@@ -10,14 +10,16 @@ export function FactsStrip() {
   return (
     <section className={`lw-section lw-section-alt ${styles.strip}`}>
       <Reveal>
-        <ul className={`lw-container ${styles.grid}`}>
-          {m.home.facts.items.map((item) => (
-            <li key={item.value + item.label} className={styles.item}>
-              <span className={styles.value}>{item.value}</span>
-              <span className={styles.label}>{item.label}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="lw-container">
+          <ul className={styles.grid}>
+            {m.home.facts.items.map((item) => (
+              <li key={item.value + item.label} className={styles.item}>
+                <span className={styles.value}>{item.value}</span>
+                <span className={styles.label}>{item.label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Reveal>
     </section>
   );
