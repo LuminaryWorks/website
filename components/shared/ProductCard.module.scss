@@ -1,0 +1,151 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--lw-primary-rim);
+  background: var(--lw-surface-2);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--lw-r-md);
+  object-fit: contain;
+}
+
+.names {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nameEn {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--lw-text);
+}
+
+.nameLocal {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--lw-muted);
+}
+
+.role {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 3px 8px;
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-sm);
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--lw-cyan);
+}
+
+.oneLiner {
+  margin: 0;
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.audience {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--lw-border-soft);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--lw-muted);
+}
+
+.audienceLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--lw-faint);
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--lw-border-soft);
+}
+
+.statusGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.commercial {
+  padding-left: 10px;
+  border-left: 1px solid var(--lw-border);
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--lw-faint);
+}
+
+.links {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.secondaryLink {
+  color: var(--lw-muted);
+}
+
+.full {
+  padding: 28px;
+}

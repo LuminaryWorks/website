@@ -24,4 +24,18 @@ export const meta = {
     description:
       "Works means workshop and skunk works. House of Brands, licensing and commercial use, contact.",
   },
+  "legal/terms": {
+    title: "Terms of Service · LuminaryWorks",
+    description: "Engineering template for LuminaryWorks Hosted SaaS Terms (lw-legal-v2026-09-07).",
+  },
+  "legal/privacy": {
+    title: "Privacy Policy · LuminaryWorks",
+    description:
+      "Engineering template for LuminaryWorks Hosted SaaS Privacy Policy (lw-legal-v2026-09-07).",
+  },
+  "legal/trial-data-deletion": {
+    title: "Trial & Data Deletion · LuminaryWorks",
+    description:
+      "Engineering template for Trial operation and data deletion (lw-legal-v2026-09-07).",
+  },
 };

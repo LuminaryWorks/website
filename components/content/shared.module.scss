@@ -1,0 +1,207 @@
+.section {
+  padding: 64px 0;
+  border-top: 1px solid var(--lw-border-soft);
+
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.sectionAlt {
+  composes: section;
+  background: var(--lw-bg-deep);
+  margin-inline: -24px;
+  padding-inline: 24px;
+
+  @media (max-width: 768px) {
+    margin-inline: -16px;
+    padding-inline: 16px;
+  }
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  color: var(--lw-muted);
+  background: var(--lw-surface-2);
+  border-bottom: 1px solid var(--lw-border-soft);
+}
+
+.table td {
+  padding: 14px 16px;
+  vertical-align: top;
+  color: var(--lw-text);
+  border-bottom: 1px solid var(--lw-border-soft);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.mono {
+  font-family: var(--lw-font-mono);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.cardGrid2 {
+  composes: cardGrid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cardGrid3 {
+  composes: cardGrid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 960px) {
+  .cardGrid3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .cardGrid2,
+  .cardGrid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.surfaceCard {
+  padding: 20px;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+}
+
+.surfaceCard h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--lw-text);
+}
+
+.surfaceCard p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.callout {
+  margin-top: 24px;
+  padding: 16px 20px;
+  font-family: var(--lw-font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--lw-muted);
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-md);
+  overflow-wrap: anywhere;
+}
+
+.calloutAmber {
+  composes: callout;
+  border-color: var(--lw-amber);
+  color: var(--lw-text);
+}
+
+.footnote {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--lw-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.list li + li {
+  margin-top: 8px;
+}
+
+.bulletList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.bulletList li + li {
+  margin-top: 10px;
+}
+
+.bulletList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--lw-primary);
+}
+
+.ctaBlock {
+  margin-top: 48px;
+  padding: 32px;
+  text-align: center;
+  background: var(--lw-bg-deep);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+}
+
+.ctaBlock h2 {
+  margin: 0 0 8px;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 700;
+  color: var(--lw-text);
+}
+
+.ctaBlock p {
+  margin: 0 0 20px;
+  color: var(--lw-muted);
+}

@@ -34,8 +34,14 @@ export function LanguageSwitcher() {
       trigger={["click"]}
       placement="bottomRight"
     >
-      <button type="button" aria-label={m.common.lang.label} className={styles.button}>
-        <GlobalOutlined style={{ fontSize: 15 }} />
+      <button
+        type="button"
+        aria-label={`${m.common.lang.label} ${LOCALE_SHORT[locale]}`}
+        className={styles.button}
+      >
+        <span aria-hidden="true">
+          <GlobalOutlined style={{ fontSize: 15 }} />
+        </span>
         <span>{LOCALE_SHORT[locale]}</span>
       </button>
     </Dropdown>

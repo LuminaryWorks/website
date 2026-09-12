@@ -3,7 +3,7 @@ import styles from "./Logo.module.scss";
 
 export function Logo({ href = "/" }: { href?: string }) {
   return (
-    <Link href={href} className={styles.brand} aria-label="LuminaryWorks">
+    <Link href={href} className={styles.brand}>
       <img src="/logo.svg" width={24} height={24} alt="" className={styles.mark} />
       <span className={styles.text}>
         <span className={styles.name}>LuminaryWorks</span>

@@ -62,6 +62,10 @@
   color: var(--lw-text);
 }
 
+.menuWrap {
+  display: inline-flex;
+}
+
 .menuBtn {
   display: inline-flex;
 }
@@ -107,7 +111,7 @@
     display: flex;
   }
 
-  .menuBtn {
+  .menuWrap {
     display: none;
   }
 

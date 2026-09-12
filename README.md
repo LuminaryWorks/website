@@ -21,6 +21,8 @@ pnpm typecheck
 pnpm check
 ```
 
+OG 图 `public/og.png`（1200×630）由 `scripts/og-template.html` 截图生成：用静态服务器打开该 HTML，视口设为 1200×630 后截图覆盖 `public/og.png`。
+
 ## Cloudflare Pages
 
 | 项 | 值 |

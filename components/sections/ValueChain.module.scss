@@ -1,0 +1,224 @@
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.diagram {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) 28px minmax(120px, 1fr) 28px minmax(120px, 1fr) 40px minmax(
+      120px,
+      1fr
+    );
+  grid-template-rows: auto 20px auto 20px auto;
+  align-items: center;
+}
+
+.create {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.hCreate {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.connect {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.hConnect {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.see {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.vSeeWatch {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.watch {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.vWatchControl {
+  grid-column: 5;
+  grid-row: 4;
+}
+
+.control {
+  grid-column: 5;
+  grid-row: 5;
+}
+
+.vControlEarn {
+  display: none;
+}
+
+.spine {
+  grid-column: 6;
+  grid-row: 1 / -1;
+  width: 1px;
+  height: 100%;
+  justify-self: center;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 160, 251, 0.3),
+    rgba(22, 119, 255, 0.12) 50%,
+    rgba(24, 160, 251, 0.3)
+  );
+}
+
+.earn {
+  grid-column: 7;
+  grid-row: 1 / -1;
+  align-self: center;
+}
+
+.lineMain {
+  position: relative;
+  height: 1px;
+  align-self: center;
+  background: rgba(24, 160, 251, 0.3);
+}
+
+.lineMain::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent rgba(24, 160, 251, 0.45);
+}
+
+.lineV {
+  width: 1px;
+  height: 100%;
+  justify-self: center;
+  background: rgba(24, 160, 251, 0.3);
+}
+
+.see,
+.watch,
+.control,
+.earn {
+  position: relative;
+}
+
+.see::after,
+.watch::after,
+.control::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(24, 160, 251, 0.3), rgba(22, 119, 255, 0.12));
+}
+
+.earn::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(22, 119, 255, 0.12), rgba(24, 160, 251, 0.3));
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-md);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.node:hover {
+  border-color: var(--lw-primary-rim);
+  background: var(--lw-surface-2);
+  transform: translateY(-2px);
+}
+
+.role {
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lw-cyan);
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--lw-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .node,
+  .node:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .spine,
+  .see::after,
+  .watch::after,
+  .control::after,
+  .earn::before,
+  .lineMain::after {
+    display: none;
+  }
+
+  .lineMain,
+  .lineV,
+  .vControlEarn {
+    display: block;
+    width: 1px;
+    height: 20px;
+    justify-self: center;
+    align-self: center;
+    background: linear-gradient(180deg, rgba(24, 160, 251, 0.3), rgba(22, 119, 255, 0.12));
+  }
+
+  .earn {
+    align-self: stretch;
+  }
+}

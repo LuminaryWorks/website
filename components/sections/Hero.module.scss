@@ -1,0 +1,261 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.beam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--lw-cyan) 40%,
+    var(--lw-primary) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: lw-hero-beam 8s linear infinite;
+}
+
+@keyframes lw-hero-beam {
+  0% {
+    background-position: 0% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .beam {
+    animation: none;
+    background-position: 50% 0;
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lw-faint);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--lw-text);
+}
+
+.lead {
+  margin: 0;
+  max-width: 36em;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: var(--lw-r-md);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btnPrimary {
+  background: var(--lw-primary);
+  color: #fff;
+  border: 1px solid var(--lw-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btnPrimary:hover {
+  background: var(--lw-primary-hover);
+  border-color: var(--lw-primary-hover);
+  color: #fff;
+}
+
+.btnSecondary {
+  background: transparent;
+  color: var(--lw-muted);
+  border: 1px solid var(--lw-border);
+}
+
+.btnSecondary:hover {
+  border-color: var(--lw-primary-rim);
+  color: var(--lw-text);
+}
+
+.docs {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--lw-primary-hover);
+}
+
+.diagram {
+  padding: 24px;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+}
+
+.diagramInner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.planeLabel {
+  margin: 0;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lw-muted);
+}
+
+.planeNote {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--lw-muted);
+}
+
+.control,
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.connectors {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  height: 28px;
+}
+
+.dash {
+  justify-self: center;
+  width: 0;
+  height: 100%;
+  border-left: 1px dashed rgba(24, 160, 251, 0.3);
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 10px;
+  background: var(--lw-bg);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-md);
+}
+
+.nodeLabel {
+  min-width: 0;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--lw-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sep {
+  color: var(--lw-faint);
+}
+
+.lab {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 2px 6px;
+  border: 1px solid var(--lw-amber);
+  border-radius: var(--lw-r-sm);
+  font-family: var(--lw-font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lw-amber);
+}
+
+.dotMint,
+.dotAmber {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dotMint {
+  background: var(--lw-mint);
+}
+
+.dotAmber {
+  background: var(--lw-amber);
+}
+
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  .control,
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .connectors {
+    display: none;
+  }
+
+  .diagram {
+    padding: 16px;
+  }
+}

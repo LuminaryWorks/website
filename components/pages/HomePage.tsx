@@ -1,14 +1,23 @@
-"use client";
-
-import { useT } from "@/lib/i18n/context";
-import styles from "./page.module.scss";
+import { CallToAction } from "@/components/sections/CallToAction";
+import { Deployment } from "@/components/sections/Deployment";
+import { FactsStrip } from "@/components/sections/FactsStrip";
+import { Hero } from "@/components/sections/Hero";
+import { Platform } from "@/components/sections/Platform";
+import { ProductsGrid } from "@/components/sections/ProductsGrid";
+import { ValueChain } from "@/components/sections/ValueChain";
+import { Why } from "@/components/sections/Why";
 
 export function HomePage() {
-  const { m } = useT();
   return (
-    <main id="main" className={styles.main}>
-      <h1>{m.meta.home.title}</h1>
-      <p>{m.meta.home.description}</p>
+    <main id="main">
+      <Hero />
+      <FactsStrip />
+      <ValueChain />
+      <ProductsGrid />
+      <Platform />
+      <Deployment />
+      <Why />
+      <CallToAction />
     </main>
   );
 }

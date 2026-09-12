@@ -8,7 +8,6 @@ import {
   DOCS_URL,
   DOERFLOW_URL,
   GITHUB_ORG,
-  LOGIN_URL,
   SYNCROBRAIN_URL,
   VISTACAST_URL,
   VISTAREMOTE_URL,
@@ -33,15 +32,27 @@ export function Footer() {
 
   const platform = [
     { href: DOCS_URL, label: m.common.footer.developerDocs, external: true },
-    { href: LOGIN_URL, label: m.common.footer.unifiedLogin, external: true },
+    {
+      href: `${DOCS_URL}/develop/unified-login`,
+      label: m.common.footer.unifiedLogin,
+      external: true,
+    },
     { href: localePath(locale, "/deploy/"), label: m.common.footer.deployKits, external: false },
     { href: GITHUB_ORG, label: m.common.footer.githubOrg, external: true },
   ];
 
   const ecosystem = [
-    { href: localePath(locale, "/ecosystem/"), label: m.common.footer.ecosystemStory },
-    { href: localePath(locale, "/ecosystem/"), label: m.common.footer.architecture },
-    { href: localePath(locale, "/about/"), label: m.common.footer.licensing },
+    {
+      href: localePath(locale, "/ecosystem/"),
+      label: m.common.footer.ecosystemStory,
+      external: false,
+    },
+    {
+      href: `${DOCS_URL}/guide/architecture`,
+      label: m.common.footer.architecture,
+      external: true,
+    },
+    { href: localePath(locale, "/about/"), label: m.common.footer.licensing, external: false },
   ];
 
   const legal = [
@@ -92,9 +103,15 @@ export function Footer() {
             <ul className={styles.list}>
               {ecosystem.map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href} className={styles.link}>
-                    {item.label}
-                  </Link>
+                  {item.external ? (
+                    <ExternalLink href={item.href} className={styles.link}>
+                      {item.label}
+                    </ExternalLink>
+                  ) : (
+                    <Link href={item.href} className={styles.link}>
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

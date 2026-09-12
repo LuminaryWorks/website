@@ -1,0 +1,70 @@
+.desktopTable {
+  display: block;
+}
+
+.mobileCards {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dl {
+  margin: 12px 0 0;
+}
+
+.dl div + div {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--lw-border-soft);
+}
+
+.dl dt {
+  font-size: 12px;
+  font-family: var(--lw-font-mono);
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  color: var(--lw-faint);
+}
+
+.dl dd {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--lw-muted);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: var(--lw-primary);
+  border-radius: var(--lw-r-md);
+}
+
+.ctaButton:hover {
+  background: var(--lw-primary-hover);
+}
+
+.ctaButton:focus-visible {
+  outline: 2px solid var(--lw-primary-hover);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .desktopTable {
+    display: none;
+  }
+
+  .mobileCards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

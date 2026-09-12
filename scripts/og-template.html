@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <title>LuminaryWorks OG 1200×630</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #0d1117;
+        color: #e6edf3;
+        font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      }
+
+      .canvas {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+      }
+
+      .grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(22, 119, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(22, 119, 255, 0.05) 1px, transparent 1px);
+        background-size: 48px 48px;
+        -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+        mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+      }
+
+      .beam {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          #18a0fb 40%,
+          #1677ff 50%,
+          transparent 100%
+        );
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        height: 630px;
+        padding: 72px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .mark {
+        width: 56px;
+        height: 56px;
+      }
+
+      .eyebrow {
+        margin: 0;
+        font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #7d8590;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 980px;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        color: #e6edf3;
+      }
+
+      .domain {
+        margin: 36px 0 0;
+        font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: #4593ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="grid" aria-hidden="true"></div>
+      <div class="beam" aria-hidden="true"></div>
+      <div class="content">
+        <div class="brand">
+          <img class="mark" src="/logo.svg" width="56" height="56" alt="" />
+          <p class="eyebrow">LuminaryWorks · 启明工坊</p>
+        </div>
+        <h1>六个可独立部署的 AI 产品，一套统一的身份与权益底座</h1>
+        <p class="domain">luminaryworks.dev</p>
+      </div>
+    </div>
+  </body>
+</html>

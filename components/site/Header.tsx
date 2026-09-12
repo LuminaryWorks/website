@@ -70,22 +70,21 @@ export function Header() {
           >
             <GithubOutlined />
           </a>
-          <Button
-            type="primary"
-            href={CONSOLE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.desktopOnly}
-          >
-            {m.common.cta.startTrial}
-          </Button>
-          <Button
-            type="text"
-            className={styles.menuBtn}
-            aria-label={m.common.menuAria}
-            icon={<MenuOutlined style={{ color: COLORS.text, fontSize: 20 }} />}
-            onClick={() => setOpen(true)}
-          />
+          <span className={styles.desktopOnly}>
+            <Button type="primary" href={CONSOLE_URL} target="_blank" rel="noopener noreferrer">
+              {m.common.cta.startTrial}
+            </Button>
+          </span>
+          <span className={styles.menuWrap}>
+            <Button
+              type="text"
+              className={styles.menuBtn}
+              aria-label={m.common.menuAria}
+              aria-expanded={open}
+              icon={<MenuOutlined style={{ color: COLORS.text, fontSize: 20 }} />}
+              onClick={() => setOpen(true)}
+            />
+          </span>
         </div>
       </div>
 

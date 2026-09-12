@@ -18,7 +18,7 @@ export const COLORS = {
   dim: "#4a5568",
   text: "#e6edf3",
   muted: "#8b949e",
-  faint: "#4a5568",
+  faint: "#7d8590",
 } as const;
 
 export const darkTheme: ThemeConfig = {

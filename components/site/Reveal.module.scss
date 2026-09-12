@@ -1,18 +1,23 @@
 .root {
+  /* SSR / no-JS: visible. Hidden state is applied client-side only. */
+}
+
+.revealHidden {
   opacity: 0;
   transform: translateY(8px);
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
   transition:
     opacity 240ms ease,
     transform 240ms ease;
 }
 
-.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .root {
+  .revealHidden,
+  .revealVisible {
     opacity: 1;
     transform: none;
     transition: none;
