@@ -54,6 +54,8 @@ export const ecosystem = {
     label: "PLATFORM",
     title: "共享底座",
     lead: "控制面可选、产品面自治。中央服务停机时，各产品按 manifest 声明降级，Casbin 永不被绕过。",
+    spineLabel: "CONTROL PLANE",
+    unitsLabel: "CAPABILITY UNITS",
     items: [
       {
         title: "统一登录 Identity",
@@ -135,5 +137,9 @@ export const ecosystem = {
     label: "AUTONOMY",
     title: "产品自治硬约束",
     lead: "每个产品独占自己的数据库、迁移、Casbin 策略与发布节奏；兄弟产品全部关闭时仍能启动并通过 ready 检查。",
+    boundaries: [
+      "每个产品独占自己的数据库、迁移、Casbin 策略与发布节奏",
+      "兄弟产品全部关闭时仍能启动并通过 ready 检查",
+    ],
   },
 };

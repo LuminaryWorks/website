@@ -3,7 +3,7 @@
 import { useT } from "@/lib/i18n/context";
 import { localePath } from "@/lib/i18n/paths";
 import { COLORS } from "@/lib/theme";
-import { CONSOLE_URL, DOCS_URL, GITHUB_ORG } from "@/lib/urls";
+import { DOCS_URL, GITHUB_ORG } from "@/lib/urls";
 import { GithubOutlined, MenuOutlined } from "@ant-design/icons";
 import { Button, Drawer } from "antd";
 import Link from "next/link";
@@ -66,15 +66,10 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={m.common.githubAria}
-            className={`${styles.github} ${styles.desktopOnly}`}
+            className={styles.github}
           >
             <GithubOutlined />
           </a>
-          <span className={styles.desktopOnly}>
-            <Button type="primary" href={CONSOLE_URL} target="_blank" rel="noopener noreferrer">
-              {m.common.cta.startTrial}
-            </Button>
-          </span>
           <span className={styles.menuWrap}>
             <Button
               type="text"
@@ -125,17 +120,6 @@ export function Header() {
           <ExternalLink href={GITHUB_ORG} className={styles.drawerLink}>
             {m.common.footer.githubOrg}
           </ExternalLink>
-          <span className={styles.drawerCta}>
-            <Button
-              block
-              type="primary"
-              href={CONSOLE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {m.common.cta.startTrial}
-            </Button>
-          </span>
         </nav>
       </Drawer>
     </header>

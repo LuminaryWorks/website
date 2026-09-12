@@ -6,26 +6,37 @@ import { useT } from "@/lib/i18n/context";
 import { type ProductCode, getProduct } from "@/lib/products";
 import styles from "./ValueChain.module.scss";
 
-const MAIN = {
-  create: "blockyedu",
-  connect: "syncrobrain",
-  see: "dataluminary",
-} as const satisfies Record<string, ProductCode>;
-const BRANCH = {
-  watch: "vistacast",
-  control: "vistaremote",
-} as const satisfies Record<string, ProductCode>;
-const SINK: ProductCode = "doerflow";
+const STAGES: readonly { code: ProductCode; index: string; lane: "main" | "branch" | "sink" }[] = [
+  { code: "blockyedu", index: "01", lane: "main" },
+  { code: "syncrobrain", index: "02", lane: "main" },
+  { code: "dataluminary", index: "03", lane: "main" },
+  { code: "vistacast", index: "04", lane: "branch" },
+  { code: "vistaremote", index: "05", lane: "branch" },
+  { code: "doerflow", index: "06", lane: "sink" },
+];
 
-function ChainNode({ code, className }: { code: ProductCode; className: string }) {
+function ChainNode({
+  code,
+  index,
+  lane,
+}: {
+  code: ProductCode;
+  index: string;
+  lane: "main" | "branch" | "sink";
+}) {
   const { m } = useT();
   const product = getProduct(code);
   const item = m.products.items[code];
 
   return (
-    <a className={`${styles.node} ${className}`} href={`#product-${code}`}>
+    <a
+      className={`${styles.node} ${lane === "branch" ? styles.branch : ""} ${lane === "sink" ? styles.sink : ""}`}
+      href={`#product-${code}`}
+    >
+      <span className={styles.index}>{index}</span>
       <span className={styles.role}>{item.role}</span>
       <span className={styles.name}>{product.nameEn}</span>
+      <span className={styles.local}>{item.nameLocal}</span>
     </a>
   );
 }
@@ -39,20 +50,10 @@ export function ValueChain() {
       <Reveal>
         <div className="lw-container">
           <SectionHeading index={s.index} label={s.label} title={s.title} lead={s.lead} />
-          <p className={styles.srOnly}>{s.diagramAria}</p>
-          <div className={styles.diagram}>
-            <ChainNode code={MAIN.create} className={styles.create} />
-            <span className={`${styles.lineMain} ${styles.hCreate}`} aria-hidden="true" />
-            <ChainNode code={MAIN.connect} className={styles.connect} />
-            <span className={`${styles.lineMain} ${styles.hConnect}`} aria-hidden="true" />
-            <ChainNode code={MAIN.see} className={styles.see} />
-            <span className={`${styles.lineV} ${styles.vSeeWatch}`} aria-hidden="true" />
-            <ChainNode code={BRANCH.watch} className={styles.watch} />
-            <span className={`${styles.lineV} ${styles.vWatchControl}`} aria-hidden="true" />
-            <ChainNode code={BRANCH.control} className={styles.control} />
-            <span className={`${styles.lineV} ${styles.vControlEarn}`} aria-hidden="true" />
-            <span className={styles.spine} aria-hidden="true" />
-            <ChainNode code={SINK} className={styles.earn} />
+          <div className={styles.track} role="img" aria-label={s.diagramAria}>
+            {STAGES.map((stage) => (
+              <ChainNode key={stage.code} code={stage.code} index={stage.index} lane={stage.lane} />
+            ))}
           </div>
         </div>
       </Reveal>

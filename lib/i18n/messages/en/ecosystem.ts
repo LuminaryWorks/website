@@ -54,6 +54,8 @@ export const ecosystem = {
     label: "PLATFORM",
     title: "Shared platform",
     lead: "The control plane is optional; product planes stay autonomous. When central services stop, each product degrades exactly as its manifest declares — Casbin is never bypassed.",
+    spineLabel: "CONTROL PLANE",
+    unitsLabel: "CAPABILITY UNITS",
     items: [
       {
         title: "Identity (OIDC)",
@@ -148,5 +150,9 @@ export const ecosystem = {
     label: "AUTONOMY",
     title: "Product autonomy (hard constraint)",
     lead: "Each product owns its database, migrations, Casbin policy and release cadence. It must still start and pass readiness when every sibling product is down.",
+    boundaries: [
+      "Each product owns its database, migrations, Casbin policy and release cadence",
+      "It must still start and pass readiness when every sibling product is down",
+    ],
   },
 };

@@ -5,6 +5,15 @@
   padding: 64px 24px 96px;
 }
 
+.ecosystemMain {
+  min-height: calc(100vh - 64px - 320px);
+  padding-bottom: 96px;
+}
+
+.ecosystemIntro {
+  padding: 64px 0 8px;
+}
+
 .notFound {
   min-height: calc(100vh - 64px);
   display: flex;

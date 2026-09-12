@@ -4,7 +4,7 @@ type Props = {
   index: string | number;
   label: string;
   title: string;
-  lead: string;
+  lead?: string;
 };
 
 export function SectionHeading({ index, label, title, lead }: Props) {
@@ -16,7 +16,7 @@ export function SectionHeading({ index, label, title, lead }: Props) {
         {n} / {label}
       </p>
       <h2 className={styles.title}>{title}</h2>
-      <p className={styles.lead}>{lead}</p>
+      {lead ? <p className={styles.lead}>{lead}</p> : null}
     </header>
   );
 }

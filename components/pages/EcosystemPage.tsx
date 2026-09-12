@@ -18,10 +18,14 @@ export function EcosystemPage() {
   const p = m.ecosystem.page;
 
   return (
-    <main id="main" className={styles.main}>
-      <Reveal>
-        <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
-      </Reveal>
+    <main id="main" className={styles.ecosystemMain}>
+      <div className={styles.ecosystemIntro}>
+        <div className="lw-container">
+          <Reveal>
+            <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
+          </Reveal>
+        </div>
+      </div>
       <Reveal>
         <ValueChainSection />
       </Reveal>
