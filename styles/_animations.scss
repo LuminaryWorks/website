@@ -1,0 +1,33 @@
+@keyframes lw-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lw-reveal {
+  animation: lw-reveal 240ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lw-reveal {
+    animation: none;
+  }
+
+  @keyframes lw-reveal {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

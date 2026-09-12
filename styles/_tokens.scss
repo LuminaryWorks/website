@@ -1,0 +1,66 @@
+// 画布与表面
+$lw-bg: #0d1117;
+$lw-bg-deep: #0b1220;
+$lw-surface: #161f2e;
+$lw-surface-2: #1c2a3a;
+$lw-border: #21334a;
+$lw-border-soft: rgba(33, 51, 74, 0.6);
+
+// 品牌
+$lw-primary: #1677ff;
+$lw-primary-hover: #4593ff;
+$lw-primary-active: #0958d9;
+$lw-primary-bg: rgba(22, 119, 255, 0.08);
+$lw-primary-rim: rgba(22, 119, 255, 0.22);
+
+// 强调
+$lw-cyan: #18a0fb;
+$lw-mint: #21d4a8;
+$lw-amber: #f5a623;
+$lw-dim: #4a5568;
+
+// 文字
+$lw-text: #e6edf3;
+$lw-muted: #8b949e;
+$lw-faint: #4a5568;
+
+:root {
+  --lw-bg: #{$lw-bg};
+  --lw-bg-deep: #{$lw-bg-deep};
+  --lw-surface: #{$lw-surface};
+  --lw-surface-2: #{$lw-surface-2};
+  --lw-border: #{$lw-border};
+  --lw-border-soft: #{$lw-border-soft};
+
+  --lw-primary: #{$lw-primary};
+  --lw-primary-hover: #{$lw-primary-hover};
+  --lw-primary-active: #{$lw-primary-active};
+  --lw-primary-bg: #{$lw-primary-bg};
+  --lw-primary-rim: #{$lw-primary-rim};
+
+  --lw-cyan: #{$lw-cyan};
+  --lw-mint: #{$lw-mint};
+  --lw-amber: #{$lw-amber};
+  --lw-dim: #{$lw-dim};
+
+  --lw-text: #{$lw-text};
+  --lw-muted: #{$lw-muted};
+  --lw-faint: #{$lw-faint};
+
+  --lw-font-sans: var(--font-inter), Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --lw-font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
+
+  --lw-r-sm: 4px;
+  --lw-r-md: 8px;
+  --lw-r-lg: 12px;
+
+  --lw-space-4: 4px;
+  --lw-space-8: 8px;
+  --lw-space-12: 12px;
+  --lw-space-16: 16px;
+  --lw-space-24: 24px;
+  --lw-space-32: 32px;
+  --lw-space-48: 48px;
+  --lw-space-64: 64px;
+  --lw-space-96: 96px;
+}

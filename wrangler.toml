@@ -1,0 +1,6 @@
+# Cloudflare Pages — LuminaryWorks marketing site (static export)
+# https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+
+name = "luminaryworks-website"
+pages_build_output_dir = "out"
+compatibility_date = "2026-09-12"

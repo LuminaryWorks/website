@@ -1,0 +1,8 @@
+@use "../../styles/blueprint" as *;
+
+.root {
+  @include lw-blueprint;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}

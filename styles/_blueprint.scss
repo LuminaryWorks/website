@@ -1,0 +1,12 @@
+@mixin lw-blueprint {
+  background-image:
+    linear-gradient(rgba(22, 119, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 119, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 78%);
+}
+
+.lw-blueprint {
+  @include lw-blueprint;
+}

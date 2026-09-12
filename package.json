@@ -1,0 +1,35 @@
+{
+  "name": "@luminaryworks/website",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Polyform-Noncommercial-1.0.0",
+  "description": "LuminaryWorks marketing site — luminaryworks.dev",
+  "scripts": {
+    "dev": "next dev -p 13000",
+    "build": "next build",
+    "start": "next start -p 13000",
+    "check": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.3.2",
+    "@ant-design/nextjs-registry": "^1.3.0",
+    "antd": "^6.6.1",
+    "marked": "^15.0.12",
+    "next": "16.3.3",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "sass": "^1.89.2",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

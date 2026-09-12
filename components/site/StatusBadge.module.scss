@@ -1,0 +1,29 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--lw-muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lw-dim);
+}
+
+.sellable .dot {
+  background: var(--lw-mint);
+}
+
+.preview .dot {
+  background: var(--lw-amber);
+}
+
+.planned .dot {
+  background: var(--lw-dim);
+}
