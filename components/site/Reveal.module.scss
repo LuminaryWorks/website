@@ -1,25 +1,24 @@
+@keyframes lwFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+ * `both` + 单次播放：动画结束后停在可见状态。
+ * 无 JS、无 observer，静态 HTML 与打印都是可见的。
+ */
 .root {
-  /* SSR / no-JS: visible. Hidden state is applied client-side only. */
-}
-
-.revealHidden {
-  opacity: 0;
-  transform: translateY(8px);
-}
-
-.revealVisible {
-  opacity: 1;
-  transform: translateY(0);
-  transition:
-    opacity 240ms ease,
-    transform 240ms ease;
+  animation: lwFadeIn 240ms ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .revealHidden,
-  .revealVisible {
-    opacity: 1;
-    transform: none;
-    transition: none;
+  .root {
+    animation: none;
   }
 }

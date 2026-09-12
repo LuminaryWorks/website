@@ -104,7 +104,8 @@
   background: var(--lw-primary);
   color: #fff;
   border: 1px solid var(--lw-primary);
-  font-size: 16px;
+  /* ≥19px/700 让白字落入 WCAG 大文本档（3:1），实测 4.1:1 达标；见 spec/website-design.md 变更记录 */
+  font-size: 19px;
   font-weight: 700;
 }
 

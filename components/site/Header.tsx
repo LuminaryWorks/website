@@ -125,9 +125,17 @@ export function Header() {
           <ExternalLink href={GITHUB_ORG} className={styles.drawerLink}>
             {m.common.footer.githubOrg}
           </ExternalLink>
-          <Button block type="primary" href={CONSOLE_URL} target="_blank" rel="noopener noreferrer">
-            {m.common.cta.startTrial}
-          </Button>
+          <span className={styles.drawerCta}>
+            <Button
+              block
+              type="primary"
+              href={CONSOLE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {m.common.cta.startTrial}
+            </Button>
+          </span>
         </nav>
       </Drawer>
     </header>

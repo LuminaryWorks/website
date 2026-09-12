@@ -106,6 +106,28 @@
   display: none;
 }
 
+/*
+ * Header CTA 尺寸小，无法进入 WCAG 大文本档，因此填充色下沉到 --lw-primary-active
+ * （白字 6.3:1，达标 AA 正文），hover 回到品牌蓝。大号 CTA 仍用 --lw-primary。
+ * 见 spec/website-design.md 变更记录。
+ */
+.drawerCta {
+  display: block;
+}
+
+.desktopOnly :global(.ant-btn-primary),
+.drawerCta :global(.ant-btn-primary) {
+  background: var(--lw-primary-active);
+  border-color: var(--lw-primary-active);
+  font-weight: 600;
+}
+
+.desktopOnly :global(.ant-btn-primary:hover),
+.drawerCta :global(.ant-btn-primary:hover) {
+  background: var(--lw-primary) !important;
+  border-color: var(--lw-primary) !important;
+}
+
 @media (min-width: 1024px) {
   .nav {
     display: flex;

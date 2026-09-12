@@ -34,6 +34,9 @@
   background: var(--lw-primary);
   color: #fff;
   border: 1px solid var(--lw-primary);
+  /* ≥19px/700 → WCAG 大文本档；见 spec/website-design.md 变更记录 */
+  font-size: 19px;
+  font-weight: 700;
 }
 
 .btnPrimary:hover {

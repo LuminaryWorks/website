@@ -23,7 +23,7 @@ export function ProductsGrid() {
   return (
     <div className={shared.cardGrid2}>
       {PRODUCTS.map((product) => (
-        <ProductCard key={product.code} product={product} variant="full" />
+        <ProductCard key={product.code} product={product} variant="full" headingLevel={2} />
       ))}
     </div>
   );

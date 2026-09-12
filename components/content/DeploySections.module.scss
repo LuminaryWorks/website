@@ -40,8 +40,9 @@
   justify-content: center;
   min-height: 44px;
   padding: 0 24px;
-  font-size: 15px;
-  font-weight: 600;
+  /* ≥19px/700 → WCAG 大文本档；见 spec/website-design.md 变更记录 */
+  font-size: 19px;
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
   background: var(--lw-primary);

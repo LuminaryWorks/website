@@ -17,8 +17,8 @@ export const COLORS = {
   amber: "#f5a623",
   dim: "#4a5568",
   text: "#e6edf3",
-  muted: "#8b949e",
-  faint: "#7d8590",
+  muted: "#9aa5b1",
+  faint: "#8b949e",
 } as const;
 
 export const darkTheme: ThemeConfig = {

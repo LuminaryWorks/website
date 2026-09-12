@@ -18,13 +18,17 @@ import styles from "./ProductCard.module.scss";
 export function ProductCard({
   product,
   variant = "compact",
+  headingLevel = 3,
 }: {
   product: Product;
   variant?: "compact" | "full";
+  /** 产品总览页的卡片就是该页的一级分区，用 h2 以免标题层级跳级 */
+  headingLevel?: 2 | 3;
 }) {
   const { m } = useT();
   const item = m.products.items[product.code];
   const card = m.products.card;
+  const Heading = headingLevel === 2 ? "h2" : "h3";
 
   const commercial =
     product.status === "sellable"
@@ -39,7 +43,7 @@ export function ProductCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className={styles.logo} src={product.logo} alt="" width={32} height={32} />
         <div className={styles.names}>
-          <h3 className={styles.nameEn}>{product.nameEn}</h3>
+          <Heading className={styles.nameEn}>{product.nameEn}</Heading>
           <p className={styles.nameLocal}>{item.nameLocal}</p>
         </div>
         <span className={styles.role}>{item.role}</span>

@@ -20,9 +20,11 @@ $lw-amber: #f5a623;
 $lw-dim: #4a5568;
 
 // 文字
+// 三级色阶按实测对比度定：最暗一档也要在最亮表面 --lw-surface-2 (#1c2a3a) 上 >= 4.5:1
+// text 12.9:1 / muted 5.8:1 / faint 4.7:1（均相对 #1c2a3a）
 $lw-text: #e6edf3;
-$lw-muted: #8b949e;
-$lw-faint: #7d8590;
+$lw-muted: #9aa5b1;
+$lw-faint: #8b949e;
 
 :root {
   --lw-bg: #{$lw-bg};

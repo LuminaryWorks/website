@@ -144,8 +144,9 @@
   border-radius: var(--lw-r-md);
   background: var(--lw-primary);
   color: #fff;
-  font-size: 15px;
-  font-weight: 600;
+  /* ≥19px/700 → WCAG 大文本档；见 spec/website-design.md 变更记录 */
+  font-size: 19px;
+  font-weight: 700;
   text-decoration: none;
 }
 
