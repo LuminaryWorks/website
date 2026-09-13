@@ -1,0 +1,52 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--lw-muted);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.address {
+  font-family: var(--lw-font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--lw-text);
+  user-select: all;
+}
+
+.copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-md);
+  background: transparent;
+  color: var(--lw-text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy:hover {
+  border-color: var(--lw-primary-rim);
+  background: var(--lw-surface-2);
+}
+
+.copy:focus-visible {
+  outline: 2px solid var(--lw-primary-hover);
+  outline-offset: 2px;
+}

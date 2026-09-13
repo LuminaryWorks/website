@@ -41,37 +41,41 @@ export function PlatformSection() {
     <section className={`${styles.band} ${styles.bandAlt}`} aria-labelledby="platform">
       <div className="lw-container">
         <SectionHeading index={s.index} label={s.label} title={s.title} lead={s.lead} />
-        <div className={styles.board}>
-          <div className={styles.spineCol}>
+        <div className={styles.planes}>
+          <div className={styles.plane}>
             <p className={styles.planeKicker}>{s.spineLabel}</p>
-            {spine.map((item) => (
-              <article key={item.title} className={styles.mod}>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <div className={styles.tagRow}>
-                  {item.tags.map((tag) => (
-                    <Chip key={tag}>{tag}</Chip>
-                  ))}
-                </div>
-              </article>
-            ))}
+            <div className={styles.modGrid}>
+              {spine.map((item) => (
+                <article key={item.title} className={styles.mod}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <div className={styles.tagRow}>
+                    {item.tags.map((tag) => (
+                      <Chip key={tag}>{tag}</Chip>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className={styles.unitsCol}>
+          <div className={styles.plane}>
             <p className={styles.planeKicker}>{s.unitsLabel}</p>
-            {units.map((item) => (
-              <article key={item.title} className={styles.mod}>
-                <h3>
-                  {item.title}
-                  {"lab" in item && item.lab ? <span className={styles.labTag}>lab</span> : null}
-                </h3>
-                <p>{item.description}</p>
-                <div className={styles.tagRow}>
-                  {item.tags.map((tag) => (
-                    <Chip key={tag}>{tag}</Chip>
-                  ))}
-                </div>
-              </article>
-            ))}
+            <div className={styles.modGrid}>
+              {units.map((item) => (
+                <article key={item.title} className={styles.mod}>
+                  <h3>
+                    {item.title}
+                    {"lab" in item && item.lab ? <span className={styles.labTag}>lab</span> : null}
+                  </h3>
+                  <p>{item.description}</p>
+                  <div className={styles.tagRow}>
+                    {item.tags.map((tag) => (
+                      <Chip key={tag}>{tag}</Chip>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -27,6 +27,11 @@ export const common = {
     preview: "Preview",
     planned: "Planned",
   },
+  email: {
+    hint: "For business inquiries, send email to",
+    copy: "Copy address",
+    copied: "Copied",
+  },
   lang: {
     label: "Change language",
   },

@@ -6,8 +6,8 @@
  * - 本文件只放结构：代码、英文名、Logo、官网、源码、商业化状态
  *
  * 硬约束：
- * - `vistacast` / `syncrobrain` 中央目录可配置但不可售、不发 Trial → status `preview`
- * - `doerflow` 可售但无 Trial
+ * - 六产品均可售（status `sellable`）
+ * - `doerflow` 无 Trial；VistaCast / SyncroBrain 当前无 Trial
  * - VistaRemote 官网一律 `remote.vistacast.dev`，禁止 `vistaremote.dev`
  * - 第二个链接用可验证的 GitHub 源码地址，不猜各产品 docs 子域
  */
@@ -61,7 +61,7 @@ export const PRODUCTS: readonly Product[] = [
     logo: "/brand/syncrobrain-logo.svg",
     site: SYNCROBRAIN_URL,
     repo: "https://github.com/SyncroBrain/SyncroBrain",
-    status: "preview",
+    status: "sellable",
     trial: "none",
   },
   {
@@ -79,7 +79,7 @@ export const PRODUCTS: readonly Product[] = [
     logo: "/brand/vistacast-logo.svg",
     site: VISTACAST_URL,
     repo: "https://github.com/VistaCast/VistaCast",
-    status: "preview",
+    status: "sellable",
     trial: "none",
   },
   {

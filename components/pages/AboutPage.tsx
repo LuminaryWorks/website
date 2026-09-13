@@ -16,9 +16,13 @@ export function AboutPage() {
   const p = m.about.page;
 
   return (
-    <main id="main" className={styles.main}>
+    <main id="main" className={styles.aboutMain}>
       <Reveal>
-        <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
+        <div className={styles.aboutIntro}>
+          <div className="lw-container">
+            <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
+          </div>
+        </div>
       </Reveal>
       <Reveal>
         <NamingSection />

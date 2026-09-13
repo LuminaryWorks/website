@@ -41,6 +41,7 @@
   flex-direction: column;
   gap: 8px;
   min-width: 0;
+  height: 100%;
   padding: 20px;
   background: var(--lw-surface);
   border: 1px solid var(--lw-border);
@@ -93,48 +94,25 @@
 }
 
 .outputLabel {
-  margin: 0;
+  margin: auto 0 0;
   font-size: 14px;
   line-height: 1.6;
   color: var(--lw-muted);
   overflow-wrap: anywhere;
 }
 
-.board {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 32px;
-  padding: 28px;
-  background: var(--lw-bg);
-  border: 1px solid var(--lw-border);
-  border-radius: var(--lw-r-lg);
-}
-
-.spineCol,
-.unitsCol {
+.planes {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
+}
+
+.plane {
   min-width: 0;
 }
 
-.spineCol {
-  position: relative;
-  padding-left: 20px;
-}
-
-.spineCol::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 36px;
-  bottom: 8px;
-  width: 1px;
-  background: rgba(24, 160, 251, 0.35);
-}
-
 .planeKicker {
-  margin: 0 0 4px;
+  margin: 0 0 12px;
   font-family: var(--lw-font-mono);
   font-size: 12px;
   font-weight: 500;
@@ -143,11 +121,21 @@
   color: var(--lw-faint);
 }
 
+.modGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
 .mod {
-  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
   background: var(--lw-surface);
   border: 1px solid var(--lw-border);
-  border-radius: var(--lw-r-md);
+  border-radius: var(--lw-r-lg);
   transition:
     border-color 0.2s ease,
     background-color 0.2s ease,
@@ -174,6 +162,7 @@
 
 .mod p {
   margin: 0;
+  flex: 1;
   font-size: 14px;
   line-height: 1.6;
   color: var(--lw-muted);
@@ -183,7 +172,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .labTag {
@@ -401,17 +391,12 @@
 
 @media (min-width: 721px) and (max-width: 1023px) {
   .chain {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
 
-  .board {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .spineCol {
-    padding-left: 20px;
+  .modGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .errorGrid {
@@ -424,7 +409,7 @@
     position: relative;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 16px;
-    padding-bottom: 28px;
+    align-items: stretch;
   }
 
   .chain::before {
@@ -441,10 +426,6 @@
   .chainItem {
     position: relative;
     z-index: 1;
-  }
-
-  .chainItem:nth-child(even) {
-    margin-top: 28px;
   }
 }
 
@@ -472,14 +453,8 @@
     transform: translateX(-50%);
   }
 
-  .board {
+  .modGrid {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 20px;
-  }
-
-  .spineCol {
-    padding-left: 20px;
   }
 
   .contrast {

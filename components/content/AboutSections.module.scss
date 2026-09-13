@@ -1,10 +1,79 @@
-.contactDl {
-  margin: 0;
-  display: grid;
-  gap: 20px;
+.band {
+  padding: 80px 0;
+  border-top: 1px solid var(--lw-border-soft);
+  background: var(--lw-bg);
 }
 
-.contactDl dt {
+.bandAlt {
+  background: var(--lw-bg-deep);
+}
+
+.band:first-of-type {
+  border-top: none;
+}
+
+@media (max-width: 768px) {
+  .band {
+    padding: 48px 0;
+  }
+}
+
+.panel {
+  margin: 0;
+  padding: 28px 32px;
+  list-style: none;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+  max-width: 720px;
+}
+
+.panel li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lw-muted);
+}
+
+.panel li + li {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--lw-border-soft);
+}
+
+.panel li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--lw-primary);
+}
+
+.panel li + li::before {
+  top: calc(0.7em + 14px);
+}
+
+.contactPanel {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 720px;
+}
+
+.contactItem {
+  margin: 0;
+  padding: 24px 28px;
+  background: var(--lw-surface);
+  border: 1px solid var(--lw-border);
+  border-radius: var(--lw-r-lg);
+}
+
+.contactItem dt {
   font-family: var(--lw-font-mono);
   font-size: 12px;
   font-weight: 500;
@@ -13,21 +82,35 @@
   color: var(--lw-faint);
 }
 
-.contactDl dd {
-  margin: 6px 0 0;
+.contactItem dd {
+  margin: 12px 0 0;
   font-size: 16px;
 }
 
-.contactDl a {
+.contactItem a {
   color: var(--lw-primary-hover);
   text-decoration: none;
 }
 
-.contactDl a:hover {
+.contactItem a:hover {
   text-decoration: underline;
 }
 
-.contactDl a:focus-visible {
+.contactItem a:focus-visible {
   outline: 2px solid var(--lw-primary-hover);
   outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .panel {
+    padding: 20px;
+  }
+
+  .contactPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .contactItem {
+    padding: 20px;
+  }
 }

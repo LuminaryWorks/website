@@ -76,7 +76,6 @@ export const products = {
       status: "商业化状态",
       trial: "Trial",
     },
-    footnote:
-      "VistaCast 与 SyncroBrain 在中央目录可配置但暂不可售、不发 Trial；DoerFlow 无 Trial。全生态无永久免费档。",
+    footnote: "六产品均可售。DoerFlow 无 Trial；全生态无永久免费档。",
   },
 };

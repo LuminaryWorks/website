@@ -27,6 +27,11 @@ export const common = {
     preview: "预览",
     planned: "规划中",
   },
+  email: {
+    hint: "商务合作请发邮件至",
+    copy: "复制邮箱",
+    copied: "已复制",
+  },
   lang: {
     label: "切换语言",
   },

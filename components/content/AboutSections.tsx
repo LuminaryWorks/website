@@ -1,9 +1,11 @@
+"use client";
+
+import { CopyEmail } from "@/components/site/CopyEmail";
 import { ExternalLink } from "@/components/site/ExternalLink";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { useT } from "@/lib/i18n/context";
-import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/urls";
+import { GITHUB_ORG } from "@/lib/urls";
 import styles from "./AboutSections.module.scss";
-import shared from "./shared.module.scss";
 
 function BulletSection({
   index,
@@ -21,13 +23,15 @@ function BulletSection({
   alt?: boolean;
 }) {
   return (
-    <section className={alt ? `${shared.section} ${shared.sectionAlt}` : shared.section}>
-      <SectionHeading index={index} label={label} title={title} lead={lead} />
-      <ul className={shared.bulletList}>
-        {points.map((point) => (
-          <li key={point}>{point}</li>
-        ))}
-      </ul>
+    <section className={alt ? `${styles.band} ${styles.bandAlt}` : styles.band}>
+      <div className="lw-container">
+        <SectionHeading index={index} label={label} title={title} lead={lead} />
+        <ul className={styles.panel}>
+          {points.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
@@ -80,22 +84,24 @@ export function ContactSection() {
   const s = m.about.contact;
 
   return (
-    <section className={`${shared.section} ${shared.sectionAlt}`} aria-labelledby="contact">
-      <SectionHeading index={s.index} label={s.label} title={s.title} lead={s.lead} />
-      <dl className={styles.contactDl}>
-        <div>
-          <dt>{s.emailLabel}</dt>
-          <dd>
-            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-          </dd>
-        </div>
-        <div>
-          <dt>{s.githubLabel}</dt>
-          <dd>
-            <ExternalLink href={GITHUB_ORG}>{GITHUB_ORG.replace("https://", "")}</ExternalLink>
-          </dd>
-        </div>
-      </dl>
+    <section className={`${styles.band} ${styles.bandAlt}`} aria-labelledby="contact">
+      <div className="lw-container">
+        <SectionHeading index={s.index} label={s.label} title={s.title} lead={s.lead} />
+        <dl className={styles.contactPanel}>
+          <div className={styles.contactItem}>
+            <dt>{s.emailLabel}</dt>
+            <dd>
+              <CopyEmail compact />
+            </dd>
+          </div>
+          <div className={styles.contactItem}>
+            <dt>{s.githubLabel}</dt>
+            <dd>
+              <ExternalLink href={GITHUB_ORG}>{GITHUB_ORG.replace("https://", "")}</ExternalLink>
+            </dd>
+          </div>
+        </dl>
+      </div>
     </section>
   );
 }

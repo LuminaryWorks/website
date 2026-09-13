@@ -82,6 +82,6 @@ export const products = {
       trial: "Trial",
     },
     footnote:
-      "VistaCast and SyncroBrain are configurable in the central catalog but not yet sellable and carry no Trial. DoerFlow has no Trial. There is no permanent free tier across the ecosystem.",
+      "All six products are sellable. DoerFlow has no trial. The ecosystem has no permanent free tier.",
   },
 };
