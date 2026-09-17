@@ -58,8 +58,20 @@ jobs:
         env:
           NODE_ENV: production
 
-      # No --branch: production deploy → luminaryworks-website.pages.dev (not main.luminaryworks-website.pages.dev)
+      # Create project once if missing, then production deploy (no --branch → *.pages.dev).
       # Use npx (not wrangler-action) to avoid npm install into a pnpm workspace.
+      - name: Ensure Cloudflare Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if npx --yes wrangler@4 pages project list 2>/dev/null | grep -q 'luminaryworks-website'; then
+            echo "Pages project luminaryworks-website already exists"
+          else
+            echo "Creating Pages project luminaryworks-website"
+            npx --yes wrangler@4 pages project create luminaryworks-website --production-branch=main
+          fi
+
       - name: Publish to Cloudflare Pages (production)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
