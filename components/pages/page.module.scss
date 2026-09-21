@@ -88,3 +88,11 @@
   outline: 2px solid var(--lw-primary-hover);
   outline-offset: 2px;
 }
+
+.deployMain {
+  min-height: calc(100vh - 64px - 320px);
+}
+
+.deployIntro {
+  padding: 64px 0 8px;
+}

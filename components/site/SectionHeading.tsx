@@ -5,9 +5,10 @@ type Props = {
   label: string;
   title: string;
   lead?: string;
+  id?: string;
 };
 
-export function SectionHeading({ index, label, title, lead }: Props) {
+export function SectionHeading({ index, label, title, lead, id }: Props) {
   const n = typeof index === "number" ? String(index).padStart(2, "0") : index;
 
   return (
@@ -15,7 +16,9 @@ export function SectionHeading({ index, label, title, lead }: Props) {
       <p className={styles.kicker}>
         {n} / {label}
       </p>
-      <h2 className={styles.title}>{title}</h2>
+      <h2 id={id} className={styles.title}>
+        {title}
+      </h2>
       {lead ? <p className={styles.lead}>{lead}</p> : null}
     </header>
   );
