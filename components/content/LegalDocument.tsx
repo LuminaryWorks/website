@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
+import { legalLinkLocale } from "@/lib/i18n/config";
 import { MESSAGES } from "@/lib/i18n/messages";
 import { localePath } from "@/lib/i18n/paths";
 import { LEGAL_NAV, type LegalSlug, POLICY_VERSION, readLegalDocument } from "@/lib/legal";
@@ -35,7 +36,9 @@ export function LegalDocument({ locale, slug }: { locale: Locale; slug: LegalSlu
         <ul className={styles.nav}>
           {LEGAL_NAV.map((item) => (
             <li key={item.slug}>
-              <Link href={localePath(locale, `/legal/${item.slug}/`)}>{m.nav[item.key]}</Link>
+              <Link href={localePath(legalLinkLocale(locale), `/legal/${item.slug}/`)}>
+                {m.nav[item.key]}
+              </Link>
             </li>
           ))}
         </ul>

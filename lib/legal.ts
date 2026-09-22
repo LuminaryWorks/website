@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Locale } from "@/lib/i18n/config";
+import { type LegalLocale, legalContentLocale } from "@/lib/i18n/config";
 import { marked } from "marked";
 
 export const LEGAL_SLUGS = ["terms", "privacy", "trial-data-deletion"] as const;
@@ -17,7 +18,8 @@ export function isLegalSlug(value: string): value is LegalSlug {
 }
 
 export function readLegalDocument(locale: Locale, slug: LegalSlug): LegalDocument {
-  const filePath = path.join(process.cwd(), "content/legal", locale, `${slug}.md`);
+  const contentLocale: LegalLocale = legalContentLocale(locale);
+  const filePath = path.join(process.cwd(), "content/legal", contentLocale, `${slug}.md`);
   const raw = fs.readFileSync(filePath, "utf8");
 
   const lines = raw.split("\n");

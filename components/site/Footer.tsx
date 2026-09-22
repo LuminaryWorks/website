@@ -1,5 +1,6 @@
 "use client";
 
+import { legalLinkLocale } from "@/lib/i18n/config";
 import { useT } from "@/lib/i18n/context";
 import { localePath } from "@/lib/i18n/paths";
 import {
@@ -55,11 +56,12 @@ export function Footer() {
     { href: localePath(locale, "/about/"), label: m.common.footer.licensing, external: false },
   ];
 
+  const legalLocale = legalLinkLocale(locale);
   const legal = [
-    { href: localePath(locale, "/legal/terms/"), label: m.common.footer.terms },
-    { href: localePath(locale, "/legal/privacy/"), label: m.common.footer.privacy },
+    { href: localePath(legalLocale, "/legal/terms/"), label: m.common.footer.terms },
+    { href: localePath(legalLocale, "/legal/privacy/"), label: m.common.footer.privacy },
     {
-      href: localePath(locale, "/legal/trial-data-deletion/"),
+      href: localePath(legalLocale, "/legal/trial-data-deletion/"),
       label: m.common.footer.trialDeletion,
     },
   ];

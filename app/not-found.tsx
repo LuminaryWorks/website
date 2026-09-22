@@ -8,9 +8,9 @@ import "@/styles/globals.scss";
 
 export default function NotFound(): ReactNode {
   return (
-    <html lang="zh" className={inter.variable}>
+    <html lang="zh-CN" className={inter.variable}>
       <body>
-        <Providers locale="zh">
+        <Providers locale="zh-CN">
           <Header />
           <NotFoundPage />
           <Footer />

@@ -9,7 +9,8 @@
 - **Next.js 16.3.3**（`output: "export"` 静态导出）
 - React 19 + TypeScript 5.7.3
 - antd 6 + SCSS Modules
-- 中文默认挂 `/`，英文挂 `/en/`
+- 默认语言 **简体中文** 挂 `/`（`zh-CN`）；其它语言前缀挂 `/en/`、`/zh-TW/`、`/ja/`、`/ko/`、`/es/`、`/pt/`、`/nl/`、`/it/`
+- 法律页暂仅 **zh-CN**（`/legal/...`）与 **en**（`/en/legal/...`）；其它语言页脚链到英文法律页
 
 ## 本地开发
 

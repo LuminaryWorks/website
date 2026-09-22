@@ -16,3 +16,8 @@
 .button:hover {
   color: var(--lw-text);
 }
+
+.menu {
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
+}

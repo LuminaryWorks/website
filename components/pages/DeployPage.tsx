@@ -18,10 +18,14 @@ export function DeployPage() {
   const p = m.deploy.page;
 
   return (
-    <main id="main" className={styles.main}>
-      <Reveal>
-        <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
-      </Reveal>
+    <main id="main" className={styles.deployMain}>
+      <div className={styles.deployIntro}>
+        <div className="lw-container">
+          <Reveal>
+            <PageHeader index={p.index} label={p.label} title={p.title} lead={p.lead} />
+          </Reveal>
+        </div>
+      </div>
       <Reveal>
         <DeploymentProfilesSection />
       </Reveal>
