@@ -142,8 +142,21 @@
   font-size: 14px;
 }
 
-.secondaryLink {
+a.siteLink {
+  color: var(--lw-primary-hover);
+}
+
+a.siteLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a.secondaryLink {
   color: var(--lw-muted);
+}
+
+a.secondaryLink:hover {
+  color: var(--lw-text);
 }
 
 .full {

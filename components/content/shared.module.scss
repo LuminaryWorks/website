@@ -39,7 +39,6 @@
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.06em;
-  text-transform: lowercase;
   color: var(--lw-muted);
   background: var(--lw-surface-2);
   border-bottom: 1px solid var(--lw-border-soft);
@@ -64,7 +63,7 @@
 
 .cardGrid {
   display: grid;
-  gap: 16px;
+  gap: 24px;
 }
 
 .cardGrid2 {
