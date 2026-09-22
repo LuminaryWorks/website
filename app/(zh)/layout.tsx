@@ -2,6 +2,7 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { Providers } from "@/components/site/Providers";
 import { inter } from "@/lib/fonts";
+import { DEFAULT_LOCALE, LOCALE_HTML_LANG } from "@/lib/i18n/config";
 import { SITE_URL } from "@/lib/urls";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
@@ -18,11 +19,15 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function ZhLayout({ children }: { children: ReactNode }) {
+export default function RootLocaleLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="zh" className={inter.variable} suppressHydrationWarning>
+    <html
+      lang={LOCALE_HTML_LANG[DEFAULT_LOCALE]}
+      className={inter.variable}
+      suppressHydrationWarning
+    >
       <body>
-        <Providers locale="zh">
+        <Providers locale={DEFAULT_LOCALE}>
           <Header />
           {children}
           <Footer />

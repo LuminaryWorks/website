@@ -1,0 +1,145 @@
+export const ecosystem = {
+  page: {
+    index: "01",
+    label: "ECOSYSTEM",
+    title: "生態與架構",
+    lead: "六個產品各自獨立運行，透過開放協定與可選共用控制面組成聯邦式套件——統一的是身分、權益與協定，不是業務邏輯。",
+  },
+  valueChain: {
+    index: "01",
+    label: "VALUE CHAIN",
+    title: "價值鏈閉環",
+    lead: "從創造與學習起步，接入裝置、洞察資料，延伸到視覺安防與遠端維運，最後由 Agent 與人類共同結算。",
+    steps: [
+      {
+        stage: "學+創",
+        product: "BlockyEdu",
+        productLocal: "智碼工坊",
+        output: "技能、Artifact 與訓練內容",
+      },
+      {
+        stage: "連",
+        product: "SyncroBrain",
+        productLocal: "萬物智腦",
+        output: "裝置納管、遙測、Incident 與 Safety Kernel",
+      },
+      {
+        stage: "看",
+        product: "DataLuminary",
+        productLocal: "數據明鑑",
+        output: "報表、儀表板、匯出與 embed",
+      },
+      {
+        stage: "視",
+        product: "VistaCast",
+        productLocal: "視界雲遙",
+        output: "視覺事件、告警狀態與 ack",
+      },
+      {
+        stage: "控",
+        product: "VistaRemote",
+        productLocal: "視界遠程",
+        output: "遠端會話、錄製與稽核",
+      },
+      {
+        stage: "賺",
+        product: "DoerFlow",
+        productLocal: "智工網",
+        output: "任務、Receipt 與帳本結算",
+      },
+    ],
+  },
+  platform: {
+    index: "02",
+    label: "PLATFORM",
+    title: "共用底座",
+    lead: "控制面可選、產品面自治。中央服務停機時，各產品依 manifest 宣告降級，Casbin 永不被繞過。",
+    spineLabel: "CONTROL PLANE",
+    unitsLabel: "CAPABILITY UNITS",
+    items: [
+      {
+        title: "統一登入 Identity",
+        description: "一套 OIDC 登入服務承載六個品牌，各產品保留自己的 Logo 與文案。",
+        tags: ["Logto", "OIDC", "PKCE"],
+      },
+      {
+        title: "中央權益 Entitlement",
+        description: "方案、Trial、License、席次與付款集中管理；商業權益不進 JWT。",
+        tags: ["NestJS", "PostgreSQL"],
+      },
+      {
+        title: "資源權限 PAL",
+        description: "資源級 ACL 留在各產品，permissions 隨資源下發。",
+        tags: ["Casbin", "PAL"],
+      },
+      {
+        title: "AI 閘道",
+        description: "多供應商模型路由、金鑰保險庫與用量計量。",
+        tags: ["lab", "BYOK"],
+        lab: true,
+      },
+      {
+        title: "通知",
+        description: "共用郵件與通知模組，統一寄件身分。",
+        tags: ["@luminaryworks/notification"],
+      },
+      {
+        title: "共用套件",
+        description: "身分、ACL 與權益用戶端以 npm 套件散發，不做跨儲存庫原始碼引用。",
+        tags: ["@luminaryworks/*"],
+      },
+    ],
+  },
+  integration: {
+    index: "03",
+    label: "INTEGRATION",
+    title: "整合矩陣",
+    lead: "跨產品整合一律走 OIDC、HTTP、MQTT 與版本化事件；禁止跨產品 runtime import 與共用業務 schema。",
+    allowedHeading: "允許",
+    forbiddenHeading: "禁止",
+    allowed: [
+      "OIDC 身分聯邦",
+      "HTTP REST export / embed",
+      "MQTT / CloudEvents",
+      "明確的綁定記錄（非隱式關聯）",
+    ],
+    forbidden: [
+      "跨產品 runtime import（file: 路徑、直接引用對方原始碼）",
+      "共用業務 schema / 共用業務資料庫",
+      "沿用對方 JWT 做資源授權",
+      "把商業權益寫入 JWT",
+    ],
+  },
+  errors: {
+    index: "04",
+    label: "ERRORS",
+    title: "統一錯誤語意",
+    lead: "HTTP 狀態碼在各產品間含義一致，便於編排與稽核。",
+    items: [
+      { code: "401", label: "身分", description: "AuthN 失敗；身分服務不可用時不降級為匿名。" },
+      {
+        code: "402",
+        label: "權益",
+        description: "商業權益不足（Trial 過期、方案未涵蓋、配額耗盡）。",
+      },
+      { code: "403", label: "資源 ACL", description: "Casbin 拒絕；License 永不繞過資源權限。" },
+    ],
+  },
+  protocols: {
+    index: "05",
+    label: "PROTOCOLS",
+    title: "開放協定清單",
+    lead: "整合優先採用開放標準，降低鎖定與移轉成本。",
+    items: ["OIDC", "MQTT", "REST", "WebRTC", "ONVIF"],
+  },
+  autonomy: {
+    index: "06",
+    label: "AUTONOMY",
+    title: "產品自治硬性約束",
+    lead: "每個產品獨占自己的資料庫、遷移、Casbin 政策與發布節奏；兄弟產品全部關閉時仍能啟動並通過 ready 檢查。",
+    boundaries: [
+      "每個產品獨占自己的資料庫、遷移、Casbin 政策與發布節奏",
+      "兄弟產品全部關閉時仍能啟動並通過 ready 檢查",
+    ],
+  },
+};

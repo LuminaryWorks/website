@@ -25,6 +25,7 @@ export function LanguageSwitcher() {
         items,
         selectable: true,
         selectedKeys: [locale],
+        className: styles.menu,
         onClick: ({ key }) => {
           const next = key as Locale;
           const current = unlocalizedPath(pathname ?? "/");

@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE, type Locale } from "./config";
+import { DEFAULT_LOCALE, type Locale, isPrefixedLocale } from "./config";
 
 function ensureLeadingSlash(path: string): string {
   return path.startsWith("/") ? path : `/${path}`;
@@ -24,13 +24,26 @@ export function localePath(locale: Locale, path = "/"): string {
     return normalized;
   }
   if (normalized === "/") {
-    return "/en/";
+    return `/${locale}/`;
   }
-  return `/en${normalized}`;
+  return `/${locale}${normalized}`;
 }
 
 export function unlocalizedPath(pathname: string): string {
   const raw = pathname || "/";
-  const stripped = raw.replace(/^\/en(?=\/|$)/, "");
-  return normalizePath(stripped || "/");
+  const match = raw.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)(?=\/|$)/);
+  if (match?.[1] && isPrefixedLocale(match[1])) {
+    const stripped = raw.slice(match[0].length);
+    return normalizePath(stripped || "/");
+  }
+  return normalizePath(raw);
+}
+
+export function localeFromPathname(pathname: string): Locale {
+  const raw = pathname || "/";
+  const match = raw.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)(?=\/|$)/);
+  if (match?.[1] && isPrefixedLocale(match[1])) {
+    return match[1];
+  }
+  return DEFAULT_LOCALE;
 }

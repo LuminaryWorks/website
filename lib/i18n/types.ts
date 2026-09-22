@@ -1,3 +1,3 @@
-import type { zh } from "./messages/zh";
+import type { zhCN } from "./messages/zh-CN";
 
-export type Messages = typeof zh;
+export type Messages = typeof zhCN;

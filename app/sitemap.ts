@@ -1,25 +1,15 @@
-import { PAGE_PATHS } from "@/lib/i18n/metadata";
+import { DEFAULT_LOCALE, LEGAL_LOCALES, LOCALES, type Locale } from "@/lib/i18n/config";
+import { PAGE_PATHS, languagesForPath } from "@/lib/i18n/metadata";
 import { localePath } from "@/lib/i18n/paths";
 import { SITE_URL } from "@/lib/urls";
 import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-function languagesFor(path: string): Record<string, string> {
-  const zh = `${SITE_URL}${localePath("zh", path)}`;
-  const en = `${SITE_URL}${localePath("en", path)}`;
-  return {
-    "zh-CN": zh,
-    zh,
-    en,
-    "x-default": zh,
-  };
-}
-
-function priorityFor(locale: "zh" | "en", path: string): number {
+function priorityFor(locale: Locale, path: string): number {
   const isHome = path === "/";
   const isLegal = path.startsWith("/legal/");
-  if (locale === "zh") {
+  if (locale === DEFAULT_LOCALE) {
     if (isHome) {
       return 1;
     }
@@ -36,12 +26,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const path of Object.values(PAGE_PATHS)) {
-    for (const locale of ["zh", "en"] as const) {
+    const isLegal = path.startsWith("/legal/");
+    const locales: readonly Locale[] = isLegal ? LEGAL_LOCALES : LOCALES;
+    for (const locale of locales) {
       entries.push({
         url: `${SITE_URL}${localePath(locale, path)}`,
         lastModified,
         priority: priorityFor(locale, path),
-        alternates: { languages: languagesFor(path) },
+        alternates: { languages: languagesForPath(path) },
       });
     }
   }

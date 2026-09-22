@@ -9,7 +9,8 @@
 - **Next.js 16.3.3**（`output: "export"` 静态导出）
 - React 19 + TypeScript 5.7.3
 - antd 6 + SCSS Modules
-- 中文默认挂 `/`，英文挂 `/en/`
+- 默认语言 **简体中文** 挂 `/`（`zh-CN`）；其它语言前缀挂 `/en/`、`/zh-TW/`、`/ja/`、`/ko/`、`/es/`、`/pt/`、`/nl/`、`/it/`
+- 法律页暂仅 **zh-CN**（`/legal/...`）与 **en**（`/en/legal/...`）；其它语言页脚链到英文法律页
 
 ## 本地开发
 
@@ -54,9 +55,15 @@ npx wrangler pages deploy out --project-name=luminaryworks-website
 
 不要加 `--branch`，否则会变成预览部署。
 
-### 自定义域名
+### 自定义域名（SEO 唯一主域）
 
-在 Cloudflare Pages 项目绑定 `luminaryworks.dev` 与 `www.luminaryworks.dev`（CNAME 交给 Pages）。文档站走 `docs.luminaryworks.dev`。
+**主域只保留 apex**：`https://luminaryworks.dev`（与 `SITE_URL` / canonical / sitemap 一致）。
+
+1. Cloudflare Pages 项目 `luminaryworks-website` 绑定 **`luminaryworks.dev`**（以及可选的 `www`，仅用于接收流量）。
+2. 在 Zone 加 **Redirect Rule**：`www.luminaryworks.dev/*` → `301` → `https://luminaryworks.dev/${1}`（或「Hostname equals www → Dynamic/Static 到 apex」）。
+3. 不要把 `www` 与 apex 当作两个平等入口长期并存；搜索引擎应以 apex 为准。
+
+文档站走 `docs.luminaryworks.dev`。
 
 ## License
 
