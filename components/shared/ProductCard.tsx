@@ -72,7 +72,9 @@ export function ProductCard({
           <span className={styles.commercial}>{commercial}</span>
         </span>
         <span className={styles.links}>
-          <ExternalLink href={product.site}>{card.visitSite}</ExternalLink>
+          <ExternalLink href={product.site} className={styles.siteLink}>
+            {card.visitSite}
+          </ExternalLink>
           <ExternalLink href={product.repo} className={styles.secondaryLink}>
             {card.viewSource}
           </ExternalLink>
