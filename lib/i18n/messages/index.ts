@@ -5,6 +5,7 @@ import { es } from "./es";
 import { it } from "./it";
 import { ja } from "./ja";
 import { ko } from "./ko";
+import { fr } from "./fr";
 import { nl } from "./nl";
 import { pt } from "./pt";
 import { zhCN } from "./zh-CN";
@@ -20,4 +21,5 @@ export const MESSAGES: Record<Locale, Messages> = {
   it,
   ja,
   ko,
+  fr,
 };

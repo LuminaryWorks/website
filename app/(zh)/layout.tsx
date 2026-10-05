@@ -1,6 +1,7 @@
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { Providers } from "@/components/site/Providers";
+import { TimeZoneLocaleHint } from "@/components/site/TimeZoneLocaleHint";
 import { inter } from "@/lib/fonts";
 import { DEFAULT_LOCALE, LOCALE_HTML_LANG } from "@/lib/i18n/config";
 import { SITE_URL } from "@/lib/urls";
@@ -28,6 +29,7 @@ export default function RootLocaleLayout({ children }: { children: ReactNode }) 
     >
       <body>
         <Providers locale={DEFAULT_LOCALE}>
+          <TimeZoneLocaleHint />
           <Header />
           {children}
           <Footer />

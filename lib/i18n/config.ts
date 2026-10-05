@@ -1,8 +1,8 @@
-export const LOCALES = ["zh-CN", "en", "zh-TW", "es", "pt", "nl", "it", "ja", "ko"] as const;
+export const LOCALES = ["en", "zh-CN", "zh-TW", "es", "pt", "nl", "it", "ja", "ko", "fr"] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
-export const DEFAULT_LOCALE: Locale = "zh-CN";
+export const DEFAULT_LOCALE: Locale = "en";
 
 /** Locales that use a URL prefix (`/en/...`). Default locale stays at `/`. */
 export const PREFIXED_LOCALES = LOCALES.filter((locale) => locale !== DEFAULT_LOCALE);
@@ -17,6 +17,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   it: "Italiano",
   ja: "日本語",
   ko: "한국어",
+  fr: "Français",
 };
 
 export const LOCALE_SHORT: Record<Locale, string> = {
@@ -29,6 +30,7 @@ export const LOCALE_SHORT: Record<Locale, string> = {
   it: "IT",
   ja: "JA",
   ko: "KO",
+  fr: "FR",
 };
 
 export const LOCALE_HTML_LANG: Record<Locale, string> = {
@@ -41,6 +43,7 @@ export const LOCALE_HTML_LANG: Record<Locale, string> = {
   it: "it",
   ja: "ja",
   ko: "ko",
+  fr: "fr",
 };
 
 export const LOCALE_OG: Record<Locale, string> = {
@@ -53,6 +56,7 @@ export const LOCALE_OG: Record<Locale, string> = {
   it: "it_IT",
   ja: "ja_JP",
   ko: "ko_KR",
+  fr: "fr_FR",
 };
 
 /** Locales with dedicated legal markdown under content/legal/. */
