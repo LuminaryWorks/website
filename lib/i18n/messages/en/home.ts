@@ -1,14 +1,13 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
-    title:
-      "Six independently deployable AI products. One shared identity and entitlement foundation.",
-    lead: "LuminaryWorks builds an AI-native open ecosystem on open protocols — OIDC, MQTT, REST, WebRTC and ONVIF. Creation and learning, device connectivity, data insight, visual security, remote operations and agent collaboration form one value chain. Every product ships standalone and self-hosted, and composes on demand.",
-    primaryCta: "Explore the six products",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
+    title: "A platform for sign-in, billing and AI access. Partner products stay independent.",
+    lead: "LuminaryWorks provides a unified account, billing and entitlement, an AI gateway, notifications and shared standards. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow and SyncroBrain are partner products. Each is operated by its own team or entity, on its own domain, with its own terms, and is available through the LuminaryWorks Platform.",
+    primaryCta: "See partner products",
     secondaryCta: "Self-hosted deployment",
     docs: "Developer docs",
     diagramAria:
-      "Diagram of the control plane and product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway marked lab. The lower rows are the six product planes, each with its own database and ACL. Dashed lines from the control plane to the product planes mean the dependency is optional.",
+      "Diagram of the control plane and partner product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway marked lab. The lower rows are partner product planes, each with its own database and ACL. Dashed lines mean the dependency is optional.",
     controlPlane: "CONTROL PLANE",
     controlNote: "optional shared",
     productPlanes: "PRODUCT PLANES",
@@ -21,7 +20,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "independently sellable products" },
+      { value: "6", label: "partner products listed" },
       { value: "5", label: "frozen deployment profiles" },
       { value: "1", label: "shared identity and entitlement layer" },
       { value: "5", label: "families of open protocols" },
@@ -31,15 +30,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Six products, one value chain",
-    lead: "Creation and learning first, then devices and data insight, then visual security and remote operations, and finally agents and humans settling together.",
+    title: "Partner products along one value chain",
+    lead: "These partner products can be used in sequence: creation and learning, devices and data insight, visual security and remote operations, then settlement between agents and humans. Each step is operated separately.",
     diagramAria:
       "Value chain: Create with BlockyEdu, Connect through SyncroBrain, See with DataLuminary; Watch with VistaCast and Control with VistaRemote branch off and merge into Earn with DoerFlow. Click a node to scroll to its product card.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Each product sells on its own. Together they close the loop.",
+    title: "Each partner product stands on its own site, with its own operator.",
   },
   platform: {
     index: "04",
@@ -50,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "Unified login · Identity",
-        body: "A single OIDC login service carries six brands; each product keeps its own logo and copy",
+        body: "One OIDC login service for partner products; each product keeps its own logo, copy and operator",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -138,7 +137,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "Why a workshop",
+    title: "Why a platform",
     items: [
       {
         title: "Open protocols first",
@@ -162,7 +161,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "Run it first, decide later",
-    lead: "Eligible products include a 7-day trial; the ecosystem has no permanent free tier. For self-hosted or offline delivery, contact the workshop.",
+    lead: "Where a partner offers it, an eligible product includes a 7-day trial. There is no permanent free tier. For self-hosted delivery, or to become a partner, email the platform.",
     startTrial: "Start trial",
     contact: "Contact sales",
     github: "GitHub",

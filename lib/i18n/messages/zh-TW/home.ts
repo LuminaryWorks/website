@@ -1,13 +1,13 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 啟明工坊",
-    title: "六個可獨立部署的 AI 產品，一套統一的身分與權益底座",
-    lead: "LuminaryWorks（啟明工坊）以 OIDC、MQTT、REST、WebRTC、ONVIF 等開放協定，把創造教育、裝置物聯、資料洞察、視覺安防、遠端維運與 Agent 協作連成一條價值鏈。每個產品都能獨立交付與私有部署，也能按需組合成完整閉環。",
-    primaryCta: "查看六大產品",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
+    title: "提供登入、帳單與 AI 接入的平台。合作產品保持獨立。",
+    lead: "LuminaryWorks 提供統一帳號、帳單與權益、AI 閘道、通知和共享標準。DataLuminary、BlockyEdu、VistaRemote、VistaCast、DoerFlow 與 SyncroBrain 是合作產品，各自由自己的團隊或實體營運，使用自己的網域和條款，並透過 LuminaryWorks 平台提供。",
+    primaryCta: "查看合作產品",
     secondaryCta: "私有部署",
     docs: "開發者文件",
     diagramAria:
-      "控制面與產品面結構示意圖。上層為可選共用的控制面：Identity（OIDC）、Entitlement，以及標記為 lab 的 AI Gateway。下層為六個產品面，各自擁有資料庫與 ACL。控制面到產品面的連線為虛線，代表可選依賴。",
+      "控制面與合作產品面的結構示意圖。上層是可選的共享控制面：Identity（OIDC）、Entitlement，以及標為 lab 的 AI Gateway。下層是合作產品面，各自擁有資料庫與 ACL。虛線表示依賴可選。",
     controlPlane: "CONTROL PLANE",
     controlNote: "可選共用",
     productPlanes: "PRODUCT PLANES",
@@ -20,7 +20,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "獨立可販售產品" },
+      { value: "6", label: "列出的合作產品" },
       { value: "5", label: "凍結部署形態" },
       { value: "1", label: "套統一登入與權益" },
       { value: "5", label: "類開放協定" },
@@ -30,15 +30,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "六個產品，回答同一條價值鏈的不同環節",
-    lead: "學 + 創起步，接入裝置、洞察資料，延伸到視覺安防、遠端維運，最後由 Agent 與人類共同結算。",
+    title: "合作產品可以沿一條價值鏈配合",
+    lead: "這些合作產品可以按順序配合：創造與學習、裝置與資料洞察、視覺安防與遠端維運，然後是 Agent 與人的結算。每一步由各自的營運方負責。",
     diagramAria:
       "價值鏈：學加創從 BlockyEdu 起步，連接到 SyncroBrain，由 DataLuminary 看資料；視 VistaCast 與控 VistaRemote 從主鏈分出，匯入賺 DoerFlow。點擊節點可捲動到對應產品卡。",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "每個產品可獨立販售，組合後形成閉環",
+    title: "每個合作產品有自己的站點與營運方。",
   },
   platform: {
     index: "04",
@@ -49,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "統一登入 Identity",
-        body: "一套 OIDC 登入服務承載六個品牌，各產品保留自己的 Logo 與文案",
+        body: "一套 OIDC 登入服務供合作產品使用；各產品保留自己的 Logo、文案與營運方",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -137,7 +137,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "為什麼是工坊",
+    title: "為什麼是平台",
     items: [
       {
         title: "開放協定優先",
@@ -161,7 +161,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "先跑起來，再決定怎麼買",
-    lead: "適用產品提供 7 天 Trial；生態不提供永久免費方案。需要私有部署或離線交付，請直接聯絡工坊。",
+    lead: "合作產品若提供 Trial，符合條件的產品含 7 天試用。沒有永久免費方案。私有化交付或希望成為合作夥伴，請寄信給平台。",
     startTrial: "開始試用",
     contact: "聯絡商務",
     github: "GitHub",

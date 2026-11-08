@@ -64,20 +64,25 @@ export const products = {
     noTrial: "Nessun Trial",
     notSellable: "Non ancora commercializzabile",
     audienceLabel: "Pensato per",
+    operatorLabel: "Operatore",
+    operatorNote: "Gestito dal proprio team o dalla propria entità.",
+    availableThrough: "Disponibile attraverso la LuminaryWorks Platform.",
+    legal: "Termini del prodotto",
   },
   page: {
     index: "01",
     label: "PRODUCTS",
-    title: "Panoramica dei prodotti",
-    lead: "Sei prodotti AI commercializzabili in modo indipendente. Ognuno possiede il proprio database e la propria ACL; si compongono all'occorrenza tramite OIDC e protocolli aperti.",
+    title: "Prodotti partner",
+    lead: "Prodotti partner disponibili attraverso la LuminaryWorks Platform. Ciascuno è gestito dal proprio team o dalla propria entità, sul proprio dominio, con i propri termini, database e controllo degli accessi.",
   },
   compare: {
     index: "02",
     label: "COMPARE",
     title: "Tabella comparativa",
-    lead: "Ruolo, pubblico, dominio, stato commerciale e Trial provengono dalle specifiche di prodotto — non vengono riscritti in questa pagina.",
+    lead: "Ruolo, pubblico, sito, operatore, stato commerciale e Trial dei prodotti disponibili attraverso la LuminaryWorks Platform.",
     headers: {
       product: "Prodotto",
+      operator: "Operatore",
       role: "Ruolo",
       audience: "Pubblico",
       domain: "Dominio del sito",
@@ -85,6 +90,6 @@ export const products = {
       trial: "Trial",
     },
     footnote:
-      "Tutti e sei i prodotti sono commercializzabili. DoerFlow non ha Trial. L'ecosistema non ha un piano gratuito permanente.",
+      "Lo stato in catalogo descrive il checkout della piattaforma. Non significa che un solo operatore gestisca ogni prodotto. DoerFlow non ha trial. Non esiste un piano gratuito permanente.",
   },
 };

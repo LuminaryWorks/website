@@ -1,13 +1,13 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
-    title: "독립적으로 배포하는 여섯 개의 AI 제품, 하나의 공유 아이덴티티·권한 기반",
-    lead: "LuminaryWorks는 OIDC, MQTT, REST, WebRTC, ONVIF 같은 오픈 프로토콜 위에 AI 네이티브 오픈 생태계를 만듭니다. 창작과 학습, 디바이스 연결, 데이터 통찰, 영상 보안, 원격 운영, 에이전트 협업이 하나의 가치 사슬을 이룹니다. 모든 제품은 단독으로도 자체 호스팅으로도 제공되며, 필요할 때 조합됩니다.",
-    primaryCta: "여섯 개 제품 살펴보기",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
+    title: "로그인, 청구, AI 액세스를 위한 플랫폼. 파트너 제품은 독립적으로 남습니다.",
+    lead: "LuminaryWorks는 통합 계정, 청구와 권한, AI 게이트웨이, 알림, 공유 표준을 제공합니다. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow, SyncroBrain은 파트너 제품입니다. 각각 자신의 팀 또는 법인이 운영하고, 자신의 도메인과 약관을 가지며, LuminaryWorks 플랫폼을 통해 이용할 수 있습니다.",
+    primaryCta: "파트너 제품 보기",
     secondaryCta: "자체 호스팅 배포",
     docs: "개발자 문서",
     diagramAria:
-      "컨트롤 플레인과 제품 플레인 구성도. 위쪽은 선택적으로 공유되는 컨트롤 플레인으로 Identity(OIDC), Entitlement, 그리고 lab으로 표시된 AI Gateway가 있습니다. 아래쪽은 여섯 개의 제품 플레인이며 각각 자체 데이터베이스와 ACL을 가집니다. 컨트롤 플레인에서 제품 플레인으로 이어지는 점선은 해당 의존성이 선택 사항임을 뜻합니다.",
+      "컨트롤 플레인과 파트너 제품 플레인의 그림입니다. 위쪽은 선택적 공유 컨트롤 플레인으로, Identity(OIDC), Entitlement, lab으로 표시된 AI Gateway입니다. 아래쪽은 파트너 제품 플레인이며, 각각 자신의 데이터베이스와 ACL을 가집니다. 점선은 의존성이 선택 사항임을 뜻합니다.",
     controlPlane: "CONTROL PLANE",
     controlNote: "선택적 공유",
     productPlanes: "PRODUCT PLANES",
@@ -20,7 +20,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "개별 판매 가능한 제품" },
+      { value: "6", label: "소개된 파트너 제품" },
       { value: "5", label: "고정된 배포 프로파일" },
       { value: "1", label: "공유 아이덴티티·권한 계층" },
       { value: "5", label: "계열의 오픈 프로토콜" },
@@ -30,15 +30,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "여섯 개 제품이 하나의 가치 사슬을 나눠 맡습니다",
-    lead: "먼저 창작과 학습에서 시작해 디바이스와 데이터 통찰로, 이어서 영상 보안과 원격 운영으로 확장되고, 마지막에 에이전트와 사람이 함께 정산합니다.",
+    title: "하나의 가치 사슬에 놓인 파트너 제품",
+    lead: "이 파트너 제품들은 순서대로 함께 쓸 수 있습니다. 창작과 학습, 장치와 데이터 인사이트, 시각 보안과 원격 운영, 그리고 에이전트와 사람의 정산입니다. 각 단계는 따로 운영됩니다.",
     diagramAria:
       "가치 사슬: BlockyEdu로 창작하고 SyncroBrain으로 연결하며 DataLuminary로 통찰합니다. VistaCast의 감시와 VistaRemote의 제어가 갈라져 나와 DoerFlow의 수익으로 합류합니다. 노드를 클릭하면 해당 제품 카드로 이동합니다.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "제품마다 단독으로 팔리고, 함께 모이면 루프가 닫힙니다.",
+    title: "각 파트너 제품은 자신의 사이트와 운영자를 가집니다.",
   },
   platform: {
     index: "04",
@@ -49,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "통합 로그인 · Identity",
-        body: "하나의 OIDC 로그인 서비스가 여섯 브랜드를 지원하며, 제품마다 자체 로고와 문구를 유지합니다",
+        body: "파트너 제품을 위한 하나의 OIDC 로그인. 각 제품은 자신의 로고, 문구, 운영자를 유지합니다",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -137,7 +137,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "왜 공방인가",
+    title: "왜 플랫폼인가",
     items: [
       {
         title: "오픈 프로토콜 우선",
@@ -161,7 +161,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "먼저 돌려 보고, 그다음에 결정하세요",
-    lead: "해당 제품에는 7일 Trial이 있습니다. 생태계 전체에 영구 무료 플랜은 없습니다. 자체 호스팅이나 오프라인 납품이 필요하면 공방으로 연락해 주세요.",
+    lead: "파트너가 제공하는 경우, 해당하는 제품에는 7일 체험이 있습니다. 영구 무료 등급은 없습니다. 자체 호스팅 인도 또는 파트너 참여는 플랫폼으로 메일을 보내 주세요.",
     startTrial: "트라이얼 시작",
     contact: "영업 문의",
     github: "GitHub",

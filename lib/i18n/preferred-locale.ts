@@ -104,7 +104,13 @@ export function matchSupportedLocale(tag: string | null | undefined): PreferredL
   if (!raw) return null;
   if (PREFERRED_SET.has(raw)) return raw as PreferredLocale;
 
-  if (raw === "zh" || raw === "zh-cn" || raw === "zh-hans" || raw.startsWith("zh-hans") || raw.startsWith("zh-cn")) {
+  if (
+    raw === "zh" ||
+    raw === "zh-cn" ||
+    raw === "zh-hans" ||
+    raw.startsWith("zh-hans") ||
+    raw.startsWith("zh-cn")
+  ) {
     return "zh-CN";
   }
   if (

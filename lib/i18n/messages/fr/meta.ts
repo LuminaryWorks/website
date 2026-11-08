@@ -1,34 +1,42 @@
 export const meta = {
-  "home": {
-    "title": "LuminaryWorks — Six produits d'IA, une base d'identité et de droits",
-    "description": "Six produits d'IA déployables indépendamment. Une fondation partagée en matière d’identité et de droits. La création et l'apprentissage, la connectivité des appareils, la compréhension des données, la sécurité visuelle, les opérations à distance et la collaboration des agents forment une seule chaîne de valeur."
+  home: {
+    title: "LuminaryWorks — Plateforme de connexion, facturation et accès à l'IA",
+    description:
+      "LuminaryWorks est une plateforme de comptes unifiés, de facturation et de droits, de passerelle IA, de notifications et de standards partagés. Les produits partenaires sont exploités de façon indépendante et sont disponibles via la plateforme.",
   },
-  "products": {
-    "title": "Produits · LuminaryWorks",
-    "description": "Six produits d'IA vendables indépendamment : rôle, audience, domaine, statut commercial et essai."
+  products: {
+    title: "Produits partenaires · LuminaryWorks",
+    description:
+      "Produits partenaires disponibles via la LuminaryWorks Platform, chacun avec son exploitant, son site, ses conditions, son rôle et son Trial.",
   },
-  "ecosystem": {
-    "title": "Écosystème et architecture · LuminaryWorks",
-    "description": "Boucle de chaîne de valeur, plateforme partagée, matrice d'intégration, sémantique d'erreur unifiée et inventaire à protocole ouvert."
+  ecosystem: {
+    title: "Écosystème et architecture · LuminaryWorks",
+    description:
+      "Comment des produits partenaires indépendants peuvent se composer sur la LuminaryWorks Platform : protocoles ouverts, plan de contrôle facultatif et bases de données séparées.",
   },
-  "deploy": {
-    "title": "Déploiement et auto-hébergement · LuminaryWorks",
-    "description": "Cinq profils de déploiement, matrice de modes de capacités, packs d'installation, livraison isolée et licence hors ligne."
+  deploy: {
+    title: "Déploiement et auto-hébergement · LuminaryWorks",
+    description:
+      "Cinq profils de déploiement, matrice de modes de capacités, packs d'installation, livraison isolée et licence hors ligne.",
   },
-  "about": {
-    "title": "À propos · LuminaryWorks",
-    "description": "Travaux signifie travaux d’atelier et de mouffette. House of Brands, licences et utilisation commerciale, contact."
+  about: {
+    title: "À propos de la plateforme · LuminaryWorks",
+    description:
+      "LuminaryWorks est une plateforme de connexion, de facturation, d'accès à l'IA et de standards partagés. Les produits partenaires gardent leurs exploitants, domaines et conditions.",
   },
   "legal/terms": {
-    "title": "Conditions d'utilisation · LuminaryWorks",
-    "description": "Modèle d'ingénierie pour les conditions SaaS hébergées LuminaryWorks (lw-legal-v2026-09-07)."
+    title: "Conditions d'utilisation · LuminaryWorks",
+    description:
+      "Modèle d'ingénierie pour les conditions SaaS hébergées LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/privacy": {
-    "title": "Politique de confidentialité · LuminaryWorks",
-    "description": "Modèle d'ingénierie pour la politique de confidentialité du SaaS hébergé LuminaryWorks (lw-legal-v2026-09-07)."
+    title: "Politique de confidentialité · LuminaryWorks",
+    description:
+      "Modèle d'ingénierie pour la politique de confidentialité du SaaS hébergé LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/trial-data-deletion": {
-    "title": "Essai et suppression des données · LuminaryWorks",
-    "description": "Modèle d'ingénierie pour le fonctionnement d'essai et la suppression de données (lw-legal-v2026-09-07)."
-  }
-}
+    title: "Essai et suppression des données · LuminaryWorks",
+    description:
+      "Modèle d'ingénierie pour le fonctionnement d'essai et la suppression de données (lw-legal-v2026-11-07).",
+  },
+};

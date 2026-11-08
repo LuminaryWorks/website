@@ -1,7 +1,7 @@
 export const common = {
   brandName: "LuminaryWorks",
   brandZh: "启明工坊",
-  brandLine: "LuminaryWorks · 启明工坊 — AI 네이티브 오픈소스 생태계",
+  brandLine: "LuminaryWorks — 통합 로그인, 청구, AI 액세스와 공유 표준을 위한 플랫폼",
   licenseLine: "Polyform Noncommercial License 1.0.0 · 상업적 이용에는 별도 라이선스가 필요합니다",
   skipToContent: "본문으로 건너뛰기",
   navAria: "주요 내비게이션",
@@ -18,7 +18,7 @@ export const common = {
   },
   cta: {
     startTrial: "트라이얼 시작",
-    exploreProducts: "여섯 개 제품 살펴보기",
+    exploreProducts: "파트너 제품 보기",
     selfHost: "자체 호스팅 배포",
     contact: "영업 문의",
   },
@@ -37,7 +37,7 @@ export const common = {
   },
   externalHint: "새 창에서 열립니다",
   footer: {
-    products: "제품",
+    products: "파트너 제품",
     platform: "플랫폼과 문서",
     ecosystem: "생태계",
     legal: "법적 고지",
@@ -51,6 +51,7 @@ export const common = {
     terms: "서비스 약관",
     privacy: "개인정보 처리방침",
     trialDeletion: "Trial 및 데이터 삭제",
+    becomePartner: "파트너 되기",
   },
   productNames: {
     dataluminary: "DataLuminary",

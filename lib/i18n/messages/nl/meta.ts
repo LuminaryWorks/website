@@ -1,18 +1,18 @@
 export const meta = {
   home: {
-    title: "LuminaryWorks — Zes AI-producten, één basis voor identiteit en entitlement",
+    title: "LuminaryWorks — Platform voor aanmelden, facturatie en AI-toegang",
     description:
-      "Zes onafhankelijk te deployen AI-producten. Één gedeelde basis voor identiteit en entitlement. Creatie en leren, deviceconnectiviteit, data-inzicht, visuele beveiliging, remote operaties en samenwerking tussen agents vormen één waardeketen.",
+      "LuminaryWorks is een platform voor uniforme accounts, facturatie en rechten, een AI-gateway, meldingen en gedeelde standaarden. Partnerproducten worden zelfstandig geëxploiteerd en zijn beschikbaar via het platform.",
   },
   products: {
-    title: "Producten · LuminaryWorks",
+    title: "Partnerproducten · LuminaryWorks",
     description:
-      "Zes onafhankelijk verkoopbare AI-producten: rol, doelgroep, domein, commerciële status en Trial.",
+      "Partnerproducten beschikbaar via het LuminaryWorks-platform, elk met een eigen exploitant, site, voorwaarden, rol en Trial.",
   },
   ecosystem: {
     title: "Ecosysteem en architectuur · LuminaryWorks",
     description:
-      "Kringloop van de waardeketen, gedeeld platform, integratiematrix, uniforme foutsemantiek en inventaris van open protocollen.",
+      "Hoe zelfstandige partnerproducten op het LuminaryWorks-platform kunnen samenwerken: open protocollen, een optioneel besturingsvlak en aparte databases.",
   },
   deploy: {
     title: "Deployment en self-hosting · LuminaryWorks",
@@ -20,23 +20,23 @@ export const meta = {
       "Vijf deployment-profielen, matrix van capability-modi, installatiepakketten, air-gapped levering en offline License.",
   },
   about: {
-    title: "Over ons · LuminaryWorks",
+    title: "Over het platform · LuminaryWorks",
     description:
-      "Works betekent werkplaats en skunk works. House of Brands, licenties en commercieel gebruik, contact.",
+      "LuminaryWorks is een platform voor aanmelden, facturatie, AI-toegang en gedeelde standaarden. Partnerproducten houden hun eigen exploitanten, domeinen en voorwaarden.",
   },
   "legal/terms": {
     title: "Servicevoorwaarden · LuminaryWorks",
     description:
-      "Engineeringtemplate voor de voorwaarden van de hosted SaaS van LuminaryWorks (lw-legal-v2026-09-07).",
+      "Engineeringtemplate voor de voorwaarden van de hosted SaaS van LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/privacy": {
     title: "Privacybeleid · LuminaryWorks",
     description:
-      "Engineeringtemplate voor het privacybeleid van de hosted SaaS van LuminaryWorks (lw-legal-v2026-09-07).",
+      "Engineeringtemplate voor het privacybeleid van de hosted SaaS van LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/trial-data-deletion": {
     title: "Trial en verwijderen van gegevens · LuminaryWorks",
     description:
-      "Engineeringtemplate voor de werking van Trial en het verwijderen van gegevens (lw-legal-v2026-09-07).",
+      "Engineeringtemplate voor de werking van Trial en het verwijderen van gegevens (lw-legal-v2026-11-07).",
   },
 };

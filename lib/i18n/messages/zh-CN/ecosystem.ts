@@ -3,7 +3,7 @@ export const ecosystem = {
     index: "01",
     label: "ECOSYSTEM",
     title: "生态与架构",
-    lead: "六个产品各自独立运行，通过开放协议与可选共享控制面组成联邦式套件——统一的是身份、权益与协议，不是业务逻辑。",
+    lead: "合作产品独立运行。它们可以通过开放协议和可选的共享控制面组合。平台共享的是身份、权益与协议，不是业务逻辑。",
   },
   valueChain: {
     index: "01",
@@ -59,7 +59,7 @@ export const ecosystem = {
     items: [
       {
         title: "统一登录 Identity",
-        description: "一套 OIDC 登录服务承载六个品牌，各产品保留自己的 Logo 与文案。",
+        description: "一套 OIDC 登录界面供合作产品使用；各产品保留自己的 Logo、文案与运营方。",
         tags: ["Logto", "OIDC", "PKCE"],
       },
       {
@@ -136,7 +136,7 @@ export const ecosystem = {
     index: "06",
     label: "AUTONOMY",
     title: "产品自治硬约束",
-    lead: "每个产品独占自己的数据库、迁移、Casbin 策略与发布节奏；兄弟产品全部关闭时仍能启动并通过 ready 检查。",
+    lead: "每个合作产品拥有自己的数据库、迁移、访问策略与发布节奏，并由自己的团队或实体运营。其他合作产品关闭时，它仍须能够启动并通过就绪检查。",
     boundaries: [
       "每个产品独占自己的数据库、迁移、Casbin 策略与发布节奏",
       "兄弟产品全部关闭时仍能启动并通过 ready 检查",

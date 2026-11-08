@@ -63,20 +63,25 @@ export const products = {
     noTrial: "Geen trial",
     notSellable: "Nog niet verkoopbaar",
     audienceLabel: "Gemaakt voor",
+    operatorLabel: "Exploitant",
+    operatorNote: "Geëxploiteerd door het eigen team of de eigen entiteit.",
+    availableThrough: "Beschikbaar via het LuminaryWorks-platform.",
+    legal: "Productvoorwaarden",
   },
   page: {
     index: "01",
     label: "PRODUCTS",
-    title: "Productoverzicht",
-    lead: "Zes onafhankelijk verkoopbare AI-producten. Elk bezit zijn eigen database en ACL; ze combineren op aanvraag via OIDC en open protocollen.",
+    title: "Partnerproducten",
+    lead: "Partnerproducten die beschikbaar zijn via het LuminaryWorks-platform. Elk wordt geëxploiteerd door het eigen team of de eigen entiteit, op het eigen domein, met eigen voorwaarden, database en toegangsbeheer.",
   },
   compare: {
     index: "02",
     label: "COMPARE",
     title: "Vergelijkingstabel",
-    lead: "Rol, doelgroep, domein, commerciële status en Trial komen uit de productspecificaties — ze worden op deze pagina niet herschreven.",
+    lead: "Rol, doelgroep, site, exploitant, commerciële status en Trial van producten die via het LuminaryWorks-platform beschikbaar zijn.",
     headers: {
       product: "Product",
+      operator: "Exploitant",
       role: "Rol",
       audience: "Doelgroep",
       domain: "Domein van de site",
@@ -84,6 +89,6 @@ export const products = {
       trial: "Trial",
     },
     footnote:
-      "Alle zes producten zijn verkoopbaar. DoerFlow heeft geen trial. Het ecosysteem heeft geen permanent gratis plan.",
+      "De catalogusstatus beschrijft de platformafrekening. Ze betekent niet dat één exploitant elk product draait. DoerFlow heeft geen trial. Er is geen blijvend gratis niveau.",
   },
 };

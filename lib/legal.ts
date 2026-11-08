@@ -6,7 +6,7 @@ import { marked } from "marked";
 
 export const LEGAL_SLUGS = ["terms", "privacy", "trial-data-deletion"] as const;
 export type LegalSlug = (typeof LEGAL_SLUGS)[number];
-export const POLICY_VERSION = "lw-legal-v2026-09-07";
+export const POLICY_VERSION = "lw-legal-v2026-11-07";
 
 export interface LegalDocument {
   title: string;

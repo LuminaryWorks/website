@@ -101,6 +101,7 @@ export function ProductsCompareTable() {
             <thead>
               <tr>
                 <th scope="col">{c.headers.product}</th>
+                <th scope="col">{c.headers.operator}</th>
                 <th scope="col">{c.headers.role}</th>
                 <th scope="col">{c.headers.audience}</th>
                 <th scope="col">{c.headers.domain}</th>
@@ -116,6 +117,7 @@ export function ProductsCompareTable() {
                     <td>
                       <ProductIdentity product={product} localName={item.nameLocal} />
                     </td>
+                    <td>{product.operator}</td>
                     <td className={`${shared.mono} ${styles.roleCell}`}>{item.role}</td>
                     <td>{item.audience}</td>
                     <td className={styles.domainCell}>
@@ -139,6 +141,7 @@ export function ProductsCompareTable() {
         {PRODUCTS.map((product) => {
           const item = m.products.items[product.code];
           const fields: { label: string; value: ReactNode; mono: boolean }[] = [
+            { label: c.headers.operator, value: product.operator, mono: false },
             { label: c.headers.role, value: item.role, mono: true },
             { label: c.headers.audience, value: item.audience, mono: false },
             {

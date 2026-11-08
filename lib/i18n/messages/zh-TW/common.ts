@@ -1,7 +1,7 @@
 export const common = {
   brandName: "LuminaryWorks",
   brandZh: "啟明工坊",
-  brandLine: "LuminaryWorks · 啟明工坊 — AI 原生開源生態",
+  brandLine: "LuminaryWorks · 啟明工坊 — 提供統一登入、帳單、AI 接入與共享標準的平台",
   licenseLine: "Polyform Noncommercial License 1.0.0 · 商業使用須另行授權",
   skipToContent: "跳至主要內容",
   navAria: "主要導覽",
@@ -18,7 +18,7 @@ export const common = {
   },
   cta: {
     startTrial: "開始試用",
-    exploreProducts: "查看六大產品",
+    exploreProducts: "查看合作產品",
     selfHost: "私有部署",
     contact: "聯絡商務",
   },
@@ -37,7 +37,7 @@ export const common = {
   },
   externalHint: "在新視窗開啟",
   footer: {
-    products: "產品",
+    products: "合作產品",
     platform: "平台與文件",
     ecosystem: "生態",
     legal: "法律",
@@ -51,6 +51,7 @@ export const common = {
     terms: "服務條款",
     privacy: "隱私權政策",
     trialDeletion: "Trial 與資料刪除",
+    becomePartner: "成為合作夥伴",
   },
   productNames: {
     dataluminary: "DataLuminary",

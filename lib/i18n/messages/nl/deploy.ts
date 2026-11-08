@@ -126,7 +126,7 @@ export const deploy = {
   },
   cta: {
     title: "Private of offline levering nodig?",
-    lead: "Neem contact op met het team van de werkplaats over profielen, License en leveringsomvang.",
+    lead: "Neem contact op met het platformteam over profielen, License en de omvang van de levering.",
     contact: "Contact met sales",
   },
 };

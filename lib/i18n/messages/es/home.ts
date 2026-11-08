@@ -1,14 +1,14 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
     title:
-      "Seis productos de IA que se despliegan por separado. Una única base de identidad y derechos.",
-    lead: "LuminaryWorks construye un ecosistema abierto nativo de IA sobre protocolos abiertos: OIDC, MQTT, REST, WebRTC y ONVIF. Creación y aprendizaje, conectividad de dispositivos, análisis de datos, seguridad visual, operaciones remotas y colaboración entre agentes forman una sola cadena de valor. Cada producto se entrega de forma independiente y autoalojada, y se combina a demanda.",
-    primaryCta: "Descubrir los seis productos",
+      "Una plataforma de inicio de sesión, facturación y acceso a IA. Los productos asociados siguen siendo independientes.",
+    lead: "LuminaryWorks ofrece una cuenta unificada, facturación y derechos, una pasarela de IA, notificaciones y estándares compartidos. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow y SyncroBrain son productos asociados. Cada uno lo opera su propio equipo o entidad, en su propio dominio, con sus propios términos, y está disponible a través de la LuminaryWorks Platform.",
+    primaryCta: "Ver productos asociados",
     secondaryCta: "Despliegue autoalojado",
     docs: "Documentación para desarrolladores",
     diagramAria:
-      "Diagrama del plano de control y de los planos de producto. La fila superior es un plano de control compartido opcional: Identity (OIDC), Entitlement y AI Gateway marcado como lab. Las filas inferiores son los seis planos de producto, cada uno con su base de datos y su ACL. Las líneas discontinuas del plano de control a los planos de producto indican que la dependencia es opcional.",
+      "Diagrama del plano de control y de los planos de los productos asociados. La fila superior es un plano de control compartido y opcional: Identity (OIDC), Entitlement y AI Gateway marcado como lab. Las filas inferiores son los planos de los productos asociados, cada uno con su base de datos y su ACL. Las líneas discontinuas indican que la dependencia es opcional.",
     controlPlane: "CONTROL PLANE",
     controlNote: "compartido opcional",
     productPlanes: "PRODUCT PLANES",
@@ -21,7 +21,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "productos que se venden por separado" },
+      { value: "6", label: "productos asociados listados" },
       { value: "5", label: "perfiles de despliegue congelados" },
       { value: "1", label: "capa compartida de identidad y derechos" },
       { value: "5", label: "familias de protocolos abiertos" },
@@ -31,15 +31,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Seis productos, una cadena de valor",
-    lead: "Primero creación y aprendizaje; después dispositivos y análisis de datos; luego seguridad visual y operaciones remotas; y al final agentes y personas liquidando juntos.",
+    title: "Productos asociados a lo largo de una cadena de valor",
+    lead: "Estos productos asociados pueden usarse en secuencia: creación y aprendizaje, dispositivos y lectura de datos, seguridad visual y operaciones remotas, y después la liquidación entre agentes y personas. Cada paso se opera por separado.",
     diagramAria:
       "Cadena de valor: Crear con BlockyEdu, Conectar con SyncroBrain, Ver con DataLuminary; Vigilar con VistaCast y Controlar con VistaRemote se ramifican y se unen en Ganar con DoerFlow. Haz clic en un nodo para desplazarte a su ficha de producto.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Cada producto se vende solo. Juntos cierran el ciclo.",
+    title: "Cada producto asociado tiene su propio sitio y su propio operador.",
   },
   platform: {
     index: "04",
@@ -50,7 +50,7 @@ export const home = {
       {
         id: "identity",
         title: "Inicio de sesión unificado · Identity",
-        body: "Un único servicio de login OIDC sostiene seis marcas; cada producto conserva su logo y sus textos",
+        body: "Un servicio de acceso OIDC para productos asociados; cada producto conserva su logotipo, su texto y su operador",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -139,7 +139,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "Por qué un taller",
+    title: "Por qué una plataforma",
     items: [
       {
         title: "Protocolos abiertos primero",
@@ -163,7 +163,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "Primero pruébalo, luego decide",
-    lead: "Los productos elegibles incluyen un trial de 7 días; el ecosistema no ofrece un plan gratuito permanente. Para entrega autoalojada u offline, habla con el taller.",
+    lead: "Si el asociado lo ofrece, un producto elegible incluye una prueba de 7 días. No hay un nivel gratuito permanente. Para una entrega autoalojada, o para ser asociado, escribe a la plataforma.",
     startTrial: "Empezar el trial",
     contact: "Contactar con ventas",
     github: "GitHub",

@@ -2,9 +2,10 @@
 
 import {
   ContactSection,
-  HouseOfBrandsSection,
   LicensingSection,
   NamingSection,
+  PartnerSection,
+  PlatformSection,
 } from "@/components/content/AboutSections";
 import { PageHeader } from "@/components/content/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
@@ -28,10 +29,13 @@ export function AboutPage() {
         <NamingSection />
       </Reveal>
       <Reveal>
-        <HouseOfBrandsSection />
+        <PlatformSection />
       </Reveal>
       <Reveal>
         <LicensingSection />
+      </Reveal>
+      <Reveal>
+        <PartnerSection />
       </Reveal>
       <Reveal>
         <ContactSection />

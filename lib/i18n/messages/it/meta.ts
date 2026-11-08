@@ -1,18 +1,18 @@
 export const meta = {
   home: {
-    title: "LuminaryWorks — Sei prodotti AI, un'unica base di identità e entitlement",
+    title: "LuminaryWorks — Piattaforma per accesso, fatturazione e IA",
     description:
-      "Sei prodotti AI con deployment indipendente. Un'unica base condivisa di identità e entitlement. Creazione e apprendimento, connettività dei dispositivi, analisi dei dati, sicurezza visiva, operazioni remote e collaborazione tra agenti formano un'unica catena del valore.",
+      "LuminaryWorks è una piattaforma per account unificati, fatturazione e diritti, un gateway IA, notifiche e standard condivisi. I prodotti partner sono gestiti in modo indipendente e sono disponibili attraverso la piattaforma.",
   },
   products: {
-    title: "Prodotti · LuminaryWorks",
+    title: "Prodotti partner · LuminaryWorks",
     description:
-      "Sei prodotti AI commercializzabili in modo indipendente: ruolo, pubblico, dominio, stato commerciale e Trial.",
+      "Prodotti partner disponibili attraverso la LuminaryWorks Platform, ciascuno con il proprio operatore, sito, termini, ruolo e Trial.",
   },
   ecosystem: {
     title: "Ecosistema e architettura · LuminaryWorks",
     description:
-      "Ciclo della catena del valore, piattaforma condivisa, matrice di integrazione, semantica unificata degli errori e inventario dei protocolli aperti.",
+      "Come i prodotti partner indipendenti possono comporsi sulla LuminaryWorks Platform: protocolli aperti, piano di controllo facoltativo e database separati.",
   },
   deploy: {
     title: "Deployment e self-hosting · LuminaryWorks",
@@ -20,23 +20,23 @@ export const meta = {
       "Cinque profili di deployment, matrice delle modalità di capability, pack di installazione, consegna air-gapped e License offline.",
   },
   about: {
-    title: "Chi siamo · LuminaryWorks",
+    title: "La piattaforma · LuminaryWorks",
     description:
-      "Works significa officina e skunk works. House of Brands, licenze e uso commerciale, contatti.",
+      "LuminaryWorks è una piattaforma per accesso, fatturazione, uso dell'IA e standard condivisi. I prodotti partner mantengono i propri operatori, domini e termini.",
   },
   "legal/terms": {
     title: "Termini di servizio · LuminaryWorks",
     description:
-      "Modello di progettazione dei Termini del SaaS hosted di LuminaryWorks (lw-legal-v2026-09-07).",
+      "Modello di progettazione dei Termini del SaaS hosted di LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/privacy": {
     title: "Informativa sulla privacy · LuminaryWorks",
     description:
-      "Modello di progettazione dell'Informativa sulla privacy del SaaS hosted di LuminaryWorks (lw-legal-v2026-09-07).",
+      "Modello di progettazione dell'Informativa sulla privacy del SaaS hosted di LuminaryWorks (lw-legal-v2026-11-07).",
   },
   "legal/trial-data-deletion": {
     title: "Trial ed eliminazione dei dati · LuminaryWorks",
     description:
-      "Modello di progettazione per il funzionamento del Trial e l'eliminazione dei dati (lw-legal-v2026-09-07).",
+      "Modello di progettazione per il funzionamento del Trial e l'eliminazione dei dati (lw-legal-v2026-11-07).",
   },
 };

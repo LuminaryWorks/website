@@ -61,20 +61,25 @@ export const products = {
     noTrial: "No trial",
     notSellable: "Not yet sellable",
     audienceLabel: "Built for",
+    operatorLabel: "Operator",
+    operatorNote: "Operated by its own team or entity.",
+    availableThrough: "Available through the LuminaryWorks Platform.",
+    legal: "Product terms",
   },
   page: {
     index: "01",
     label: "PRODUCTS",
-    title: "Product overview",
-    lead: "Six independently sellable AI products. Each owns its database and ACL; they compose on demand through OIDC and open protocols.",
+    title: "Partner products",
+    lead: "Partner products available through the LuminaryWorks Platform. Each is operated by its own team or entity, on its own domain, with its own terms, database and access control.",
   },
   compare: {
     index: "02",
     label: "COMPARE",
     title: "Comparison table",
-    lead: "Role, audience, domain, commercial status and Trial come from product specs — not rewritten on this page.",
+    lead: "Role, audience, site, operator, commercial status and Trial for products available through the LuminaryWorks Platform.",
     headers: {
       product: "Product",
+      operator: "Operator",
       role: "Role",
       audience: "Audience",
       domain: "Site domain",
@@ -82,6 +87,6 @@ export const products = {
       trial: "Trial",
     },
     footnote:
-      "All six products are sellable. DoerFlow has no trial. The ecosystem has no permanent free tier.",
+      "Catalog status describes platform checkout. It does not mean one operator runs every product. DoerFlow has no trial. There is no permanent free tier.",
   },
 };

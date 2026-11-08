@@ -126,7 +126,7 @@ export const deploy = {
   },
   cta: {
     title: "프라이빗 또는 오프라인 납품이 필요하신가요?",
-    lead: "공방 영업팀에 연락해 프로파일과 License, 납품 범위를 논의해 보세요.",
+    lead: "프로파일, License, 인도 범위는 플랫폼 팀에 문의해 주세요.",
     contact: "영업 문의",
   },
 };

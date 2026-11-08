@@ -50,9 +50,9 @@ export function NamingSection() {
   );
 }
 
-export function HouseOfBrandsSection() {
+export function PlatformSection() {
   const { m } = useT();
-  const s = m.about.houseOfBrands;
+  const s = m.about.platform;
   return (
     <BulletSection
       index={s.index}
@@ -62,6 +62,42 @@ export function HouseOfBrandsSection() {
       points={s.points}
       alt
     />
+  );
+}
+
+export function PartnerSection() {
+  const { m } = useT();
+  const s = m.about.partner;
+
+  return (
+    <section
+      id="partner"
+      className={`${styles.band} ${styles.bandAlt}`}
+      aria-labelledby="become-a-partner"
+    >
+      <div className="lw-container">
+        <SectionHeading
+          id="become-a-partner"
+          index={s.index}
+          label={s.label}
+          title={s.title}
+          lead={s.lead}
+        />
+        <ul className={styles.panel}>
+          {s.points.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
+        <dl className={styles.contactPanel}>
+          <div className={styles.contactItem}>
+            <dt>{s.emailLabel}</dt>
+            <dd>
+              <CopyEmail compact />
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
   );
 }
 
@@ -84,7 +120,7 @@ export function ContactSection() {
   const s = m.about.contact;
 
   return (
-    <section className={`${styles.band} ${styles.bandAlt}`} aria-labelledby="contact">
+    <section className={styles.band} aria-labelledby="contact">
       <div className="lw-container">
         <SectionHeading index={s.index} label={s.label} title={s.title} lead={s.lead} />
         <dl className={styles.contactPanel}>

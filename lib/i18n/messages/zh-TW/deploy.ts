@@ -111,7 +111,7 @@ export const deploy = {
   },
   cta: {
     title: "需要私有部署或離線交付？",
-    lead: "聯絡工坊商務團隊，討論部署形態、License 與交付範圍。",
+    lead: "聯絡平台團隊，討論部署形態、License 與交付範圍。",
     contact: "聯絡商務",
   },
 };

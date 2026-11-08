@@ -3,7 +3,7 @@ export const ecosystem = {
     index: "01",
     label: "ECOSYSTEM",
     title: "生態與架構",
-    lead: "六個產品各自獨立運行，透過開放協定與可選共用控制面組成聯邦式套件——統一的是身分、權益與協定，不是業務邏輯。",
+    lead: "合作產品獨立運行。它們可以透過開放協定和可選的共享控制面組合。平台共享的是身分、權益與協定，不是業務邏輯。",
   },
   valueChain: {
     index: "01",
@@ -59,7 +59,7 @@ export const ecosystem = {
     items: [
       {
         title: "統一登入 Identity",
-        description: "一套 OIDC 登入服務承載六個品牌，各產品保留自己的 Logo 與文案。",
+        description: "一套 OIDC 登入介面供合作產品使用；各產品保留自己的 Logo、文案與營運方。",
         tags: ["Logto", "OIDC", "PKCE"],
       },
       {
@@ -136,7 +136,7 @@ export const ecosystem = {
     index: "06",
     label: "AUTONOMY",
     title: "產品自治硬性約束",
-    lead: "每個產品獨占自己的資料庫、遷移、Casbin 政策與發布節奏；兄弟產品全部關閉時仍能啟動並通過 ready 檢查。",
+    lead: "每個合作產品擁有自己的資料庫、遷移、存取策略與發布節奏，並由自己的團隊或實體營運。其他合作產品關閉時，它仍須能夠啟動並通過就緒檢查。",
     boundaries: [
       "每個產品獨占自己的資料庫、遷移、Casbin 政策與發布節奏",
       "兄弟產品全部關閉時仍能啟動並通過 ready 檢查",

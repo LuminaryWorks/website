@@ -7,6 +7,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import enUS from "antd/locale/en_US";
 import esES from "antd/locale/es_ES";
+import frFR from "antd/locale/fr_FR";
 import itIT from "antd/locale/it_IT";
 import jaJP from "antd/locale/ja_JP";
 import koKR from "antd/locale/ko_KR";
@@ -26,6 +27,7 @@ const ANTD_LOCALES: Record<Locale, typeof enUS> = {
   it: itIT,
   ja: jaJP,
   ko: koKR,
+  fr: frFR,
 };
 
 export function Providers({

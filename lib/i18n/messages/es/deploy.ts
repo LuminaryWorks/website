@@ -127,7 +127,7 @@ export const deploy = {
   },
   cta: {
     title: "¿Necesitas entrega privada u offline?",
-    lead: "Habla con el equipo comercial del taller para tratar perfiles, License y alcance de la entrega.",
+    lead: "Contacta con el equipo de la plataforma para perfiles, License y alcance de la entrega.",
     contact: "Contactar con ventas",
   },
 };

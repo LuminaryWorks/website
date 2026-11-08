@@ -1,14 +1,14 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
     title:
-      "Zes onafhankelijk te deployen AI-producten. Één gedeelde basis voor identiteit en entitlement.",
-    lead: "LuminaryWorks bouwt een AI-native open ecosysteem op open protocollen — OIDC, MQTT, REST, WebRTC en ONVIF. Creatie en leren, deviceconnectiviteit, data-inzicht, visuele beveiliging, remote operaties en samenwerking tussen agents vormen één waardeketen. Elk product wordt standalone en self-hosted geleverd en combineert op aanvraag.",
-    primaryCta: "Bekijk de zes producten",
+      "Een platform voor aanmelden, facturatie en AI-toegang. Partnerproducten blijven zelfstandig.",
+    lead: "LuminaryWorks levert een uniform account, facturatie en rechten, een AI-gateway, meldingen en gedeelde standaarden. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow en SyncroBrain zijn partnerproducten. Elk wordt geëxploiteerd door het eigen team of de eigen entiteit, op het eigen domein, met de eigen voorwaarden, en is beschikbaar via het LuminaryWorks-platform.",
+    primaryCta: "Partnerproducten bekijken",
     secondaryCta: "Self-hosted deployment",
     docs: "Ontwikkelaarsdocumentatie",
     diagramAria:
-      "Diagram van de control plane en de productplanes. De bovenste rij is een optionele gedeelde control plane: Identity (OIDC), Entitlement en AI Gateway met het label lab. De onderste rijen zijn de zes productplanes, elk met een eigen database en ACL. Stippellijnen van de control plane naar de productplanes betekenen dat de afhankelijkheid optioneel is.",
+      "Schema van het besturingsvlak en de vlakken van partnerproducten. De bovenste rij is een optioneel gedeeld besturingsvlak: Identity (OIDC), Entitlement en AI Gateway met het label lab. De onderste rijen zijn vlakken van partnerproducten, elk met een eigen database en ACL. Stippellijnen betekenen dat de afhankelijkheid optioneel is.",
     controlPlane: "CONTROL PLANE",
     controlNote: "optioneel gedeeld",
     productPlanes: "PRODUCT PLANES",
@@ -21,7 +21,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "onafhankelijk verkoopbare producten" },
+      { value: "6", label: "vermelde partnerproducten" },
       { value: "5", label: "vastgezette deployment-profielen" },
       { value: "1", label: "gedeelde laag voor identiteit en entitlement" },
       { value: "5", label: "families van open protocollen" },
@@ -31,15 +31,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Zes producten, één waardeketen",
-    lead: "Eerst creatie en leren, dan devices en data-inzicht, daarna visuele beveiliging en remote operaties en ten slotte agents en mensen die samen afrekenen.",
+    title: "Partnerproducten langs één waardeketen",
+    lead: "Deze partnerproducten kunnen na elkaar worden gebruikt: maken en leren, apparaten en data-inzicht, visuele beveiliging en beheer op afstand, daarna afrekening tussen agents en mensen. Elke stap wordt apart geëxploiteerd.",
     diagramAria:
       "Waardeketen: Creëren met BlockyEdu, Verbinden via SyncroBrain, Zien met DataLuminary; Bewaken met VistaCast en Besturen met VistaRemote takken af en komen samen in Verdienen met DoerFlow. Klik op een knooppunt om naar de bijbehorende productkaart te scrollen.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Elk product verkoopt op eigen kracht. Samen sluiten ze de kringloop.",
+    title: "Elk partnerproduct heeft een eigen site en een eigen exploitant.",
   },
   platform: {
     index: "04",
@@ -50,7 +50,7 @@ export const home = {
       {
         id: "identity",
         title: "Uniforme login · Identity",
-        body: "Één OIDC-loginservice draagt zes merken; elk product houdt zijn eigen logo en teksten",
+        body: "Eén OIDC-aanmelddienst voor partnerproducten; elk product houdt het eigen logo, de eigen tekst en de eigen exploitant",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -139,7 +139,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "Waarom een werkplaats",
+    title: "Waarom een platform",
     items: [
       {
         title: "Open protocollen eerst",
@@ -163,7 +163,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "Eerst uitproberen, later beslissen",
-    lead: "In aanmerking komende producten hebben een trial van 7 dagen; het ecosysteem heeft geen permanent gratis plan. Voor self-hosted of offline levering neemt u contact op met de werkplaats.",
+    lead: "Waar een partner dat aanbiedt, omvat een in aanmerking komend product een proef van 7 dagen. Er is geen blijvend gratis niveau. Mail het platform voor self-hosted levering of om partner te worden.",
     startTrial: "Trial starten",
     contact: "Contact met sales",
     github: "GitHub",

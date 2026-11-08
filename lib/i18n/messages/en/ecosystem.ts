@@ -3,7 +3,7 @@ export const ecosystem = {
     index: "01",
     label: "ECOSYSTEM",
     title: "Ecosystem & architecture",
-    lead: "Six products run independently and compose as a federated suite through open protocols and an optional shared control plane — what is shared is identity, entitlement and protocols, never business logic.",
+    lead: "Partner products run independently. They can compose through open protocols and an optional shared control plane. The platform shares identity, entitlement and protocols, not business logic.",
   },
   valueChain: {
     index: "01",
@@ -60,7 +60,7 @@ export const ecosystem = {
       {
         title: "Identity (OIDC)",
         description:
-          "One OIDC login surface for six brands; each product keeps its own logo and copy.",
+          "One OIDC login surface for partner products; each product keeps its own logo, copy and operator.",
         tags: ["Logto", "OIDC", "PKCE"],
       },
       {
@@ -149,7 +149,7 @@ export const ecosystem = {
     index: "06",
     label: "AUTONOMY",
     title: "Product autonomy (hard constraint)",
-    lead: "Each product owns its database, migrations, Casbin policy and release cadence. It must still start and pass readiness when every sibling product is down.",
+    lead: "Each partner product owns its database, migrations, access policy and release cadence, and is operated by its own team or entity. It must still start and pass readiness when the others are down.",
     boundaries: [
       "Each product owns its database, migrations, Casbin policy and release cadence",
       "It must still start and pass readiness when every sibling product is down",

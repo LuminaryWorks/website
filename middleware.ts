@@ -1,7 +1,7 @@
 import { isLocale } from "@/lib/i18n/config";
 import { localeFromPathname, localePath, unlocalizedPath } from "@/lib/i18n/paths";
 import { matchSupportedLocale, resolvePreferredLocale } from "@/lib/i18n/preferred-locale";
-import { NextResponse, type NextRequest } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 
 const COOKIE = "lw-locale";
 
@@ -27,7 +27,11 @@ export function middleware(request: NextRequest) {
   if (locale === current) {
     const response = NextResponse.next();
     if (fromLanguage && !request.cookies.get(COOKIE)) {
-      response.cookies.set(COOKIE, locale, { path: "/", maxAge: 60 * 60 * 24 * 365, sameSite: "lax" });
+      response.cookies.set(COOKIE, locale, {
+        path: "/",
+        maxAge: 60 * 60 * 24 * 365,
+        sameSite: "lax",
+      });
     }
     return response;
   }
@@ -35,7 +39,11 @@ export function middleware(request: NextRequest) {
   url.pathname = localePath(locale as Parameters<typeof localePath>[0], unlocalizedPath(pathname));
   const response = NextResponse.redirect(url);
   if (fromLanguage) {
-    response.cookies.set(COOKIE, locale, { path: "/", maxAge: 60 * 60 * 24 * 365, sameSite: "lax" });
+    response.cookies.set(COOKIE, locale, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365,
+      sameSite: "lax",
+    });
   }
   return response;
 }

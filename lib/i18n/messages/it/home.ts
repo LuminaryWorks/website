@@ -1,14 +1,14 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
     title:
-      "Sei prodotti AI con deployment indipendente. Un'unica base condivisa di identità e entitlement.",
-    lead: "LuminaryWorks costruisce un ecosistema aperto AI-native su protocolli aperti — OIDC, MQTT, REST, WebRTC e ONVIF. Creazione e apprendimento, connettività dei dispositivi, analisi dei dati, sicurezza visiva, operazioni remote e collaborazione tra agenti formano un'unica catena del valore. Ogni prodotto viene rilasciato standalone e self-hosted e si compone all'occorrenza.",
-    primaryCta: "Esplora i sei prodotti",
+      "Una piattaforma per accesso, fatturazione e uso dell'IA. I prodotti partner restano indipendenti.",
+    lead: "LuminaryWorks fornisce un account unificato, fatturazione e diritti, un gateway IA, notifiche e standard condivisi. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow e SyncroBrain sono prodotti partner. Ciascuno è gestito dal proprio team o dalla propria entità, sul proprio dominio, con i propri termini, ed è disponibile attraverso la LuminaryWorks Platform.",
+    primaryCta: "Vedi i prodotti partner",
     secondaryCta: "Deployment self-hosted",
     docs: "Documentazione per sviluppatori",
     diagramAria:
-      "Diagramma del control plane e dei piani di prodotto. La riga superiore è un control plane condiviso opzionale: Identity (OIDC), Entitlement e AI Gateway con etichetta lab. Le righe inferiori sono i sei piani di prodotto, ciascuno con il proprio database e la propria ACL. Le linee tratteggiate dal control plane ai piani di prodotto indicano che la dipendenza è opzionale.",
+      "Schema del piano di controllo e dei piani dei prodotti partner. La riga superiore è un piano di controllo condiviso e facoltativo: Identity (OIDC), Entitlement e AI Gateway contrassegnato come lab. Le righe inferiori sono i piani dei prodotti partner, ciascuno con il proprio database e la propria ACL. Le linee tratteggiate indicano che la dipendenza è facoltativa.",
     controlPlane: "CONTROL PLANE",
     controlNote: "condiviso opzionale",
     productPlanes: "PRODUCT PLANES",
@@ -21,7 +21,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "prodotti commercializzabili in modo indipendente" },
+      { value: "6", label: "prodotti partner elencati" },
       { value: "5", label: "profili di deployment congelati" },
       { value: "1", label: "livello condiviso di identità e entitlement" },
       { value: "5", label: "famiglie di protocolli aperti" },
@@ -31,15 +31,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Sei prodotti, una catena del valore",
-    lead: "Prima creazione e apprendimento, poi dispositivi e analisi dei dati, quindi sicurezza visiva e operazioni remote e infine agenti e persone che regolano insieme.",
+    title: "Prodotti partner lungo una catena del valore",
+    lead: "Questi prodotti partner si possono usare in sequenza: creazione e apprendimento, dispositivi e lettura dei dati, sicurezza visiva e operazioni remote, poi il regolamento tra agenti e persone. Ogni passaggio è gestito separatamente.",
     diagramAria:
       "Catena del valore: Creare con BlockyEdu, Connettere tramite SyncroBrain, Vedere con DataLuminary; Sorvegliare con VistaCast e Controllare con VistaRemote si diramano e confluiscono in Monetizzare con DoerFlow. Fate clic su un nodo per scorrere alla relativa scheda di prodotto.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Ogni prodotto si vende da solo. Insieme chiudono il ciclo.",
+    title: "Ogni prodotto partner ha il proprio sito e il proprio operatore.",
   },
   platform: {
     index: "04",
@@ -51,7 +51,7 @@ export const home = {
       {
         id: "identity",
         title: "Login unificato · Identity",
-        body: "Un unico servizio di login OIDC sostiene sei marchi; ogni prodotto mantiene logo e testi propri",
+        body: "Un servizio di accesso OIDC per i prodotti partner; ogni prodotto mantiene il proprio logo, i propri testi e il proprio operatore",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -141,7 +141,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "Perché un'officina",
+    title: "Perché una piattaforma",
     items: [
       {
         title: "Prima i protocolli aperti",
@@ -165,7 +165,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "Prima provatelo, poi decidete",
-    lead: "I prodotti idonei includono un Trial di 7 giorni; l'ecosistema non ha un piano gratuito permanente. Per consegne self-hosted od offline, contattate l'officina.",
+    lead: "Se il partner lo offre, un prodotto idoneo include una prova di 7 giorni. Non esiste un piano gratuito permanente. Per una consegna self-hosted, o per diventare partner, scrivi alla piattaforma.",
     startTrial: "Avvia il Trial",
     contact: "Contatta il team commerciale",
     github: "GitHub",

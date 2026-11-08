@@ -111,7 +111,7 @@ export const deploy = {
   },
   cta: {
     title: "需要私有化或离线交付？",
-    lead: "联系工坊商务团队，讨论部署形态、License 与交付范围。",
+    lead: "联系平台团队，讨论部署形态、License 与交付范围。",
     contact: "联系商务",
   },
 };

@@ -1,7 +1,8 @@
 export const common = {
   brandName: "LuminaryWorks",
   brandZh: "启明工坊",
-  brandLine: "LuminaryWorks · 启明工坊 — AI-native open source-ecosysteem",
+  brandLine:
+    "LuminaryWorks — platform voor uniforme aanmelding, facturatie, AI-toegang en gedeelde standaarden",
   licenseLine:
     "Polyform Noncommercial License 1.0.0 · Commercieel gebruik vereist een aparte licentie",
   skipToContent: "Ga naar de hoofdinhoud",
@@ -19,7 +20,7 @@ export const common = {
   },
   cta: {
     startTrial: "Trial starten",
-    exploreProducts: "Bekijk de zes producten",
+    exploreProducts: "Partnerproducten bekijken",
     selfHost: "Self-hosted deployment",
     contact: "Contact met sales",
   },
@@ -38,7 +39,7 @@ export const common = {
   },
   externalHint: "Opent in een nieuw venster",
   footer: {
-    products: "Producten",
+    products: "Partnerproducten",
     platform: "Platform en documentatie",
     ecosystem: "Ecosysteem",
     legal: "Juridisch",
@@ -52,6 +53,7 @@ export const common = {
     terms: "Servicevoorwaarden",
     privacy: "Privacybeleid",
     trialDeletion: "Trial en verwijderen van gegevens",
+    becomePartner: "Partner worden",
   },
   productNames: {
     dataluminary: "DataLuminary",

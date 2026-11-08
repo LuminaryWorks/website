@@ -123,7 +123,7 @@ export const deploy = {
   },
   cta: {
     title: "Need private or offline delivery?",
-    lead: "Contact the workshop team to discuss profiles, License and delivery scope.",
+    lead: "Contact the platform team to discuss profiles, License and delivery scope.",
     contact: "Contact sales",
   },
 };

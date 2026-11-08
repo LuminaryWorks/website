@@ -61,20 +61,25 @@ export const products = {
     noTrial: "Trial なし",
     notSellable: "販売準備中",
     audienceLabel: "対象",
+    operatorLabel: "運営者",
+    operatorNote: "自らのチームまたは事業体が運営しています。",
+    availableThrough: "LuminaryWorks プラットフォームを通じて利用できます。",
+    legal: "製品規約",
   },
   page: {
     index: "01",
     label: "PRODUCTS",
-    title: "製品一覧",
-    lead: "単体で販売できる 6 つの AI 製品。各製品が自前のデータベースと ACL を持ち、OIDC とオープンプロトコルで必要に応じて組み合わせます。",
+    title: "パートナー製品",
+    lead: "LuminaryWorks プラットフォームを通じて利用できるパートナー製品です。それぞれ自らのチームまたは事業体が運営し、独自のドメイン、規約、データベース、アクセス制御を持ちます。",
   },
   compare: {
     index: "02",
     label: "COMPARE",
     title: "比較表",
-    lead: "役割・対象ユーザー・ドメイン・商用ステータス・Trial はすべて製品仕様に基づくもので、このページで書き換えることはありません。",
+    lead: "LuminaryWorks プラットフォームを通じて利用できる製品の役割、対象、サイト、運営者、販売状態、Trial。",
     headers: {
       product: "製品",
+      operator: "運営者",
       role: "役割",
       audience: "対象ユーザー",
       domain: "サイトドメイン",
@@ -82,6 +87,6 @@ export const products = {
       trial: "Trial",
     },
     footnote:
-      "6 製品すべてが販売可能です。DoerFlow に Trial はありません。エコシステム全体で恒久的な無料プランは提供しません。",
+      "カタログ上の販売状態はプラットフォームの決済を指します。一つの運営者がすべての製品を運営するという意味ではありません。DoerFlow に Trial はありません。恒久の無料枠はありません。",
   },
 };

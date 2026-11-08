@@ -1,13 +1,13 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
-    title: "六个可独立部署的 AI 产品，一套统一的身份与权益底座",
-    lead: "LuminaryWorks（启明工坊）用 OIDC、MQTT、REST、WebRTC、ONVIF 等开放协议，把创造教育、设备物联、数据洞察、视觉安防、远程运维与 Agent 协作连成一条价值链。每个产品都能独立交付与私有化，也能按需组合成完整闭环。",
-    primaryCta: "查看六大产品",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
+    title: "提供登录、账单与 AI 接入的平台。合作产品保持独立。",
+    lead: "LuminaryWorks 提供统一账号、账单与权益、AI 网关、通知和共享标准。DataLuminary、BlockyEdu、VistaRemote、VistaCast、DoerFlow 与 SyncroBrain 是合作产品，各自由自己的团队或实体运营，使用自己的域名和条款，并通过 LuminaryWorks 平台提供。",
+    primaryCta: "查看合作产品",
     secondaryCta: "私有化部署",
     docs: "开发者文档",
     diagramAria:
-      "控制面与产品面结构示意图。上层为可选共享的控制面：Identity（OIDC）、Entitlement，以及带 lab 标记的 AI Gateway。下层为六个产品面，各自拥有数据库与 ACL。控制面到产品面的连线为虚线，表示可选依赖。",
+      "控制面与合作产品面的结构示意图。上层是可选的共享控制面：Identity（OIDC）、Entitlement，以及标为 lab 的 AI Gateway。下层是合作产品面，各自拥有数据库与 ACL。虚线表示依赖可选。",
     controlPlane: "CONTROL PLANE",
     controlNote: "可选共享",
     productPlanes: "PRODUCT PLANES",
@@ -20,7 +20,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "独立可售产品" },
+      { value: "6", label: "列出的合作产品" },
       { value: "5", label: "冻结部署形态" },
       { value: "1", label: "套统一登录与权益" },
       { value: "5", label: "类开放协议" },
@@ -30,15 +30,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "六个产品，回答同一条价值链的不同环节",
-    lead: "学 + 创起步，接入设备、洞察数据，延伸到视觉安防、远程运维，最后由 Agent 与人类共同结算。",
+    title: "合作产品可以沿一条价值链配合",
+    lead: "这些合作产品可以按顺序配合：创造与学习、设备与数据洞察、视觉安防与远程运维，然后是 Agent 与人的结算。每一步由各自的运营方负责。",
     diagramAria:
       "价值链：学加创从 BlockyEdu 起步，连接到 SyncroBrain，由 DataLuminary 看数据；视 VistaCast 与控 VistaRemote 从主链分出，汇入赚 DoerFlow。点击节点滚动到对应产品卡。",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "每个产品可独立售卖，组合后形成闭环",
+    title: "每个合作产品有自己的站点与运营方。",
   },
   platform: {
     index: "04",
@@ -49,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "统一登录 Identity",
-        body: "一套 OIDC 登录服务承载六个品牌，各产品保留自己的 Logo 与文案",
+        body: "一套 OIDC 登录服务供合作产品使用；各产品保留自己的 Logo、文案与运营方",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -137,7 +137,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "为什么是工坊",
+    title: "为什么是平台",
     items: [
       {
         title: "开放协议优先",
@@ -161,7 +161,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "先跑起来，再决定怎么买",
-    lead: "适用产品提供 7 天 Trial；生态不提供永久免费档。需要私有化或离线交付，直接联系工坊。",
+    lead: "合作产品若提供 Trial，符合条件的产品含 7 天试用。没有永久免费档。私有化交付或希望成为合作伙伴，请发邮件给平台。",
     startTrial: "开始试用",
     contact: "联系商务",
     github: "GitHub",

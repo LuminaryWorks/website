@@ -162,3 +162,28 @@ a.secondaryLink:hover {
 .full {
   padding: 28px;
 }
+
+.operator {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--lw-text);
+}
+
+.operatorLabel {
+  display: block;
+  margin-bottom: 2px;
+  font-family: var(--lw-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lw-faint);
+}
+
+.operatorNote,
+.available {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--lw-muted);
+}

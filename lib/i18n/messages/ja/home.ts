@@ -1,13 +1,14 @@
 export const home = {
   hero: {
-    eyebrow: "LUMINARYWORKS · 启明工坊",
-    title: "独立してデプロイできる 6 つの AI 製品と、共通のアイデンティティ・権利基盤",
-    lead: "LuminaryWorks は OIDC、MQTT、REST、WebRTC、ONVIF といったオープンプロトコルの上に、AI ネイティブなオープンエコシステムを構築します。創造と学習、デバイス接続、データ分析、映像セキュリティ、リモート運用、エージェント協働がひとつのバリューチェーンを形成します。各製品は単体でもセルフホストでも提供でき、必要に応じて組み合わせられます。",
-    primaryCta: "6 つの製品を見る",
+    eyebrow: "LUMINARYWORKS · PLATFORM",
+    title:
+      "ログイン、請求、AI アクセスのためのプラットフォーム。パートナー製品は独立したままです。",
+    lead: "LuminaryWorks は、統一アカウント、請求とエンタイトルメント、AI ゲートウェイ、通知、共有標準を提供します。DataLuminary、BlockyEdu、VistaRemote、VistaCast、DoerFlow、SyncroBrain はパートナー製品です。それぞれ自らのチームまたは事業体が運営し、独自のドメインと規約を持ち、LuminaryWorks プラットフォームを通じて利用できます。",
+    primaryCta: "パートナー製品を見る",
     secondaryCta: "セルフホスト構成",
     docs: "開発者ドキュメント",
     diagramAria:
-      "コントロールプレーンと製品プレーンの構成図。上段は任意で共有されるコントロールプレーンで、Identity（OIDC）、Entitlement、および lab と表示された AI Gateway があります。下段は 6 つの製品プレーンで、それぞれが自前のデータベースと ACL を持ちます。コントロールプレーンから製品プレーンへの破線は、依存関係が任意であることを示します。",
+      "コントロールプレーンとパートナー製品プレーンの図です。上段は任意の共有コントロールプレーンで、Identity（OIDC）、Entitlement、lab と記された AI Gateway です。下段はパートナー製品プレーンで、それぞれ独自のデータベースと ACL を持ちます。破線は依存が任意であることを示します。",
     controlPlane: "CONTROL PLANE",
     controlNote: "任意の共有",
     productPlanes: "PRODUCT PLANES",
@@ -20,7 +21,7 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "単体で販売できる製品" },
+      { value: "6", label: "掲載中のパートナー製品" },
       { value: "5", label: "凍結済みのデプロイ形態" },
       { value: "1", label: "共通のログイン・権利レイヤー" },
       { value: "5", label: "系統のオープンプロトコル" },
@@ -30,15 +31,15 @@ export const home = {
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "6 つの製品が、ひとつのバリューチェーンを担う",
-    lead: "まず創造と学習から始まり、デバイス接続とデータ分析へ、さらに映像セキュリティとリモート運用へ広がり、最後にエージェントと人間が一緒に決済します。",
+    title: "一つの価値連鎖に並ぶパートナー製品",
+    lead: "これらのパートナー製品は順に組み合わせできます。創造と学習、デバイスとデータ洞察、視覚セキュリティと遠隔運用、そしてエージェントと人の決済です。各段階は別々に運営されます。",
     diagramAria:
       "バリューチェーン：BlockyEdu で創り、SyncroBrain で繋ぎ、DataLuminary で見る。VistaCast の監ると VistaRemote の操るが分岐し、DoerFlow の稼ぐへ合流します。ノードをクリックすると該当製品のカードへスクロールします。",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "各製品は単体で売れる。組み合わせればループが閉じる。",
+    title: "各パートナー製品は、独自のサイトと運営者を持ちます。",
   },
   platform: {
     index: "04",
@@ -49,7 +50,7 @@ export const home = {
       {
         id: "identity",
         title: "統合ログイン · Identity",
-        body: "ひとつの OIDC ログインサービスが 6 ブランドを支え、各製品はロゴと文言を維持します",
+        body: "パートナー製品向けの一つの OIDC ログイン。各製品は独自のロゴ、文言、運営者を保ちます",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -137,7 +138,7 @@ export const home = {
   why: {
     index: "06",
     label: "WHY",
-    title: "なぜ工房なのか",
+    title: "なぜプラットフォームか",
     items: [
       {
         title: "オープンプロトコル優先",
@@ -161,7 +162,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "まず動かし、それから決める",
-    lead: "対象製品には 7 日間の Trial があります。エコシステム全体で恒久的な無料プランは提供しません。セルフホストやオフライン提供が必要な場合は、工房までご連絡ください。",
+    lead: "パートナーが提供する場合、対象製品には 7 日間のトライアルがあります。恒久の無料枠はありません。セルフホストでの導入、またはパートナー参加はプラットフォームへメールしてください。",
     startTrial: "トライアルを開始",
     contact: "営業に問い合わせ",
     github: "GitHub",

@@ -3,7 +3,7 @@ export const ecosystem = {
     index: "01",
     label: "ECOSYSTEM",
     title: "Ecosysteem en architectuur",
-    lead: "De zes producten werken onafhankelijk en vormen via open protocollen en een optionele gedeelde control plane een gefedereerde suite — wat gedeeld wordt zijn identiteit, entitlement en protocollen, nooit businesslogica.",
+    lead: "Partnerproducten draaien zelfstandig. Ze kunnen samenwerken via open protocollen en een optioneel gedeeld besturingsvlak. Het platform deelt identiteit, rechten en protocollen, niet de bedrijfslogica.",
   },
   valueChain: {
     index: "01",
@@ -60,7 +60,7 @@ export const ecosystem = {
       {
         title: "Identity (OIDC)",
         description:
-          "Één OIDC-loginoppervlak voor zes merken; elk product houdt zijn eigen logo en teksten.",
+          "Eén OIDC-aanmeldscherm voor partnerproducten; elk product houdt het eigen logo, de eigen tekst en de eigen exploitant.",
         tags: ["Logto", "OIDC", "PKCE"],
       },
       {
@@ -150,7 +150,7 @@ export const ecosystem = {
     index: "06",
     label: "AUTONOMY",
     title: "Productautonomie (harde randvoorwaarde)",
-    lead: "Elk product bezit zijn eigen database, migraties, Casbin-policy en releasecadans. Het moet nog steeds opstarten en de readiness-check doorstaan wanneer alle zusterproducten uit staan.",
+    lead: "Elk partnerproduct bezit de eigen database, migraties, toegangsbeleid en releasecadans, en wordt geëxploiteerd door het eigen team of de eigen entiteit. Het moet nog starten en de gereedheidscontrole halen als de andere uit staan.",
     boundaries: [
       "Elk product bezit zijn eigen database, migraties, Casbin-policy en releasecadans",
       "Het moet nog steeds opstarten en de readiness-check doorstaan wanneer alle zusterproducten uit staan",

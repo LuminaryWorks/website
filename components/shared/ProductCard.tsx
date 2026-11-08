@@ -3,7 +3,7 @@
 /**
  * 六产品共用卡片（首页 §03 与 /products 共用，定稿组件）。
  *
- * 规范：spec/website-design.md §3「卡片」与 §5「六大产品」。
+ * 规范：spec/website-design.md §3「卡片」与 §5「合作产品」。
  * - hover 只改描边 / 底色 / translateY(-2px)，不加发光阴影
  * - 不给产品配 accent 色：差异化只靠 Logo + 名称 + 角色标签
  * - 商业化状态与 Trial 文案必须来自 lib/products.ts，不得在页面里另写
@@ -51,6 +51,13 @@ export function ProductCard({
 
       <p className={styles.oneLiner}>{item.oneLiner}</p>
 
+      <p className={styles.operator}>
+        <span className={styles.operatorLabel}>{card.operatorLabel}</span>
+        {product.operator}
+      </p>
+      <p className={styles.operatorNote}>{card.operatorNote}</p>
+      <p className={styles.available}>{card.availableThrough}</p>
+
       <ul className={styles.chips}>
         {item.chips.map((chip) => (
           <li key={chip}>
@@ -74,6 +81,9 @@ export function ProductCard({
         <span className={styles.links}>
           <ExternalLink href={product.site} className={styles.siteLink}>
             {card.visitSite}
+          </ExternalLink>
+          <ExternalLink href={product.legal} className={styles.secondaryLink}>
+            {card.legal}
           </ExternalLink>
           <ExternalLink href={product.repo} className={styles.secondaryLink}>
             {card.viewSource}

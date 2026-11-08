@@ -54,6 +54,11 @@ export function Footer() {
       external: true,
     },
     { href: localePath(locale, "/about/"), label: m.common.footer.licensing, external: false },
+    {
+      href: `${localePath(locale, "/about/")}#partner`,
+      label: m.common.footer.becomePartner,
+      external: false,
+    },
   ];
 
   const legalLocale = legalLinkLocale(locale);

@@ -1,7 +1,7 @@
 export const common = {
   brandName: "LuminaryWorks",
   brandZh: "启明工坊",
-  brandLine: "LuminaryWorks · 启明工坊 — AI ネイティブなオープンソース・エコシステム",
+  brandLine: "LuminaryWorks — 統一ログイン、請求、AI アクセスと共有標準のためのプラットフォーム",
   licenseLine: "Polyform Noncommercial License 1.0.0 · 商用利用には別途ライセンスが必要です",
   skipToContent: "メインコンテンツへスキップ",
   navAria: "メインナビゲーション",
@@ -18,7 +18,7 @@ export const common = {
   },
   cta: {
     startTrial: "トライアルを開始",
-    exploreProducts: "6 つの製品を見る",
+    exploreProducts: "パートナー製品を見る",
     selfHost: "セルフホスト構成",
     contact: "営業に問い合わせ",
   },
@@ -37,7 +37,7 @@ export const common = {
   },
   externalHint: "新しいウィンドウで開きます",
   footer: {
-    products: "製品",
+    products: "パートナー製品",
     platform: "プラットフォームとドキュメント",
     ecosystem: "エコシステム",
     legal: "法務",
@@ -51,6 +51,7 @@ export const common = {
     terms: "利用規約",
     privacy: "プライバシーポリシー",
     trialDeletion: "Trial とデータ削除",
+    becomePartner: "パートナーになる",
   },
   productNames: {
     dataluminary: "DataLuminary",

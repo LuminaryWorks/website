@@ -3,7 +3,7 @@ export const ecosystem = {
     index: "01",
     label: "ECOSYSTEM",
     title: "Ecosistema y arquitectura",
-    lead: "Los seis productos funcionan de forma independiente y se combinan como una suite federada mediante protocolos abiertos y un plano de control compartido opcional: lo compartido es identidad, derechos y protocolos, nunca la lógica de negocio.",
+    lead: "Los productos asociados funcionan de forma independiente. Pueden componerse mediante protocolos abiertos y un plano de control compartido opcional. La plataforma comparte identidad, derechos y protocolos, no la lógica de negocio.",
   },
   valueChain: {
     index: "01",
@@ -60,7 +60,7 @@ export const ecosystem = {
       {
         title: "Identity (OIDC)",
         description:
-          "Una sola superficie de login OIDC para seis marcas; cada producto conserva su logo y sus textos.",
+          "Una superficie de acceso OIDC para productos asociados; cada producto conserva su logotipo, su texto y su operador.",
         tags: ["Logto", "OIDC", "PKCE"],
       },
       {
@@ -151,7 +151,7 @@ export const ecosystem = {
     index: "06",
     label: "AUTONOMY",
     title: "Autonomía de producto (restricción estricta)",
-    lead: "Cada producto es dueño de su base de datos, sus migraciones, su política de Casbin y su cadencia de releases. Debe arrancar y pasar readiness incluso con todos los productos hermanos caídos.",
+    lead: "Cada producto asociado posee su base de datos, migraciones, política de acceso y ritmo de publicación, y lo opera su propio equipo o entidad. Debe arrancar y superar la comprobación de readiness cuando los demás están apagados.",
     boundaries: [
       "Cada producto es dueño de su base de datos, sus migraciones, su política de Casbin y su cadencia de releases",
       "Debe arrancar y pasar readiness incluso con todos los productos hermanos caídos",
