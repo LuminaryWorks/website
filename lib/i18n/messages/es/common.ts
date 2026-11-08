@@ -20,7 +20,7 @@ export const common = {
   },
   cta: {
     startTrial: "Iniciar Trial",
-    exploreProducts: "Ver productos asociados",
+    exploreProducts: "Explorar productos",
     selfHost: "Despliegue autogestionado",
     contact: "Contactar con ventas",
   },
@@ -39,7 +39,7 @@ export const common = {
   },
   externalHint: "Se abre en una ventana nueva",
   footer: {
-    products: "Productos asociados",
+    products: "Productos",
     platform: "Plataforma y documentación",
     ecosystem: "Ecosistema",
     legal: "Legal",

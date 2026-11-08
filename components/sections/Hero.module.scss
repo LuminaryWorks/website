@@ -65,19 +65,33 @@
 
 .title {
   margin: 0;
-  font-size: clamp(32px, 5vw, 56px);
+  max-width: 14em;
+  font-size: clamp(32px, 4.6vw, 52px);
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.15;
+  line-height: 1.18;
   color: var(--lw-text);
+  text-wrap: balance;
 }
 
-.lead {
+.leads {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 34em;
+}
+
+.lead,
+.leadSecondary {
   margin: 0;
-  max-width: 36em;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--lw-muted);
+  text-wrap: pretty;
+}
+
+.leadSecondary {
+  color: var(--lw-faint);
 }
 
 .actions {

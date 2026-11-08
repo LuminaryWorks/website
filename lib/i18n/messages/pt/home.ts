@@ -1,10 +1,10 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title:
-      "Uma plataforma para início de sessão, faturação e acesso a IA. Os produtos parceiros permanecem independentes.",
-    lead: "A LuminaryWorks fornece uma conta unificada, faturação e direitos, um gateway de IA, notificações e normas partilhadas. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow e SyncroBrain são produtos parceiros. Cada um é operado pela sua própria equipa ou entidade, no seu próprio domínio, com os seus próprios termos, e está disponível através da LuminaryWorks Platform.",
-    primaryCta: "Ver produtos parceiros",
+    title: "Plataforma base de AI SaaS",
+    lead: "Contas unificadas, faturação e direitos, gateway de IA, notificações e normas partilhadas. Cada produto pode ser entregue sozinho — ou em conjunto ao longo da cadeia.",
+    leadSecondary: "Seis produtos já provaram aterragem comercial nesta plataforma e formam uma cadeia de valor.",
+    primaryCta: "Explorar produtos",
     secondaryCta: "Implementação autogerida",
     docs: "Documentação para programadores",
     diagramAria:
@@ -12,34 +12,33 @@ export const home = {
     controlPlane: "CONTROL PLANE",
     controlNote: "partilhado opcional",
     productPlanes: "PRODUCT PLANES",
-    productNote: "base de dados e ACL próprias",
+    productNote: "entrega independente",
     identity: "Identity",
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
     lab: "lab",
   },
-  facts: {
+    facts: {
     items: [
-      { value: "6", label: "produtos parceiros listados" },
-      { value: "5", label: "perfis de implementação congelados" },
-      { value: "1", label: "camada partilhada de identidade e entitlement" },
-      { value: "5", label: "famílias de protocolos abertos" },
-      { value: "NC", label: "código-fonte Polyform Noncommercial" },
+      { value: "6 produtos", label: "aterragem comercial comprovada" },
+      { value: "1 base", label: "sessão · faturação · gateway IA" },
+      { value: "5 deploys", label: "standalone a air-gapped" },
+      { value: "Open source", label: "Polyform Noncommercial" },
     ],
   },
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Produtos parceiros ao longo de uma cadeia de valor",
-    lead: "Estes produtos parceiros podem ser usados em sequência: criação e aprendizagem, dispositivos e leitura de dados, segurança visual e operações remotas, e depois liquidação entre agentes e pessoas. Cada etapa é operada à parte.",
+    title: "Uma cadeia de valor já formada",
+    lead: "Da criação e aprendizagem, à ligação de dispositivos e leitura de dados, à segurança visual e operações remotas, e por fim à liquidação entre agentes e pessoas. Cada produto entrega sozinho; juntos fecham o ciclo.",
     diagramAria:
       "Cadeia de valor: Criar com o BlockyEdu, Conectar com o SyncroBrain, Ver com o DataLuminary; Vigiar com o VistaCast e Controlar com o VistaRemote ramificam-se e convergem em Monetizar com o DoerFlow. Clique num nó para avançar para o respetivo cartão de produto.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Cada produto parceiro tem o seu próprio site e o seu próprio operador.",
+    title: "Seis produtos, cada um pronto a entregar sozinho",
   },
   platform: {
     index: "04",
@@ -51,7 +50,7 @@ export const home = {
       {
         id: "identity",
         title: "Início de sessão unificado · Identity",
-        body: "Um serviço de login OIDC para produtos parceiros; cada produto mantém o seu logótipo, o seu texto e o seu operador",
+        body: "Um serviço de login OIDC para os produtos; cada um mantém o seu logótipo e o seu texto",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },

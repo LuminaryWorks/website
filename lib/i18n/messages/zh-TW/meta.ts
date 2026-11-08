@@ -1,11 +1,11 @@
 export const meta = {
   home: {
-    title: "LuminaryWorks — 統一登入、帳單與 AI 接入的平台",
+    title: "LuminaryWorks — AI SaaS 基礎服務平台",
     description:
-      "LuminaryWorks 是提供統一帳號、帳單與權益、AI 閘道、通知和共享標準的平台。合作產品獨立營運，並透過該平台提供。",
+      "平台提供統一帳號、帳單與權益、AI 閘道、通知與共享標準。六款產品已在本平台完成商業落地驗證，並形成一條價值合作鏈。",
   },
   products: {
-    title: "合作產品 · LuminaryWorks",
+    title: "產品 · LuminaryWorks",
     description: "透過 LuminaryWorks 平台提供的合作產品，各自有營運方、站點、條款、角色與 Trial。",
   },
   ecosystem: {

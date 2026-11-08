@@ -34,7 +34,10 @@ export function Hero() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>{h.eyebrow}</p>
           <h1 className={styles.title}>{h.title}</h1>
-          <p className={styles.lead}>{h.lead}</p>
+          <div className={styles.leads}>
+            <p className={styles.lead}>{h.lead}</p>
+            <p className={styles.leadSecondary}>{h.leadSecondary}</p>
+          </div>
           <div className={styles.actions}>
             <Link href={localePath(locale, "/products/")} className={styles.btnPrimary}>
               {h.primaryCta}

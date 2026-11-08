@@ -2,10 +2,10 @@ export const meta = {
   home: {
     title: "LuminaryWorks — 로그인, 청구, AI 액세스 플랫폼",
     description:
-      "LuminaryWorks는 통합 계정, 청구와 권한, AI 게이트웨이, 알림, 공유 표준을 위한 플랫폼입니다. 파트너 제품은 독립적으로 운영되며 플랫폼을 통해 이용할 수 있습니다.",
+      "여섯 제품이 LuminaryWorks에서 상업적 착지를 검증했고 가치 협력 사슬을 이룹니다. 플랫폼은 통합 계정, 청구와 권한, AI 게이트웨이, 알림, 공유 표준을 제공합니다.",
   },
   products: {
-    title: "파트너 제품 · LuminaryWorks",
+    title: "제품 · LuminaryWorks",
     description:
       "LuminaryWorks 플랫폼을 통해 이용할 수 있는 파트너 제품. 각각 운영자, 사이트, 약관, 역할, Trial이 있습니다.",
   },

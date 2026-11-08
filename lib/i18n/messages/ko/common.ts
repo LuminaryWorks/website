@@ -18,7 +18,7 @@ export const common = {
   },
   cta: {
     startTrial: "트라이얼 시작",
-    exploreProducts: "파트너 제품 보기",
+    exploreProducts: "제품 보기",
     selfHost: "자체 호스팅 배포",
     contact: "영업 문의",
   },
@@ -37,7 +37,7 @@ export const common = {
   },
   externalHint: "새 창에서 열립니다",
   footer: {
-    products: "파트너 제품",
+    products: "제품",
     platform: "플랫폼과 문서",
     ecosystem: "생태계",
     legal: "법적 고지",

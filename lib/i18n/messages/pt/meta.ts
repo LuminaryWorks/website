@@ -2,10 +2,10 @@ export const meta = {
   home: {
     title: "LuminaryWorks — Plataforma de início de sessão, faturação e acesso a IA",
     description:
-      "A LuminaryWorks é uma plataforma de contas unificadas, faturação e direitos, gateway de IA, notificações e normas partilhadas. Os produtos parceiros são operados de forma independente e estão disponíveis através da plataforma.",
+      "Seis produtos comprovaram aterragem comercial na LuminaryWorks e formam uma cadeia de valor. A plataforma fornece contas unificadas, faturação e direitos, gateway de IA, notificações e normas partilhadas.",
   },
   products: {
-    title: "Produtos parceiros · LuminaryWorks",
+    title: "Produtos · LuminaryWorks",
     description:
       "Produtos parceiros disponíveis através da LuminaryWorks Platform, cada um com o seu operador, site, termos, papel e Trial.",
   },

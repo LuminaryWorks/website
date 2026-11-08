@@ -1,10 +1,10 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title:
-      "Une plateforme pour la connexion, la facturation et l'accès à l'IA. Les produits partenaires restent indépendants.",
-    lead: "LuminaryWorks fournit un compte unifié, la facturation et les droits, une passerelle IA, des notifications et des standards partagés. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow et SyncroBrain sont des produits partenaires. Chacun est exploité par sa propre équipe ou entité, sur son propre domaine, avec ses propres conditions, et il est disponible via la LuminaryWorks Platform.",
-    primaryCta: "Voir les produits partenaires",
+    title: "Plateforme de fondation AI SaaS",
+    lead: "Comptes unifiés, facturation et droits, passerelle IA, notifications et standards partagés. Chaque produit se livre seul — ou ensemble le long de la chaîne.",
+    leadSecondary: "Six produits ont prouvé leur atterrissage commercial sur cette plateforme et forment une chaîne de valeur.",
+    primaryCta: "Explorer les produits",
     secondaryCta: "Déploiement auto-hébergé",
     docs: "Documents pour développeurs",
     diagramAria:
@@ -12,49 +12,33 @@ export const home = {
     controlPlane: "PLAN DE CONTRÔLE",
     controlNote: "partagé en option",
     productPlanes: "PLANS DE PRODUITS",
-    productNote: "propre base de données et ACL chacun",
+    productNote: "livraison indépendante",
     identity: "Identité",
     identityProto: "OIDC",
     entitlement: "Droit",
     aiGateway: "Passerelle IA",
     lab: "laboratoire",
   },
-  facts: {
+    facts: {
     items: [
-      {
-        value: "6",
-        label: "produits partenaires listés",
-      },
-      {
-        value: "5",
-        label: "profils de déploiement gelés",
-      },
-      {
-        value: "1",
-        label: "couche d'identité et de droits partagée",
-      },
-      {
-        value: "5",
-        label: "familles de protocoles ouverts",
-      },
-      {
-        value: "Caroline du Nord",
-        label: "Source non commerciale Polyform",
-      },
+      { value: "6 produits", label: "atterrissage commercial prouvé" },
+      { value: "1 fondation", label: "connexion · facturation · passerelle IA" },
+      { value: "5 déploiements", label: "standalone à air-gapped" },
+      { value: "Open source", label: "Polyform Noncommercial" },
     ],
   },
   valueChain: {
     index: "02",
     label: "CHAÎNE DE VALEUR",
-    title: "Des produits partenaires le long d'une chaîne de valeur",
-    lead: "Ces produits partenaires peuvent s'utiliser dans l'ordre : création et apprentissage, appareils et lecture des données, sécurité visuelle et opérations à distance, puis règlement entre agents et humains. Chaque étape est exploitée séparément.",
+    title: "Une chaîne de valeur déjà en place",
+    lead: "De la création et l'apprentissage à la connexion des appareils et à la lecture des données, puis à la sécurité visuelle et aux opérations à distance, jusqu'au règlement entre agents et humains. Chaque produit se livre seul ; ensemble, ils ferment la boucle.",
     diagramAria:
       "Chaîne de valeur : Créer avec BlockyEdu, Connecter via SyncroBrain, Voir avec DataLuminary ; Regardez avec VistaCast et Contrôlez avec VistaRemote bifurquez et fusionnez dans Earn avec DoerFlow. Cliquez sur un nœud pour faire défiler jusqu'à sa fiche produit.",
   },
   products: {
     index: "03",
     label: "PRODUITS",
-    title: "Chaque produit partenaire a son propre site et son propre exploitant.",
+    title: "Six produits, chacun prêt à être livré seul",
   },
   platform: {
     index: "04",
@@ -66,7 +50,7 @@ export const home = {
       {
         id: "identité",
         title: "Connexion unifiée · Identité",
-        body: "Un service de connexion OIDC pour les produits partenaires ; chaque produit garde son logo, ses textes et son exploitant",
+        body: "Un service de connexion OIDC pour les produits ; chacun garde son logo et ses textes",
         tags: ["Se connecter", "OIDC", "PKCE"],
         lab: false,
       },
@@ -179,7 +163,7 @@ export const home = {
     index: "07",
     label: "Appel à l'action",
     title: "Exécutez-le d'abord, décidez plus tard",
-    lead: "Lorsqu'un partenaire le propose, un produit éligible comprend un essai de 7 jours. Il n'y a pas d'offre gratuite permanente. Pour un déploiement auto-hébergé, ou pour devenir partenaire, écrivez à la plateforme.",
+    lead: "Les produits éligibles incluent un essai de 7 jours. Il n'y a pas d'offre gratuite permanente. Pour une livraison auto-hébergée ou une demande commerciale, écrivez à la plateforme.",
     startTrial: "Commencer l'essai",
     contact: "Contacter le service commercial",
     github: "GitHub",

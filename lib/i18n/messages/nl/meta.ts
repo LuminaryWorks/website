@@ -2,10 +2,10 @@ export const meta = {
   home: {
     title: "LuminaryWorks — Platform voor aanmelden, facturatie en AI-toegang",
     description:
-      "LuminaryWorks is een platform voor uniforme accounts, facturatie en rechten, een AI-gateway, meldingen en gedeelde standaarden. Partnerproducten worden zelfstandig geëxploiteerd en zijn beschikbaar via het platform.",
+      "Zes producten hebben hun commerciële landing op LuminaryWorks bewezen en vormen één waardeketen. Het platform levert uniforme accounts, facturatie en rechten, een AI-gateway, meldingen en gedeelde standaarden.",
   },
   products: {
-    title: "Partnerproducten · LuminaryWorks",
+    title: "Producten · LuminaryWorks",
     description:
       "Partnerproducten beschikbaar via het LuminaryWorks-platform, elk met een eigen exploitant, site, voorwaarden, rol en Trial.",
   },

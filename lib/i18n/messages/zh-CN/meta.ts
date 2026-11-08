@@ -1,17 +1,17 @@
 export const meta = {
   home: {
-    title: "LuminaryWorks — 统一登录、账单与 AI 接入的平台",
+    title: "LuminaryWorks — AI SaaS 基础服务平台",
     description:
-      "LuminaryWorks 是提供统一账号、账单与权益、AI 网关、通知和共享标准的平台。合作产品独立运营，并通过该平台提供。",
+      "平台提供统一账号、账单与权益、AI 网关、通知与共享标准。六款产品已在本平台完成商业落地验证，并形成一条价值合作链。",
   },
   products: {
-    title: "合作产品 · LuminaryWorks",
-    description: "通过 LuminaryWorks 平台提供的合作产品，各自有运营方、站点、条款、角色与 Trial。",
+    title: "产品 · LuminaryWorks",
+    description: "六款已验证落地的产品：角色、站点、商业状态与 Trial。可独立交付，也可沿价值合作链串联。",
   },
   ecosystem: {
     title: "生态与架构 · LuminaryWorks",
     description:
-      "独立合作产品如何在 LuminaryWorks 平台上组合：开放协议、可选控制面，以及各自的数据库。",
+      "产品如何在 LuminaryWorks 平台上组合：开放协议、可选控制面，以及各自独立的数据库与交付。",
   },
   deploy: {
     title: "部署与私有化 · LuminaryWorks",
@@ -20,7 +20,7 @@ export const meta = {
   about: {
     title: "关于平台 · LuminaryWorks",
     description:
-      "LuminaryWorks 是提供登录、账单、AI 接入与共享标准的平台。合作产品保留自己的运营方、域名与条款。",
+      "LuminaryWorks 提供统一登录、账单、AI 接入与共享标准；六款产品已在平台完成商业落地验证。",
   },
   "legal/terms": {
     title: "服务条款 · LuminaryWorks",

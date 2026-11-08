@@ -51,12 +51,14 @@ export function ProductCard({
 
       <p className={styles.oneLiner}>{item.oneLiner}</p>
 
-      <p className={styles.operator}>
-        <span className={styles.operatorLabel}>{card.operatorLabel}</span>
-        {product.operator}
-      </p>
-      <p className={styles.operatorNote}>{card.operatorNote}</p>
-      <p className={styles.available}>{card.availableThrough}</p>
+      {card.operatorLabel ? (
+        <p className={styles.operator}>
+          <span className={styles.operatorLabel}>{card.operatorLabel}</span>
+          {product.operator}
+        </p>
+      ) : null}
+      {card.operatorNote ? <p className={styles.operatorNote}>{card.operatorNote}</p> : null}
+      {card.availableThrough ? <p className={styles.available}>{card.availableThrough}</p> : null}
 
       <ul className={styles.chips}>
         {item.chips.map((chip) => (

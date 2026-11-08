@@ -1,9 +1,10 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title: "提供登入、帳單與 AI 接入的平台。合作產品保持獨立。",
-    lead: "LuminaryWorks 提供統一帳號、帳單與權益、AI 閘道、通知和共享標準。DataLuminary、BlockyEdu、VistaRemote、VistaCast、DoerFlow 與 SyncroBrain 是合作產品，各自由自己的團隊或實體營運，使用自己的網域和條款，並透過 LuminaryWorks 平台提供。",
-    primaryCta: "查看合作產品",
+    title: "AI SaaS 基礎服務平台",
+    lead: "平台提供統一帳號、帳單與權益、AI 閘道、通知與共享標準；產品可獨立交付，也可串聯使用。",
+    leadSecondary: "六款產品已在本平台完成商業落地驗證，並形成一條價值合作鏈。",
+    primaryCta: "查看產品",
     secondaryCta: "私有部署",
     docs: "開發者文件",
     diagramAria:
@@ -11,34 +12,33 @@ export const home = {
     controlPlane: "CONTROL PLANE",
     controlNote: "可選共用",
     productPlanes: "PRODUCT PLANES",
-    productNote: "各自資料庫與 ACL",
+    productNote: "可獨立交付",
     identity: "Identity",
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
     lab: "lab",
   },
-  facts: {
+    facts: {
     items: [
-      { value: "6", label: "列出的合作產品" },
-      { value: "5", label: "凍結部署形態" },
-      { value: "1", label: "套統一登入與權益" },
-      { value: "5", label: "類開放協定" },
-      { value: "NC", label: "Polyform 非商業開源" },
+      { value: "六款產品", label: "商業落地已驗證" },
+      { value: "一套底座", label: "登入 · 帳單 · AI 閘道" },
+      { value: "五種部署", label: "單品到斷網內網" },
+      { value: "開源許可", label: "Polyform 非商業" },
     ],
   },
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "合作產品可以沿一條價值鏈配合",
-    lead: "這些合作產品可以按順序配合：創造與學習、裝置與資料洞察、視覺安防與遠端維運，然後是 Agent 與人的結算。每一步由各自的營運方負責。",
+    title: "我們已經形成一條價值合作鏈",
+    lead: "從創造與學習，到裝置接入與資料洞察，再到視覺安防與遠端維運，最後由 Agent 與人完成結算。六款產品各自可獨立交付，串聯後覆蓋完整閉環。",
     diagramAria:
       "價值鏈：學加創從 BlockyEdu 起步，連接到 SyncroBrain，由 DataLuminary 看資料；視 VistaCast 與控 VistaRemote 從主鏈分出，匯入賺 DoerFlow。點擊節點可捲動到對應產品卡。",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "每個合作產品有自己的站點與營運方。",
+    title: "六款產品，各自可獨立交付",
   },
   platform: {
     index: "04",
@@ -49,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "統一登入 Identity",
-        body: "一套 OIDC 登入服務供合作產品使用；各產品保留自己的 Logo、文案與營運方",
+        body: "一套 OIDC 登入服務供產品接入；各產品保留自己的 Logo 與文案",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },

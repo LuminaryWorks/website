@@ -1,7 +1,7 @@
 export const common = {
   brandName: "LuminaryWorks",
   brandZh: "啟明工坊",
-  brandLine: "LuminaryWorks · 啟明工坊 — 提供統一登入、帳單、AI 接入與共享標準的平台",
+  brandLine: "LuminaryWorks · 啟明工坊 — AI SaaS 基礎服務平台",
   licenseLine: "Polyform Noncommercial License 1.0.0 · 商業使用須另行授權",
   skipToContent: "跳至主要內容",
   navAria: "主要導覽",
@@ -18,7 +18,7 @@ export const common = {
   },
   cta: {
     startTrial: "開始試用",
-    exploreProducts: "查看合作產品",
+    exploreProducts: "查看產品",
     selfHost: "私有部署",
     contact: "聯絡商務",
   },
@@ -37,7 +37,7 @@ export const common = {
   },
   externalHint: "在新視窗開啟",
   footer: {
-    products: "合作產品",
+    products: "產品",
     platform: "平台與文件",
     ecosystem: "生態",
     legal: "法律",

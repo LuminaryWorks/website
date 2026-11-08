@@ -1,9 +1,10 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title: "로그인, 청구, AI 액세스를 위한 플랫폼. 파트너 제품은 독립적으로 남습니다.",
-    lead: "LuminaryWorks는 통합 계정, 청구와 권한, AI 게이트웨이, 알림, 공유 표준을 제공합니다. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow, SyncroBrain은 파트너 제품입니다. 각각 자신의 팀 또는 법인이 운영하고, 자신의 도메인과 약관을 가지며, LuminaryWorks 플랫폼을 통해 이용할 수 있습니다.",
-    primaryCta: "파트너 제품 보기",
+    title: "AI SaaS 기반 서비스 플랫폼",
+    lead: "통합 계정, 청구와 권한, AI 게이트웨이, 알림, 공유 표준을 제공합니다. 각 제품은 단독 납품도, 사슬로 연결도 가능합니다.",
+    leadSecondary: "여섯 제품이 이 플랫폼에서 상업적 착지를 검증했고, 하나의 가치 협력 사슬을 이룹니다.",
+    primaryCta: "제품 보기",
     secondaryCta: "자체 호스팅 배포",
     docs: "개발자 문서",
     diagramAria:
@@ -11,34 +12,33 @@ export const home = {
     controlPlane: "CONTROL PLANE",
     controlNote: "선택적 공유",
     productPlanes: "PRODUCT PLANES",
-    productNote: "각각 자체 데이터베이스와 ACL",
+    productNote: "단독 납품 가능",
     identity: "Identity",
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
     lab: "lab",
   },
-  facts: {
+    facts: {
     items: [
-      { value: "6", label: "소개된 파트너 제품" },
-      { value: "5", label: "고정된 배포 프로파일" },
-      { value: "1", label: "공유 아이덴티티·권한 계층" },
-      { value: "5", label: "계열의 오픈 프로토콜" },
-      { value: "NC", label: "Polyform 비상업 소스" },
+      { value: "6개 제품", label: "상업 착지 검증" },
+      { value: "1개 기반", label: "로그인 · 청구 · AI 게이트웨이" },
+      { value: "5가지 배포", label: "단품부터 에어갭까지" },
+      { value: "오픈소스", label: "Polyform 비상업" },
     ],
   },
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "하나의 가치 사슬에 놓인 파트너 제품",
-    lead: "이 파트너 제품들은 순서대로 함께 쓸 수 있습니다. 창작과 학습, 장치와 데이터 인사이트, 시각 보안과 원격 운영, 그리고 에이전트와 사람의 정산입니다. 각 단계는 따로 운영됩니다.",
+    title: "이미 하나의 가치 협력 사슬이 있다",
+    lead: "창작과 학습에서 장치 연결과 데이터 인사이트, 시각 보안과 원격 운영, 그리고 에이전트와 사람의 정산까지. 각 제품은 단독 납품이 가능하고, 연결하면 전체 루프가 됩니다.",
     diagramAria:
       "가치 사슬: BlockyEdu로 창작하고 SyncroBrain으로 연결하며 DataLuminary로 통찰합니다. VistaCast의 감시와 VistaRemote의 제어가 갈라져 나와 DoerFlow의 수익으로 합류합니다. 노드를 클릭하면 해당 제품 카드로 이동합니다.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "각 파트너 제품은 자신의 사이트와 운영자를 가집니다.",
+    title: "여섯 제품, 각각 단독 납품 가능",
   },
   platform: {
     index: "04",
@@ -49,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "통합 로그인 · Identity",
-        body: "파트너 제품을 위한 하나의 OIDC 로그인. 각 제품은 자신의 로고, 문구, 운영자를 유지합니다",
+        body: "제품이 연결하는 하나의 OIDC 로그인. 각 제품은 자신의 로고와 문구를 유지합니다",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },

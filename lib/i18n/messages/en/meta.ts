@@ -1,18 +1,18 @@
 export const meta = {
   home: {
-    title: "LuminaryWorks — Platform for sign-in, billing and AI access",
+    title: "LuminaryWorks — AI SaaS foundation platform",
     description:
-      "LuminaryWorks is a platform for unified accounts, billing and entitlement, an AI gateway, notifications and shared standards. Partner products are operated independently and are available through the platform.",
+      "Unified accounts, billing and entitlement, an AI gateway, notifications and shared standards. Six products have proven commercial landing and form one value chain.",
   },
   products: {
-    title: "Partner products · LuminaryWorks",
+    title: "Products · LuminaryWorks",
     description:
-      "Partner products available through the LuminaryWorks Platform, each with its own operator, site, terms, role and Trial.",
+      "Six products with proven landing: role, site, commercial status and Trial. Ship alone, or together along the value chain.",
   },
   ecosystem: {
     title: "Ecosystem & architecture · LuminaryWorks",
     description:
-      "How independent partner products can compose on the LuminaryWorks Platform: open protocols, optional control plane, and separate databases.",
+      "How products compose on the LuminaryWorks Platform: open protocols, optional control plane, and independent databases and delivery.",
   },
   deploy: {
     title: "Deployment & self-hosting · LuminaryWorks",
@@ -22,7 +22,7 @@ export const meta = {
   about: {
     title: "About the platform · LuminaryWorks",
     description:
-      "LuminaryWorks is a platform for sign-in, billing, AI access and shared standards. Partner products keep their own operators, domains and terms.",
+      "LuminaryWorks provides unified sign-in, billing, AI access and shared standards. Six products have proven commercial landing on the platform.",
   },
   "legal/terms": {
     title: "Terms of Service · LuminaryWorks",

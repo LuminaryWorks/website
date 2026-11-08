@@ -1,17 +1,19 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title: "A platform for sign-in, billing and AI access. Partner products stay independent.",
-    lead: "LuminaryWorks provides a unified account, billing and entitlement, an AI gateway, notifications and shared standards. DataLuminary, BlockyEdu, VistaRemote, VistaCast, DoerFlow and SyncroBrain are partner products. Each is operated by its own team or entity, on its own domain, with its own terms, and is available through the LuminaryWorks Platform.",
-    primaryCta: "See partner products",
+    title: "AI SaaS foundation platform",
+    lead: "Unified accounts, billing and entitlement, an AI gateway, notifications, and shared standards. Each product ships on its own — or together along the chain.",
+    leadSecondary:
+      "Six products have proven commercial landing on this platform and form one value chain.",
+    primaryCta: "Explore products",
     secondaryCta: "Self-hosted deployment",
     docs: "Developer docs",
     diagramAria:
-      "Diagram of the control plane and partner product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway marked lab. The lower rows are partner product planes, each with its own database and ACL. Dashed lines mean the dependency is optional.",
+      "Diagram of the control plane and product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway marked lab. The lower rows are product planes, each with its own database and ACL. Dashed lines mean the dependency is optional.",
     controlPlane: "CONTROL PLANE",
     controlNote: "optional shared",
     productPlanes: "PRODUCT PLANES",
-    productNote: "own database and ACL each",
+    productNote: "ship independently",
     identity: "Identity",
     identityProto: "OIDC",
     entitlement: "Entitlement",
@@ -20,25 +22,24 @@ export const home = {
   },
   facts: {
     items: [
-      { value: "6", label: "partner products listed" },
-      { value: "5", label: "frozen deployment profiles" },
-      { value: "1", label: "shared identity and entitlement layer" },
-      { value: "5", label: "families of open protocols" },
-      { value: "NC", label: "Polyform Noncommercial source" },
+      { value: "6 products", label: "commercially proven" },
+      { value: "1 foundation", label: "sign-in · billing · AI gateway" },
+      { value: "5 deploys", label: "standalone to air-gapped" },
+      { value: "Open source", label: "Polyform Noncommercial" },
     ],
   },
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "Partner products along one value chain",
-    lead: "These partner products can be used in sequence: creation and learning, devices and data insight, visual security and remote operations, then settlement between agents and humans. Each step is operated separately.",
+    title: "One value chain, already in place",
+    lead: "From creation and learning, through device connect and data insight, to visual security and remote operations, then settlement between agents and humans. Each product ships alone; together they close the loop.",
     diagramAria:
       "Value chain: Create with BlockyEdu, Connect through SyncroBrain, See with DataLuminary; Watch with VistaCast and Control with VistaRemote branch off and merge into Earn with DoerFlow. Click a node to scroll to its product card.",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "Each partner product stands on its own site, with its own operator.",
+    title: "Six products, each ready to ship on its own",
   },
   platform: {
     index: "04",
@@ -49,7 +50,7 @@ export const home = {
       {
         id: "identity",
         title: "Unified login · Identity",
-        body: "One OIDC login service for partner products; each product keeps its own logo, copy and operator",
+        body: "One OIDC login service for products to plug into; each keeps its own logo and copy",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
@@ -161,7 +162,7 @@ export const home = {
     index: "07",
     label: "CTA",
     title: "Run it first, decide later",
-    lead: "Where a partner offers it, an eligible product includes a 7-day trial. There is no permanent free tier. For self-hosted delivery, or to become a partner, email the platform.",
+    lead: "Eligible products include a 7-day trial. There is no permanent free tier. For self-hosted delivery or business inquiries, email the platform.",
     startTrial: "Start trial",
     contact: "Contact sales",
     github: "GitHub",

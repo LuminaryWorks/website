@@ -2,10 +2,10 @@ export const meta = {
   home: {
     title: "LuminaryWorks — ログイン、請求、AI アクセスのプラットフォーム",
     description:
-      "LuminaryWorks は、統一アカウント、請求とエンタイトルメント、AI ゲートウェイ、通知、共有標準のためのプラットフォームです。パートナー製品は独立して運営され、プラットフォームを通じて利用できます。",
+      "6 つの製品は LuminaryWorks で商業落地が検証済みで、価値連携チェーンを形成しています。プラットフォームは統一アカウント、請求とエンタイトルメント、AI ゲートウェイ、通知、共有標準を提供します。",
   },
   products: {
-    title: "パートナー製品 · LuminaryWorks",
+    title: "製品 · LuminaryWorks",
     description:
       "LuminaryWorks プラットフォームを通じて利用できるパートナー製品。それぞれ運営者、サイト、規約、役割、Trial があります。",
   },

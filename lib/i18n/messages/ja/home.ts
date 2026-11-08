@@ -1,10 +1,10 @@
 export const home = {
   hero: {
     eyebrow: "LUMINARYWORKS · PLATFORM",
-    title:
-      "ログイン、請求、AI アクセスのためのプラットフォーム。パートナー製品は独立したままです。",
-    lead: "LuminaryWorks は、統一アカウント、請求とエンタイトルメント、AI ゲートウェイ、通知、共有標準を提供します。DataLuminary、BlockyEdu、VistaRemote、VistaCast、DoerFlow、SyncroBrain はパートナー製品です。それぞれ自らのチームまたは事業体が運営し、独自のドメインと規約を持ち、LuminaryWorks プラットフォームを通じて利用できます。",
-    primaryCta: "パートナー製品を見る",
+    title: "AI SaaS 基盤サービスプラットフォーム",
+    lead: "統一アカウント、請求とエンタイトルメント、AI ゲートウェイ、通知、共有標準を提供。各製品は単独でも、チェーンとしても届けられます。",
+    leadSecondary: "6 つの製品は本プラットフォームで商業落地が検証済みで、ひとつの価値連携チェーンを形成しています。",
+    primaryCta: "製品を見る",
     secondaryCta: "セルフホスト構成",
     docs: "開発者ドキュメント",
     diagramAria:
@@ -12,34 +12,33 @@ export const home = {
     controlPlane: "CONTROL PLANE",
     controlNote: "任意の共有",
     productPlanes: "PRODUCT PLANES",
-    productNote: "各製品が自前のデータベースと ACL を持つ",
+    productNote: "単独で届けられる",
     identity: "Identity",
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
     lab: "lab",
   },
-  facts: {
+    facts: {
     items: [
-      { value: "6", label: "掲載中のパートナー製品" },
-      { value: "5", label: "凍結済みのデプロイ形態" },
-      { value: "1", label: "共通のログイン・権利レイヤー" },
-      { value: "5", label: "系統のオープンプロトコル" },
-      { value: "NC", label: "Polyform 非商用ソース" },
+      { value: "6 製品", label: "商業落地を検証済み" },
+      { value: "1 つの基盤", label: "ログイン · 請求 · AI ゲートウェイ" },
+      { value: "5 形態", label: "単品からエアギャップまで" },
+      { value: "オープンソース", label: "Polyform 非商用" },
     ],
   },
   valueChain: {
     index: "02",
     label: "VALUE CHAIN",
-    title: "一つの価値連鎖に並ぶパートナー製品",
-    lead: "これらのパートナー製品は順に組み合わせできます。創造と学習、デバイスとデータ洞察、視覚セキュリティと遠隔運用、そしてエージェントと人の決済です。各段階は別々に運営されます。",
+    title: "すでに一つの価値連携チェーンができている",
+    lead: "創造と学習から、デバイス接続とデータ洞察、視覚セキュリティと遠隔運用へ、そしてエージェントと人の決済まで。各製品は単独でも届けられ、つなぐとクローズドループになります。",
     diagramAria:
       "バリューチェーン：BlockyEdu で創り、SyncroBrain で繋ぎ、DataLuminary で見る。VistaCast の監ると VistaRemote の操るが分岐し、DoerFlow の稼ぐへ合流します。ノードをクリックすると該当製品のカードへスクロールします。",
   },
   products: {
     index: "03",
     label: "PRODUCTS",
-    title: "各パートナー製品は、独自のサイトと運営者を持ちます。",
+    title: "6 製品。それぞれ単独で届けられる",
   },
   platform: {
     index: "04",
@@ -50,7 +49,7 @@ export const home = {
       {
         id: "identity",
         title: "統合ログイン · Identity",
-        body: "パートナー製品向けの一つの OIDC ログイン。各製品は独自のロゴ、文言、運営者を保ちます",
+        body: "製品が接続できる一つの OIDC ログイン。各製品は独自のロゴと文言を保ちます",
         tags: ["Logto", "OIDC", "PKCE"],
         lab: false,
       },
