@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "Self-hosted deployment",
     docs: "Ontwikkelaarsdocumentatie",
     diagramAria:
-      "Schema van het besturingsvlak en de vlakken van partnerproducten. De bovenste rij is een optioneel gedeeld besturingsvlak: Identity (OIDC), Entitlement en AI Gateway met het label lab. De onderste rijen zijn vlakken van partnerproducten, elk met een eigen database en ACL. Stippellijnen betekenen dat de afhankelijkheid optioneel is.",
+      "Schema van het besturingsvlak en de vlakken van partnerproducten. De bovenste rij is een optioneel gedeeld besturingsvlak: Identity (OIDC), Entitlement en AI Gateway. De onderste rijen zijn vlakken van partnerproducten, elk met een eigen database en ACL. Stippellijnen betekenen dat de afhankelijkheid optioneel is.",
     controlPlane: "CONTROL PLANE",
     controlNote: "optioneel gedeeld",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "Wat gedeeld wordt zijn identiteit, entitlement en protocollen — nooit businesslogica.",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "Toegang tot modellen van meerdere leveranciers, een key vault en verbruiksmeting (momenteel lab, niet in productie)",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "Toegang tot modellen van meerdere leveranciers, een key vault en verbruiksmeting",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -154,7 +154,7 @@ export const home = {
       },
       {
         title: "Eerlijke maturiteitslabels",
-        body: "De documentatie en deze site onderscheiden production / pilot / lab / stub. Opgeleverde code is niet hetzelfde als productieklaar.",
+        body: "De documentatie en deze site onderscheiden production / pilot / stub. Opgeleverde code is niet hetzelfde als productieklaar.",
       },
     ],
   },

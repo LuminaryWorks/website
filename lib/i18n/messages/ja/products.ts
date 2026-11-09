@@ -33,9 +33,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "監る",
       oneLiner:
-        "物理空間をプログラム可能な映像イベントストリームに変えます。既存の ONVIF/RTSP カメラを活用し、エッジで構造化イベントを生成します。",
-      chips: ["ONVIF/RTSP", "来客数と侵入検知", "Webhook イベント"],
-      audience: "チェーン小売、倉庫・物流、中小工場、施設警備",
+      "PCB / SMT の工位 AOI-lite。目視できるはんだ不良の兆候、ブリッジ、はんだ不足に加え、フローはんだと DIP 外観を見ます。高速インライン AOI 装置の代替ではありません。",
+      chips: ["SMT はんだ", "フローはんだ", "DIP 外観"],
+      audience: "電子製造・PCBA ライン、工位の証跡が必要な品質チーム",
     },
     vistaremote: {
       nameLocal: "视界远程",

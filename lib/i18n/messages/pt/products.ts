@@ -35,10 +35,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "Vigiar",
       oneLiner:
-        "Transforme o espaço físico num fluxo programável de eventos visuais — reutilize câmaras ONVIF/RTSP existentes e emita eventos estruturados no edge.",
-      chips: ["ONVIF/RTSP", "Afluência e intrusão", "Eventos por webhook"],
-      audience:
-        "Cadeias de retalho, armazenamento e logística, pequenas fábricas, segurança de instalações",
+      "AOI-lite de estação para PCB e SMT: sinais visíveis de defeito de solda, pontes e solda insuficiente, além de solda por onda e aspeto DIP. Não substitui uma AOI de linha de alta velocidade.",
+      chips: ["Juntas SMT", "Solda por onda", "Aspeto DIP"],
+      audience: "Linhas de eletrónica e PCBA que precisam de inspeção rastreável por estação",
     },
     vistaremote: {
       nameLocal: "视界远程",

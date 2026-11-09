@@ -30,9 +30,9 @@ export const products = {
       nameLocal: "視界雲遙",
       role: "視",
       oneLiner:
-        "把實體空間變成可程式化的視覺事件流：沿用既有 ONVIF/RTSP 攝影機，在邊緣產出結構化事件。",
-      chips: ["ONVIF/RTSP", "來客與入侵", "Webhook 事件"],
-      audience: "連鎖零售、倉儲物流、中小型工廠、大樓保全",
+      "PCB / SMT 工位光學質檢：看視覺可見的虛焊徵兆、連焊、少焊，以及波峰焊和 DIP 外觀。不取代整線高速 AOI。",
+      chips: ["SMT 焊點", "波峰焊", "DIP 外觀"],
+      audience: "電子製造與 PCBA 產線、需要工位留痕的品質團隊",
     },
     vistaremote: {
       nameLocal: "視界遠程",

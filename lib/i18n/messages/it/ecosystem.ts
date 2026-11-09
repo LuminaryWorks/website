@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "Sorvegliare",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "Eventi visivi, stato degli allarmi e conferme",
+        output: "Verdetti SMT e saldatura a onda, con immagini di evidenza",
       },
       {
         stage: "Controllare",
@@ -79,8 +79,8 @@ export const ecosystem = {
         title: "Gateway AI",
         description:
           "Routing dei modelli multi-fornitore, vault delle chiavi e misurazione dei consumi.",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notifiche",

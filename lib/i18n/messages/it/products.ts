@@ -35,9 +35,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "Sorvegliare",
       oneLiner:
-        "Trasformate lo spazio fisico in un flusso programmabile di eventi visivi — riutilizzate le telecamere ONVIF/RTSP esistenti ed emettete eventi strutturati sull'edge.",
-      chips: ["ONVIF/RTSP", "Affluenza e intrusioni", "Eventi via webhook"],
-      audience: "Catene retail, magazzini e logistica, piccole fabbriche, sicurezza degli edifici",
+      "AOI-lite di stazione per PCB e SMT: segni visibili di difetto di saldatura, ponti e saldatura insufficiente, più saldatura a onda e aspetto DIP. Non sostituisce una AOI di linea ad alta velocità.",
+      chips: ["Giunti SMT", "Saldatura a onda", "Aspetto DIP"],
+      audience: "Linee elettroniche e PCBA che servono ispezione tracciabile per stazione",
     },
     vistaremote: {
       nameLocal: "视界远程",

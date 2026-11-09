@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "视",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "视觉事件、告警状态与 ack",
+        output: "SMT / 波峰焊质检判定与证据图",
       },
       {
         stage: "控",
@@ -75,8 +75,8 @@ export const ecosystem = {
       {
         title: "AI 网关",
         description: "多供应商模型接入、密钥保险库与用量计量。",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "通知",

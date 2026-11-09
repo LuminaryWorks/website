@@ -64,12 +64,12 @@ export const deploy = {
     rows: [
       {
         capability: "identity",
-        modes: "central · external_oidc · local（lab、pilot/production では拒否）",
+        modes: "central · external_oidc · local",
       },
       { capability: "entitlement", modes: "off · shadow_read · enforce · offline_license" },
       {
         capability: "ai",
-        modes: "off · central（lab、pilot/production では禁止） · local_byok",
+        modes: "off · central · local_byok",
       },
       { capability: "notification", modes: "none · smtp" },
     ],
@@ -89,8 +89,8 @@ export const deploy = {
     points: [
       "air-gapped プロファイルは ai=central を禁止します。entitlement は off または offline_license のみです。",
       "offline_license は署名済みライセンスをローカルで検証し、中央 Entitlement に強く依存しません。",
-      "local_byok はモデルのキーを顧客側に留めます。中央 AI Platform は現状 lab であり、本番に投入してはいけません。",
-      "identity は顧客の IdP（external_oidc）の利用を推奨します。local ディレクトリモードは引き続き lab です。",
+      "local_byok はモデルのキーを顧客側に留めます。",
+      "identity は顧客の IdP（external_oidc）の利用を推奨します。",
     ],
   },
   maturity: {
@@ -111,18 +111,13 @@ export const deploy = {
       },
       { label: "pilot", meaning: "実ユーザーあり、範囲は限定", wording: "「パイロット中」" },
       {
-        label: "lab",
-        meaning: "ローカルや社内ネットワークで動作、本番向け強化なし",
-        wording: "「実験中」",
-      },
-      {
         label: "stub",
         meaning: "API は存在するが実装はプレースホルダー",
         wording: "「未実装」。収益化・計測は禁止",
       },
     ],
     callout:
-      "ai=central は現状 lab です。AuthN なし、Entitlement のゲートなし、/ready なし。preflight が pilot/production を拒否します。",
+      "",
   },
   cta: {
     title: "プライベート提供やオフライン提供が必要ですか？",

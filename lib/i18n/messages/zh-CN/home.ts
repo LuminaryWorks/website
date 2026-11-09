@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "私有化部署",
     docs: "开发者文档",
     diagramAria:
-      "控制面与产品面的结构示意图。上层是可选的共享控制面：Identity（OIDC）、Entitlement，以及标为 lab 的 AI Gateway。下层是产品面，各自拥有数据库与 ACL。虚线表示依赖可选。",
+      "控制面与产品面的结构示意图。上层是可选的共享控制面：Identity（OIDC）、Entitlement，以及 AI Gateway。下层是产品面，各自拥有数据库与 ACL。虚线表示依赖可选。",
     controlPlane: "CONTROL PLANE",
     controlNote: "可选共享",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
   facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "统一的不是业务，是身份、权益与协议",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI 网关",
-        body: "多供应商模型接入、密钥保险库与用量计量（当前 lab，不进生产）",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "多供应商模型接入、密钥保险库与用量计量",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -153,7 +153,7 @@ export const home = {
       },
       {
         title: "成熟度诚实标注",
-        body: "文档与官网区分 production / pilot / lab / stub，已编码不等于已上线。",
+        body: "文档与官网区分 production / pilot / stub，已编码不等于已上线。",
       },
     ],
   },

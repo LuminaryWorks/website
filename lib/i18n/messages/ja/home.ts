@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "セルフホスト構成",
     docs: "開発者ドキュメント",
     diagramAria:
-      "コントロールプレーンとパートナー製品プレーンの図です。上段は任意の共有コントロールプレーンで、Identity（OIDC）、Entitlement、lab と記された AI Gateway です。下段はパートナー製品プレーンで、それぞれ独自のデータベースと ACL を持ちます。破線は依存が任意であることを示します。",
+      "コントロールプレーンとパートナー製品プレーンの図です。上段は任意の共有コントロールプレーンで、Identity（OIDC）、Entitlement、AI Gateway です。下段はパートナー製品プレーンで、それぞれ独自のデータベースと ACL を持ちます。破線は依存が任意であることを示します。",
     controlPlane: "CONTROL PLANE",
     controlNote: "任意の共有",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "共有するのはアイデンティティ・権利・プロトコルであり、業務ロジックではありません。",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "マルチベンダーのモデル接続、キーボールト、使用量計測（現状 lab、本番投入不可）",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "マルチベンダーのモデル接続、キーボールト、使用量計測",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -153,7 +153,7 @@ export const home = {
       },
       {
         title: "成熟度を正直に表示",
-        body: "ドキュメントとこのサイトでは production / pilot / lab / stub を区別します。コードがあることは、本番で使えることと同義ではありません。",
+        body: "ドキュメントとこのサイトでは production / pilot / stub を区別します。コードがあることは、本番で使えることと同義ではありません。",
       },
     ],
   },

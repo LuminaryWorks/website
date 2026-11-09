@@ -63,10 +63,7 @@ export function PlatformSection() {
             <div className={styles.modGrid}>
               {units.map((item) => (
                 <article key={item.title} className={styles.mod}>
-                  <h3>
-                    {item.title}
-                    {"lab" in item && item.lab ? <span className={styles.labTag}>lab</span> : null}
-                  </h3>
+                  <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <div className={styles.tagRow}>
                     {item.tags.map((tag) => (

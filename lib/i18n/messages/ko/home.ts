@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "자체 호스팅 배포",
     docs: "개발자 문서",
     diagramAria:
-      "컨트롤 플레인과 파트너 제품 플레인의 그림입니다. 위쪽은 선택적 공유 컨트롤 플레인으로, Identity(OIDC), Entitlement, lab으로 표시된 AI Gateway입니다. 아래쪽은 파트너 제품 플레인이며, 각각 자신의 데이터베이스와 ACL을 가집니다. 점선은 의존성이 선택 사항임을 뜻합니다.",
+      "컨트롤 플레인과 파트너 제품 플레인의 그림입니다. 위쪽은 선택적 공유 컨트롤 플레인으로, Identity(OIDC), Entitlement, AI Gateway입니다. 아래쪽은 파트너 제품 플레인이며, 각각 자신의 데이터베이스와 ACL을 가집니다. 점선은 의존성이 선택 사항임을 뜻합니다.",
     controlPlane: "CONTROL PLANE",
     controlNote: "선택적 공유",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "공유하는 것은 아이덴티티와 권한, 프로토콜이며 업무 로직은 아닙니다.",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "다중 벤더 모델 연결, 키 볼트, 사용량 계측(현재 lab, 운영 투입 불가)",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "다중 벤더 모델 연결, 키 볼트, 사용량 계측",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -153,7 +153,7 @@ export const home = {
       },
       {
         title: "성숙도를 정직하게 표기",
-        body: "문서와 이 사이트는 production / pilot / lab / stub을 구분합니다. 코드가 있다는 것이 운영 준비를 뜻하지는 않습니다.",
+        body: "문서와 이 사이트는 production / pilot / stub을 구분합니다. 코드가 있다는 것이 운영 준비를 뜻하지는 않습니다.",
       },
     ],
   },

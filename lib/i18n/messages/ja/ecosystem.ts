@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "監る",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "映像イベント、アラート状態、確認応答",
+        output: "SMT・フローはんだの判定と証拠画像",
       },
       {
         stage: "操る",
@@ -78,8 +78,8 @@ export const ecosystem = {
       {
         title: "AI ゲートウェイ",
         description: "マルチベンダーのモデルルーティング、キーボールト、使用量計測。",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notification",

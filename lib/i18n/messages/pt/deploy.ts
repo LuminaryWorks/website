@@ -66,12 +66,12 @@ export const deploy = {
     rows: [
       {
         capability: "identity",
-        modes: "central · external_oidc · local (lab — rejeitado em pilot/production)",
+        modes: "central · external_oidc · local",
       },
       { capability: "entitlement", modes: "off · shadow_read · enforce · offline_license" },
       {
         capability: "ai",
-        modes: "off · central (lab — bloqueado em pilot/production) · local_byok",
+        modes: "off · central · local_byok",
       },
       { capability: "notification", modes: "none · smtp" },
     ],
@@ -91,8 +91,8 @@ export const deploy = {
     points: [
       "O perfil air-gapped proíbe ai=central; o entitlement só pode ser off ou offline_license.",
       "O offline_license valida licenças assinadas localmente, sem dependência estrita do Entitlement central.",
-      "O local_byok mantém as chaves de modelo do lado do cliente; a AI Platform central está em lab e não deve entrar em produção.",
-      "O identity deve usar o IdP do cliente (external_oidc); o modo de diretório local continua em lab.",
+      "O local_byok mantém as chaves de modelo do lado do cliente",
+      "O identity deve usar o IdP do cliente (external_oidc)",
     ],
   },
   maturity: {
@@ -113,18 +113,13 @@ export const deploy = {
       },
       { label: "pilot", meaning: "Utilizadores reais, âmbito limitado", wording: '"Pilot"' },
       {
-        label: "lab",
-        meaning: "Corre num portátil ou em intranet, sem endurecimento",
-        wording: '"Experimental"',
-      },
-      {
         label: "stub",
         meaning: "A API existe, a implementação é um placeholder",
         wording: '"Não implementado" — sem monetização nem medição',
       },
     ],
     callout:
-      "Hoje ai=central está em lab: sem AuthN, sem controlo de Entitlement, sem /ready. O preflight rejeita pilot/production.",
+      "",
   },
   cta: {
     title: "Precisa de entrega privada ou offline?",

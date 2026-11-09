@@ -155,7 +155,7 @@ export function MaturitySection() {
             </li>
           ))}
         </ul>
-        <p className={`${styles.note} ${styles.noteAmber}`}>{s.callout}</p>
+        {s.callout ? <p className={`${styles.note} ${styles.noteAmber}`}>{s.callout}</p> : null}
       </div>
     </section>
   );

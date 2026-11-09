@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "Bewaken",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "Visuele events, alarmstatus en bevestigingen",
+        output: "SMT- en golfsoldeerbeoordelingen met bewijsbeelden",
       },
       {
         stage: "Besturen",
@@ -78,8 +78,8 @@ export const ecosystem = {
       {
         title: "AI-gateway",
         description: "Modelrouting over meerdere leveranciers, key vault en verbruiksmeting.",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notificaties",

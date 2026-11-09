@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "Montre",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "Événements visuels, état d'alerte et accusés de réception",
+        output: "Verdicts SMT et brasage à la vague, avec images de preuve",
       },
       {
         stage: "Contrôle",
@@ -79,8 +79,8 @@ export const ecosystem = {
         title: "Passerelle IA",
         description:
           "Routage de modèles multifournisseurs, coffre-fort de clés et mesure de l'utilisation.",
-        tags: ["laboratoire", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notification",

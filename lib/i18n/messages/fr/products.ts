@@ -31,10 +31,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "Montre",
       oneLiner:
-        "Transformez l'espace physique en un flux programmable d'événements visuels : réutilisez les caméras ONVIF/RTSP existantes et émettez des événements structurés en périphérie.",
-      chips: ["ONVIF/RTSP", "Passage et intrusion", "Événements Webhook"],
-      audience:
-        "Chaînes de vente au détail, entreposage et logistique, petites usines, sécurité des installations",
+      "AOI-lite de poste pour PCB et SMT : signes visibles de défaut de brasage, ponts et brasage insuffisant, plus brasage à la vague et aspect DIP. Ne remplace pas une AOI de ligne à grande vitesse.",
+      chips: ["Joints SMT", "Brasage à la vague", "Aspect DIP"],
+      audience: "Lignes électronique et PCBA qui ont besoin d’une inspection traçable par poste",
     },
     vistaremote: {
       nameLocal: "视界远程",

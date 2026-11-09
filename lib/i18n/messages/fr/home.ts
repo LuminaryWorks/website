@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "Déploiement auto-hébergé",
     docs: "Documents pour développeurs",
     diagramAria:
-      "Schéma du plan de contrôle et des plans des produits partenaires. La rangée supérieure est un plan de contrôle partagé et facultatif : Identity (OIDC), Entitlement et AI Gateway marquée lab. Les rangées inférieures sont les plans des produits partenaires, chacun avec sa base de données et son ACL. Les pointillés indiquent que la dépendance est facultative.",
+      "Schéma du plan de contrôle et des plans des produits partenaires. La rangée supérieure est un plan de contrôle partagé et facultatif : Identity (OIDC), Entitlement et AI Gateway. Les rangées inférieures sont les plans des produits partenaires, chacun avec sa base de données et son ACL. Les pointillés indiquent que la dépendance est facultative.",
     controlPlane: "PLAN DE CONTRÔLE",
     controlNote: "partagé en option",
     productPlanes: "PLANS DE PRODUITS",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Droit",
     aiGateway: "Passerelle IA",
-    lab: "laboratoire",
+    lab: "",
   },
     facts: {
     items: [
@@ -45,7 +45,7 @@ export const home = {
     label: "PLATE-FORME",
     title:
       "Ce qui est partagé, c'est l'identité, les droits et les protocoles, jamais la logique métier.",
-    lab: "laboratoire",
+    lab: "",
     cards: [
       {
         id: "identité",
@@ -71,9 +71,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "Passerelle IA",
-        body: "Accès aux modèles multifournisseurs, coffre-fort de clés et mesure de l'utilisation (actuellement en laboratoire, pas en production)",
-        tags: ["laboratoire", "BYOK"],
-        lab: true,
+        body: "Accès aux modèles multifournisseurs, coffre-fort de clés et mesure de l'utilisation",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -155,7 +155,7 @@ export const home = {
       },
       {
         title: "Étiquettes de maturité honnêtes",
-        body: "Docs et ce site distinguent production/pilote/laboratoire/stub. Le code expédié n’est pas le même que celui prêt pour la production.",
+        body: "Docs et ce site distinguent production / pilote / stub. Le code expédié n’est pas le même que celui prêt pour la production.",
       },
     ],
   },

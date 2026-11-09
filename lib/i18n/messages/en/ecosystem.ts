@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "Watch",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "Visual events, alert state and acknowledgements",
+        output: "SMT and wave-solder verdicts with evidence images",
       },
       {
         stage: "Control",
@@ -78,8 +78,8 @@ export const ecosystem = {
       {
         title: "AI gateway",
         description: "Multi-vendor model routing, key vault and usage metering.",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notification",

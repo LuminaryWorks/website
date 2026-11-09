@@ -9,7 +9,7 @@ export const home = {
     secondaryCta: "Self-hosted deployment",
     docs: "Developer docs",
     diagramAria:
-      "Diagram of the control plane and product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway marked lab. The lower rows are product planes, each with its own database and ACL. Dashed lines mean the dependency is optional.",
+      "Diagram of the control plane and product planes. The upper row is an optional shared control plane: Identity (OIDC), Entitlement, and AI Gateway. The lower rows are product planes, each with its own database and ACL. Dashed lines mean the dependency is optional.",
     controlPlane: "CONTROL PLANE",
     controlNote: "optional shared",
     productPlanes: "PRODUCT PLANES",
@@ -18,7 +18,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
   facts: {
     items: [
@@ -45,7 +45,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "What is shared is identity, entitlement and protocols — never business logic.",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -71,9 +71,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "Multi-vendor model access, a key vault and usage metering (currently lab, not in production)",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "Multi-vendor model access, a key vault and usage metering",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -154,7 +154,7 @@ export const home = {
       },
       {
         title: "Honest maturity labels",
-        body: "Docs and this site distinguish production / pilot / lab / stub. Shipped code is not the same as production-ready.",
+        body: "Docs and this site distinguish production / pilot / stub. Shipped code is not the same as production-ready.",
       },
     ],
   },

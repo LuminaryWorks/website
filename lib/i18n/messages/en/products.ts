@@ -32,9 +32,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "Watch",
       oneLiner:
-        "Turn physical space into a programmable stream of visual events — reuse existing ONVIF/RTSP cameras, emit structured events at the edge.",
-      chips: ["ONVIF/RTSP", "Footfall and intrusion", "Webhook events"],
-      audience: "Retail chains, warehousing and logistics, small factories, facility security",
+      "Station AOI-lite for PCB and SMT: visible solder-defect signs, bridges, and insufficient solder, plus wave solder and DIP appearance. Not a high-speed inline AOI machine.",
+      chips: ["SMT solder joints", "Wave solder", "DIP appearance"],
+      audience: "Electronics and PCBA lines that need traceable station inspection",
     },
     vistaremote: {
       nameLocal: "视界远程",

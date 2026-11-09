@@ -71,7 +71,6 @@ export function Hero() {
               <div className={styles.node}>
                 <span className={styles.dotAmber} />
                 <span className={styles.nodeLabel}>{h.aiGateway}</span>
-                <span className={styles.lab}>{h.lab}</span>
               </div>
             </div>
             <div className={styles.connectors}>

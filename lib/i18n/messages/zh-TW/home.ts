@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "私有部署",
     docs: "開發者文件",
     diagramAria:
-      "控制面與合作產品面的結構示意圖。上層是可選的共享控制面：Identity（OIDC）、Entitlement，以及標為 lab 的 AI Gateway。下層是合作產品面，各自擁有資料庫與 ACL。虛線表示依賴可選。",
+      "控制面與合作產品面的結構示意圖。上層是可選的共享控制面：Identity（OIDC）、Entitlement，以及 AI Gateway。下層是合作產品面，各自擁有資料庫與 ACL。虛線表示依賴可選。",
     controlPlane: "CONTROL PLANE",
     controlNote: "可選共用",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "統一的不是業務，而是身分、權益與協定",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI 閘道",
-        body: "多供應商模型接入、金鑰保險庫與用量計量（目前為 lab，不進生產）",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "多供應商模型接入、金鑰保險庫與用量計量",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -153,7 +153,7 @@ export const home = {
       },
       {
         title: "成熟度誠實標註",
-        body: "文件與官網區分 production / pilot / lab / stub，已寫完程式不等於已上線。",
+        body: "文件與官網區分 production / pilot / stub，已寫完程式不等於已上線。",
       },
     ],
   },

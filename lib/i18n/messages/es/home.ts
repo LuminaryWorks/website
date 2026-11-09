@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "Despliegue autoalojado",
     docs: "Documentación para desarrolladores",
     diagramAria:
-      "Diagrama del plano de control y de los planos de los productos asociados. La fila superior es un plano de control compartido y opcional: Identity (OIDC), Entitlement y AI Gateway marcado como lab. Las filas inferiores son los planos de los productos asociados, cada uno con su base de datos y su ACL. Las líneas discontinuas indican que la dependencia es opcional.",
+      "Diagrama del plano de control y de los planos de los productos asociados. La fila superior es un plano de control compartido y opcional: Identity (OIDC), Entitlement y AI Gateway. Las filas inferiores son los planos de los productos asociados, cada uno con su base de datos y su ACL. Las líneas discontinuas indican que la dependencia es opcional.",
     controlPlane: "CONTROL PLANE",
     controlNote: "compartido opcional",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -44,7 +44,7 @@ export const home = {
     index: "04",
     label: "PLATFORM",
     title: "Lo compartido es identidad, derechos y protocolos, nunca la lógica de negocio.",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -70,9 +70,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "Acceso a modelos de varios proveedores, bóveda de claves y medición de uso (hoy lab, no en producción)",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "Acceso a modelos de varios proveedores, bóveda de claves y medición de uso",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -154,7 +154,7 @@ export const home = {
       },
       {
         title: "Etiquetas de madurez honestas",
-        body: "La documentación y este sitio distinguen production / pilot / lab / stub. Que el código exista no significa que esté listo para producción.",
+        body: "La documentación y este sitio distinguen production / pilot / stub. Que el código exista no significa que esté listo para producción.",
       },
     ],
   },

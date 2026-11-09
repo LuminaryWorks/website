@@ -35,9 +35,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "Bewaken",
       oneLiner:
-        "Maak van fysieke ruimte een programmeerbare stroom visuele events — hergebruik bestaande ONVIF/RTSP-camera's en verstuur gestructureerde events op de edge.",
-      chips: ["ONVIF/RTSP", "Bezoekersaantallen en inbraak", "Webhook-events"],
-      audience: "Retailketens, warehousing en logistiek, kleine fabrieken, facilitaire beveiliging",
+      "AOI-lite op stations voor PCB en SMT: zichtbare soldeerdefecten, bruggen en te weinig soldeer, plus golfsoldeer en DIP-uiterlijk. Geen vervanging van een snelle inline-AOI.",
+      chips: ["SMT-soldeer", "Golfsoldeer", "DIP-uiterlijk"],
+      audience: "Elektronica- en PCBA-lijnen die herleidbare stationsinspectie nodig hebben",
     },
     vistaremote: {
       nameLocal: "视界远程",

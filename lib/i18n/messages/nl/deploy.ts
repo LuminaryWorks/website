@@ -64,12 +64,12 @@ export const deploy = {
     rows: [
       {
         capability: "identity",
-        modes: "central · external_oidc · local (lab — geweigerd in pilot/production)",
+        modes: "central · external_oidc · local",
       },
       { capability: "entitlement", modes: "off · shadow_read · enforce · offline_license" },
       {
         capability: "ai",
-        modes: "off · central (lab — geblokkeerd in pilot/production) · local_byok",
+        modes: "off · central · local_byok",
       },
       { capability: "notification", modes: "none · smtp" },
     ],
@@ -89,8 +89,8 @@ export const deploy = {
     points: [
       "Het air-gapped-profiel verbiedt ai=central; entitlement kan alleen off of offline_license zijn.",
       "offline_license verifieert gesigneerde licenties lokaal — zonder harde afhankelijkheid van de centrale Entitlement.",
-      "local_byok houdt modelsleutels aan de klantzijde; het centrale AI Platform is vandaag lab en mag niet in productie komen.",
-      "identity gebruikt bij voorkeur de IdP van de klant (external_oidc); de lokale directory-modus blijft lab.",
+      "local_byok houdt modelsleutels aan de klantzijde",
+      "identity gebruikt bij voorkeur de IdP van de klant (external_oidc)",
     ],
   },
   maturity: {
@@ -111,18 +111,13 @@ export const deploy = {
       },
       { label: "pilot", meaning: "Echte gebruikers, beperkte scope", wording: '"Pilot"' },
       {
-        label: "lab",
-        meaning: "Draait op een laptop of intranet, niet gehard",
-        wording: '"Experimenteel"',
-      },
-      {
         label: "stub",
         meaning: "De API bestaat, de implementatie is een placeholder",
         wording: '"Niet geïmplementeerd" — geen monetisatie of metering',
       },
     ],
     callout:
-      "ai=central is vandaag lab: geen AuthN, geen Entitlement-gate, geen /ready. Preflight weigert pilot/production.",
+      "",
   },
   cta: {
     title: "Private of offline levering nodig?",

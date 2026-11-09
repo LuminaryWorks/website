@@ -8,7 +8,7 @@ export const home = {
     secondaryCta: "Deployment self-hosted",
     docs: "Documentazione per sviluppatori",
     diagramAria:
-      "Schema del piano di controllo e dei piani dei prodotti partner. La riga superiore è un piano di controllo condiviso e facoltativo: Identity (OIDC), Entitlement e AI Gateway contrassegnato come lab. Le righe inferiori sono i piani dei prodotti partner, ciascuno con il proprio database e la propria ACL. Le linee tratteggiate indicano che la dipendenza è facoltativa.",
+      "Schema del piano di controllo e dei piani dei prodotti partner. La riga superiore è un piano di controllo condiviso e facoltativo: Identity (OIDC), Entitlement e AI Gateway. Le righe inferiori sono i piani dei prodotti partner, ciascuno con il proprio database e la propria ACL. Le linee tratteggiate indicano che la dipendenza è facoltativa.",
     controlPlane: "CONTROL PLANE",
     controlNote: "condiviso opzionale",
     productPlanes: "PRODUCT PLANES",
@@ -17,7 +17,7 @@ export const home = {
     identityProto: "OIDC",
     entitlement: "Entitlement",
     aiGateway: "AI Gateway",
-    lab: "lab",
+    lab: "",
   },
     facts: {
     items: [
@@ -45,7 +45,7 @@ export const home = {
     label: "PLATFORM",
     title:
       "Ciò che è condiviso sono identità, entitlement e protocolli — mai la logica di business.",
-    lab: "lab",
+    lab: "",
     cards: [
       {
         id: "identity",
@@ -71,9 +71,9 @@ export const home = {
       {
         id: "aiGateway",
         title: "AI Gateway",
-        body: "Accesso a modelli di più fornitori, vault delle chiavi e misurazione dei consumi (attualmente lab, non in produzione)",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        body: "Accesso a modelli di più fornitori, vault delle chiavi e misurazione dei consumi",
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         id: "notification",
@@ -156,7 +156,7 @@ export const home = {
       },
       {
         title: "Etichette di maturità oneste",
-        body: "La documentazione e questo sito distinguono production / pilot / lab / stub. Codice rilasciato non significa pronto per la produzione.",
+        body: "La documentazione e questo sito distinguono production / pilot / stub. Codice rilasciato non significa pronto per la produzione.",
       },
     ],
   },

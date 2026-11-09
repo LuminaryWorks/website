@@ -31,9 +31,9 @@ export const products = {
       nameLocal: "视界云遥",
       role: "감시",
       oneLiner:
-        "물리 공간을 프로그래밍 가능한 영상 이벤트 스트림으로 바꿉니다. 기존 ONVIF/RTSP 카메라를 재활용하고 엣지에서 구조화된 이벤트를 만듭니다.",
-      chips: ["ONVIF/RTSP", "방문객 수와 침입 감지", "Webhook 이벤트"],
-      audience: "체인 리테일, 물류·창고, 중소 공장, 시설 보안",
+      "PCB / SMT 공정 AOI-lite. 눈으로 보이는 납땜 불량 징후, 브리지, 납 부족과 웨이브 솔더, DIP 외관을 검사합니다. 고속 인라인 AOI 장비를 대체하지 않습니다.",
+      chips: ["SMT 솔더", "웨이브 솔더", "DIP 외관"],
+      audience: "전자·PCBA 라인, 공정 이력이 필요한 품질 팀",
     },
     vistaremote: {
       nameLocal: "视界远程",

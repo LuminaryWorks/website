@@ -33,7 +33,7 @@ export const ecosystem = {
         stage: "감시",
         product: "VistaCast",
         productLocal: "视界云遥",
-        output: "영상 이벤트, 경보 상태, 확인 처리",
+        output: "SMT·웨이브 솔더 판정과 증거 이미지",
       },
       {
         stage: "제어",
@@ -77,8 +77,8 @@ export const ecosystem = {
       {
         title: "AI 게이트웨이",
         description: "다중 벤더 모델 라우팅, 키 볼트, 사용량 계측.",
-        tags: ["lab", "BYOK"],
-        lab: true,
+        tags: ["BYOK"],
+        lab: false,
       },
       {
         title: "Notification",

@@ -22,15 +22,7 @@ export function Platform() {
           <div className={styles.grid}>
             {s.cards.map((card) => (
               <article key={card.id} className={styles.card}>
-                <h3 className={styles.cardTitle}>
-                  {card.title}
-                  {card.lab ? (
-                    <span className={styles.labMark}>
-                      <span className={styles.labDot} aria-hidden="true" />
-                      {s.lab}
-                    </span>
-                  ) : null}
-                </h3>
+                <h3 className={styles.cardTitle}>{card.title}</h3>
                 <p className={styles.cardBody}>{card.body}</p>
                 <ul className={styles.tags}>
                   {card.tags.map((tag) => (

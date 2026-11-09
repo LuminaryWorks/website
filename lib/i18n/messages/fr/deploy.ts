@@ -65,7 +65,7 @@ export const deploy = {
     rows: [
       {
         capability: "identité",
-        modes: "central · external_oidc · local (laboratoire — rejeté en pilote/production)",
+        modes: "central · external_oidc · local",
       },
       {
         capability: "droit",
@@ -73,7 +73,7 @@ export const deploy = {
       },
       {
         capability: "ai",
-        modes: "off · central (laboratoire — bloqué en pilote/production) · local_byok",
+        modes: "off · central · local_byok",
       },
       {
         capability: "notification",
@@ -96,8 +96,8 @@ export const deploy = {
     points: [
       "Le profil entrefer interdit ai=central ; le droit est désactivé ou hors ligne_license uniquement.",
       "Offline_license vérifie les licences signées localement – aucune dépendance stricte vis-à-vis des droits centraux.",
-      "local_byok conserve les clés de modèle côté client ; Central AI Platform est aujourd’hui un laboratoire et ne doit pas entrer en production.",
-      "l'identité doit utiliser l'IdP du client (external_oidc) ; le mode répertoire local reste laboratoire.",
+      "local_byok conserve les clés de modèle côté client",
+      "l'identité doit utiliser l'IdP du client (external_oidc)",
     ],
   },
   maturity: {
@@ -122,18 +122,13 @@ export const deploy = {
         wording: '"Pilote"',
       },
       {
-        label: "laboratoire",
-        meaning: "Fonctionne sur un ordinateur portable ou un intranet, non renforcé",
-        wording: '"Expérimental"',
-      },
-      {
         label: "bout",
         meaning: "API existe, l'implémentation est un espace réservé",
         wording: '"Non implémenté" – pas de monétisation ni de mesure',
       },
     ],
     callout:
-      "ai=central est le laboratoire aujourd'hui : pas d'AuthN, pas de porte d'autorisation, non /ready. Le contrôle en amont rejette le pilote/la production.",
+      "",
   },
   cta: {
     title: "Besoin d'une livraison privée ou hors ligne ?",

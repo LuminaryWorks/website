@@ -2,10 +2,16 @@
   padding: 32px 0;
 }
 
+/* Reveal 默认是 inline-block 级内容盒时可能收窄；强制与上下 lw-container 同宽 */
+.strip > * {
+  width: 100%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
+  gap: 0;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -16,6 +22,19 @@
   flex-direction: column;
   gap: 8px;
   min-width: 0;
+  padding: 0 24px;
+  border-left: 1px solid var(--lw-border-soft);
+}
+
+.item:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.item:last-child {
+  padding-right: 0;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .value {
@@ -36,6 +55,24 @@
 @media (max-width: 720px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px 16px;
+    row-gap: 24px;
+  }
+
+  .item {
+    padding: 0 16px;
+  }
+
+  .item:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .item:nth-child(even) {
+    padding-right: 0;
+    border-left: 1px solid var(--lw-border-soft);
+    align-items: flex-end;
+    text-align: right;
   }
 }

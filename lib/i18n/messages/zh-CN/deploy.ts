@@ -64,10 +64,10 @@ export const deploy = {
     rows: [
       {
         capability: "identity",
-        modes: "central · external_oidc · local（lab，pilot/production 拒绝）",
+        modes: "central · external_oidc · local",
       },
       { capability: "entitlement", modes: "off · shadow_read · enforce · offline_license" },
-      { capability: "ai", modes: "off · central（lab，禁止进 pilot/production） · local_byok" },
+      { capability: "ai", modes: "off · central · local_byok" },
       { capability: "notification", modes: "none · smtp" },
     ],
   },
@@ -86,8 +86,8 @@ export const deploy = {
     points: [
       "air-gapped profile 禁止 ai=central，entitlement 仅 off 或 offline_license。",
       "offline_license 通过公钥验签，不得硬依赖中央 Entitlement 服务。",
-      "local_byok 将模型密钥留在客户侧；中央 AI Platform 当前为 lab，不得进入生产。",
-      "identity 建议使用客户 IdP（external_oidc）；local 目录模式仍为 lab。",
+      "local_byok 将模型密钥留在客户侧。",
+      "identity 建议使用客户 IdP（external_oidc）。",
     ],
   },
   maturity: {
@@ -103,11 +103,10 @@ export const deploy = {
     rows: [
       { label: "production", meaning: "已上线、可售、有回归", wording: "「已上线」" },
       { label: "pilot", meaning: "有真实用户但范围受控", wording: "「试点中」" },
-      { label: "lab", meaning: "本机 / 内网跑通，无生产硬化", wording: "「实验中」" },
       { label: "stub", meaning: "接口存在，实现是占位", wording: "「未实现」，禁止变现或计量" },
     ],
     callout:
-      "ai=central 当前成熟度为 lab：无 AuthN、无 Entitlement 门禁、无 /ready。preflight 拒绝 pilot/production。",
+      "",
   },
   cta: {
     title: "需要私有化或离线交付？",
