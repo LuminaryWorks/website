@@ -5,3 +5,6 @@ out
 *.log
 .env*
 *.tsbuildinfo
+
+# Local AI provider secrets — never commit
+.env.ai
